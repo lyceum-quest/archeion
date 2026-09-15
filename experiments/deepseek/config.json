@@ -1,5 +1,6 @@
 {
-  "experiment_version": 2,
+  "experiment_name": "deepseek",
+  "experiment_version": 3,
   "provider": {
     "name": "ppq",
     "base_url": "https://api.ppq.ai/v1",
@@ -11,6 +12,7 @@
   "generation": {
     "temperature": 1,
     "top_p": 1,
+    "top_k": 0,
     "seed": 1,
     "reasoning": {
       "enabled": false,
@@ -26,25 +28,9 @@
     },
     "max_tokens": 4096,
     "frequency_penalty": 0,
-    "presence_penalty": 0,
-    "response_format": {
-      "type": "json_schema",
-      "json_schema": {
-        "name": "contextual_glosses",
-        "strict": true,
-        "schema": {
-          "type": "object",
-          "properties": {
-            "glossed_text": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "glossed_text"
-          ],
-          "additionalProperties": false
-        }
-      }
-    }
+    "presence_penalty": 0
+  },
+  "validation": {
+    "max_attempts": 2
   }
 }
