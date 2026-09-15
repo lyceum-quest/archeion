@@ -10,6 +10,7 @@
     "id": "deepseek/deepseek-v4-flash-0731"
   },
   "generation": {
+    "profile": "full-sampling",
     "temperature": 1,
     "top_p": 1,
     "top_k": 0,
