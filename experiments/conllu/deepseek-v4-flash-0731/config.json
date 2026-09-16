@@ -1,6 +1,11 @@
 {
   "experiment_name": "deepseek-v4-flash-0731",
-  "experiment_version": 4,
+  "experiment_version": 2,
+  "execution": {
+    "min_overt_tokens_per_shard": 30,
+    "max_overt_tokens_per_shard": 50,
+    "shard_delay_ms": 5000
+  },
   "provider": {
     "name": "ppq",
     "base_url": "https://api.ppq.ai/v1",
@@ -16,7 +21,7 @@
     "top_k": 0,
     "seed": 1,
     "reasoning": {
-      "enabled": false,
+      "enabled": true,
       "exclude": true
     },
     "include_reasoning": false,
@@ -27,7 +32,7 @@
       "require_parameters": true,
       "allow_fallbacks": false
     },
-    "max_tokens": 4096,
+    "max_tokens": 8192,
     "frequency_penalty": 0,
     "presence_penalty": 0
   },
