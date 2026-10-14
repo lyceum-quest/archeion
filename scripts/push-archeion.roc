@@ -8,23 +8,22 @@ import cli.Stdout
 import LyceumWebsite
 
 # Publishes a release that publish-archeion committed, tagged, and staged.
-#   git:    pushes ARCHEION_DIR's master and the release tag to each of ARCHEION_REMOTES (default `rad`).
+#   git:    pushes master and the release tag to each of ARCHEION_REMOTES (default `origin`).
 #   github: creates the GitHub release from ARCHEION_RELEASE_DIR/<version>/, only for a production snapshot whose tag
 #           is already on GitHub (push it to the GitHub remote first).
-# The release is ARCHEION_VERSION, or else the newest v* tag in ARCHEION_DIR.
+# The release is ARCHEION_VERSION, or else the newest v* tag.
 # Usage: roc scripts/push-archeion.roc git|github
 main! = |args| {
-	archeion = setting!("ARCHEION_DIR")
-	_ = require(archeion != "" and (Path.is_dir!(Path.utf8(archeion)) ?? Bool.False), "set ARCHEION_DIR to the Archeion checkout, in the environment or in .env (see .env.example)")?
+	archeion = "."
 	version = match setting!("ARCHEION_VERSION") {
 		"" => run!("git", ["-C", archeion, "describe", "--tags", "--abbrev=0", "--match", "v*"])?
 		value => value
 	}
-	_ = run!("git", ["-C", archeion, "rev-parse", "--verify", "--quiet", "refs/tags/${version}"]) ? |_| Publish("${archeion} has no tag ${version}; run publish-archeion first")
+	_ = run!("git", ["-C", archeion, "rev-parse", "--verify", "--quiet", "refs/tags/${version}"]) ? |_| Publish("no tag ${version}; run publish-archeion first")
 	match args.map(OsStr.display) {
 		[_, "git"] => {
 			_ = require(switch!("ARCHEION_PUSH"), "Pushing requires ARCHEION_PUSH=1")?
-			remotes = Str.split_on(if setting!("ARCHEION_REMOTES") == "" "rad" else setting!("ARCHEION_REMOTES"), " ").keep_if(|remote| remote != "")
+			remotes = Str.split_on(if setting!("ARCHEION_REMOTES") == "" "origin" else setting!("ARCHEION_REMOTES"), " ").keep_if(|remote| remote != "")
 			push!(archeion, version, remotes)
 		}
 		[_, "github"] => {

@@ -10,6 +10,8 @@ It is organized as a small set of data subprojects. The top-level README gives t
 |---|---|---|
 | [`db/`](db/) | SQLite database documentation for reader, corpus, morphology, dictionary, and learner-state databases. The large `.db` artifacts are release assets, not normal git-tracked files. | [`db/README.md`](db/README.md) |
 | [`conllu/`](conllu/) | Ancient Greek CoNLL-U dependency treebank data: the Lyceum editions served on lyceum.quest (`conllu/lyceum/`), plus Aesop fables, Aristotle's *Poetics*, and Xenophon's *Anabasis* Book 1 used by the CoNLL-U visualizer. | [`conllu/README.md`](conllu/README.md) |
+| [`conllu/generated/`](conllu/generated/) | Every generated work (`<work>-<model>/`): glosses, translations, passages, and generation costs. | [`PIPELINE.md`](PIPELINE.md) |
+| [`scripts/`](scripts/), [`data/oga/`](data/oga/) | The pipeline (Roc, run through `Kaifile.roc`) and the OGA citation data it uses. [`experiments/`](experiments/) and [`RESEARCH.md`](RESEARCH.md) record how prompts and models were chosen. | [`PIPELINE.md`](PIPELINE.md) |
 | [`releases/`](releases/) | One manifest per release: database checksums, the Lyceum editions included, and the source commits they came from. | [`releases/`](releases/) |
 | [`orchestrator/`](orchestrator/) | Archived per-text workspaces from the experimental (now deprecated) orchestrator pipeline. These are historical snapshots with raw sources, structured text, interlinear output, and QA artifacts where present. See discussion of the pipeline [here](https://blu.cx/posts/articles/2026-03-31-lyceum-pipeline/). | [`orchestrator/README.md`](orchestrator/README.md) |
 
@@ -26,14 +28,12 @@ Releases made by `publish-archeion` carry all four databases, compressed with zs
 
 ## How data gets here
 
-Archeion publishes what lyceum.quest serves. Its content comes from the [Aristos](https://github.com/lyceum-quest/aristos) pipeline, in four separate steps run from an Aristos checkout:
+Archeion holds the whole pipeline, from pinned source corpora to releases; see [`PIPELINE.md`](PIPELINE.md). Generated works live in [`conllu/generated/`](conllu/generated/) (`kai run generate`). From there:
 
-1. **Generate** — `kai run generate` glosses and translates a work into `conllu/generated/<work>-<model>/` (`output.conllu`, `units.jsonl`, `config.json`).
-2. **Import** — `kai run lyceum-import-config` and `kai run import-lyceum` load the work's passages into the website's `texts.db` and `editions.db`.
-3. **Deploy** — `kai run deploy-lyceum-data` (staging) or `deploy-lyceum-data-prod` installs those databases on a Lyceum host.
-4. **Publish** — `kai run publish-archeion` checks that production serves exactly the local `texts.db`, `editions.db`, `morph.db`, and `lsj.db`, copies every imported work into [`conllu/lyceum/`](conllu/lyceum/) (only as far as it is imported), writes the release manifest to `releases/`, commits, and tags `vYYYY.MM.DD`. `push-archeion` pushes the commit and tag; `release-archeion-github` uploads the compressed databases as the GitHub release.
+- **Aristos** pins a `preload-vYYYY.MM.DD` release (`aristos-preload.tar.zst`: every generated work with its passages and lemma index), built by `kai workflow preload-release`.
+- **Lyceum** is deployed databases imported here (`kai run import-lyceum`, `kai run deploy-lyceum-data`); `kai workflow release-lyceum` then publishes exactly what production serves as a `vYYYY.MM.DD` release, copying each imported work into [`conllu/lyceum/`](conllu/lyceum/).
 
-`kai workflow release-lyceum` runs the production deploy and all of step 4 together, so a release always matches the site at that moment. See Aristos's `DEPLOYMENT.md` for settings. Learner data (`users.db`) is never published.
+Learner data (`users.db`) is never published.
 
 ## Usage
 

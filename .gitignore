@@ -5,3 +5,22 @@
 __pycache__/
 .DS_Store
 .direnv/
+
+# Kai-generated environment; only the lock is committed
+/.kai/*
+!/.kai/lock.json
+
+# Local settings (see .env.example)
+.env
+
+# Built by `kai run preload` for inspection; releases build their own
+/preload/
+
+# Roc script executables
+/scripts/build-corpus-preload
+/scripts/lint
+/scripts/run-model-experiment
+/scripts/run-conllu-experiment
+
+# Per-work scratch files from scripts/generate/loop.roc
+conllu/generated/*/.scratch/

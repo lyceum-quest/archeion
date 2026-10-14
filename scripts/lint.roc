@@ -7,38 +7,40 @@ import pf.Stdout
 
 main! : List(OsStr) => Try({}, _)
 main! = |args| {
-	if List.len(args) != 1 {
-		Stderr.line!("usage: lint")?
-		Err(Exit(2))
-	} else {
-		root : Path
-		root = "."
-		match discover!(root) {
-			Err(_) => {
-				Stderr.line!("FAIL .: could not traverse current directory")?
-				Stderr.line!("CoNLL-U discovery failed.")?
-				Err(Exit(1))
-			}
+	match args {
+		[_, dir] => {
+			root = Path.from_os_str(dir)
+			match discover!(root) {
+				Err(_) => {
+					Stderr.line!("FAIL ${root.display()}: could not traverse the directory")?
+					Stderr.line!("CoNLL-U discovery failed.")?
+					Err(Exit(1))
+				}
 
-			Ok(found) => {
-				files = List.sort_with(found.files, compare_path)
-				skipped = List.sort_with(found.skipped, compare_path)
-				print_skipped!(skipped)?
+				Ok(found) => {
+					files = List.sort_with(found.files, compare_path)
+					skipped = List.sort_with(found.skipped, compare_path)
+					print_skipped!(skipped)?
 
-				if List.is_empty(files) and List.is_empty(skipped) {
-					Stdout.line!("NONE no .conllu files found under .")?
-					Ok({})
-				} else {
-					stats = lint_files!(files, { passed: 0.U64, failed: 0.U64 })?
-					Stdout.line!("SUMMARY ${U64.to_str(stats.passed)} passed, ${U64.to_str(stats.failed)} failed, ${List.len(skipped).to_str()} skipped")?
-					if stats.failed == 0 {
+					if List.is_empty(files) and List.is_empty(skipped) {
+						Stdout.line!("NONE no .conllu files found under ${root.display()}")?
 						Ok({})
 					} else {
-						Stderr.line!("CoNLL-U lint failed.")?
-						Err(Exit(1))
+						stats = lint_files!(files, { passed: 0.U64, failed: 0.U64 })?
+						Stdout.line!("SUMMARY ${U64.to_str(stats.passed)} passed, ${U64.to_str(stats.failed)} failed, ${List.len(skipped).to_str()} skipped")?
+						if stats.failed == 0 {
+							Ok({})
+						} else {
+							Stderr.line!("CoNLL-U lint failed.")?
+							Err(Exit(1))
+						}
 					}
 				}
 			}
+		}
+		_ => {
+			Stderr.line!("usage: lint <dir>")?
+			Err(Exit(2))
 		}
 	}
 }
