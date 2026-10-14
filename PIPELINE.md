@@ -3,6 +3,7 @@
 Archeion holds the whole path from source corpora to what the apps serve. The apps generate no data:
 
 - **Aristos** (the study app) pins a preload release in its `preload.lock.json` and fetches it.
+- **conllu-viz** (the CoNLL-U visualizer) pins a `conllu-viz-v*` release in its `data.lock.json`.
 - **Lyceum** (the reader at lyceum.quest) is deployed the databases imported here and published as `v*` releases.
 
 Tasks run with `kai run <task>` (or `kai workflow <workflow>`); see `Kaifile.roc`. Settings come from the
@@ -30,6 +31,19 @@ ARCHEION_GITHUB_RELEASE=1 kai run release-preload-github
 The archive `aristos-preload.tar.zst` is reproducible (sorted entries, zero mtimes and owners, `zstd -19`), so the
 same commit always gives the same SHA-256. Pin it in Aristos by setting `preload.lock.json` to the release's URL and
 checksum.
+
+## CoNLL-U visualizer preload
+
+The visualizer at conllu.lyceum.quest preloads the treebanks listed in `conllu/conllu-viz.json` (its
+`conllu-files.json`; paths under `/preload/` are paths under `conllu/`).
+
+```sh
+kai run release-conllu-viz                  # tag conllu-viz-vYYYY.MM.DD
+git push origin conllu-viz-vYYYY.MM.DD
+ARCHEION_GITHUB_RELEASE=1 kai run release-conllu-viz-github
+```
+
+The archive `conllu-viz-preload.tar.gz` is reproducible like the Aristos one; conllu-viz pins it in `data.lock.json`.
 
 ## Lyceum reader data
 

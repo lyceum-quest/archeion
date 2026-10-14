@@ -117,6 +117,7 @@
 29	.	.	PUNCT	u--------	_	24	punct	_	gloss=.|Ref=1.1.2
 
 # sentence_id = 3
+# translation_lang = en
 # subdoc = 1.3
 # prose_translation = They differ, however, from one another in three respects.
 # literal_translation = They differ but from each other in three [things].
@@ -127,6 +128,7 @@
 5	·	·	PUNCT	u--------	_	1	punct	_	gloss=;|Ref=1.3
 
 # sentence_id = 4
+# translation_lang = en
 # subdoc = 1.3
 # prose_translation = That is, by using different means, by representing different objects, or by a different manner.
 # literal_translation = For either by the kind being different to imitate, or by the [imitating] different things, or by the [imitating] differently and not the same way.
@@ -237,6 +239,7 @@
 81	.	.	PUNCT	u--------	_	36	punct	_	gloss=.|Ref=1.4
 
 # sentence_id = 6
+# translation_lang = en
 # subdoc = 1.6
 # prose_translation = Dancers imitate by rhythm alone, without harmony.
 # literal_translation = By itself but the rhythm they imitate without harmony the of the dancers.
@@ -253,6 +256,7 @@
 11	·	·	PUNCT	u--------	_	5	punct	_	gloss=;|Ref=1.6
 
 # sentence_id = 7
+# translation_lang = en
 # subdoc = 1.6
 # prose_translation = For they represent characters, emotions, and actions through rhythmic movements.
 # literal_translation = And for these through the being-fashioned rhythms imitate both characters and passions and actions.
@@ -408,6 +412,7 @@
 16	.	.	PUNCT	u--------	_	15	punct	_	gloss=.|Ref=1.11
 
 # sentence_id = 12
+# translation_lang = en
 # subdoc = 1.11
 # prose_translation = Yet Homer and Empedocles have nothing in common except their meter.
 # literal_translation = Nothing but common is to-Homer and to-Empedocles except the meter.
@@ -424,6 +429,7 @@
 11	·	·	PUNCT	u--------	_	4	punct	_	gloss=;|Ref=1.11
 
 # sentence_id = 13
+# translation_lang = en
 # subdoc = 1.11
 # prose_translation = Therefore, it is right to call the one a poet, but the other a physicist rather than a poet.
 # literal_translation = Wherefore the indeed poet just [it is] to-call, the but natural-philosopher rather than poet.
@@ -480,6 +486,7 @@
 30	.	.	PUNCT	u--------	_	1	punct	_	Ref=1.12
 
 # sentence_id = 15
+# translation_lang = en
 # subdoc = 1.12
 # prose_translation = Let these distinctions, then, be defined in this way.
 # literal_translation = Concerning indeed therefore these let-it-be-defined this the way.
@@ -534,6 +541,7 @@
 36	·	·	PUNCT	u--------	_	1	punct	_	gloss=;|Ref=1.13
 
 # sentence_id = 17
+# translation_lang = en
 # subdoc = 1.13
 # prose_translation = They differ, however, in that some use them all at once, while others use them part by part.
 # literal_translation = They-differ but, that the-ones indeed together to-all the-others but according-to part.
@@ -552,6 +560,7 @@
 13	.	.	PUNCT	u--------	_	1	punct	_	gloss=.|Ref=1.13
 
 # sentence_id = 18
+# translation_lang = en
 # subdoc = 1.13
 # prose_translation = These then are the differences I suggest between the arts in respect to the means by which they produce the imitation.
 # literal_translation = These indeed therefore I-say the differences of-the arts, in which they-make the imitation.
@@ -1373,6 +1382,7 @@
 
 
 # sentence_id = 46
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.8
 # prose_translation = For the more serious poets represented noble actions and the actions of noble people, while the more trivial poets represented the actions of the mean, at first composing lampoons, just as the others composed hymns and encomia.
@@ -1409,6 +1419,7 @@
 30	.	.	PUNCT	u--------	_	7	punct	_	gloss=.|Ref=4.8
 
 # sentence_id = 47
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.9
 # prose_translation = Now, while we cannot name any such poem by any poet before Homer, it is likely that many existed.
@@ -1431,6 +1442,7 @@
 16	·	·	PUNCT	u--------	_	7	punct	_	gloss=;|Ref=4.9
 
 # sentence_id = 48
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.10
 # prose_translation = But starting from Homer, such poems do exist—for example, his Margites and others of that kind, in which the fitting iambic meter also came into use.
@@ -1460,6 +1472,7 @@
 23	.	.	PUNCT	u--------	_	5	punct	_	gloss=.|Ref=4.10
 
 # sentence_id = 49
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.10
 # prose_translation = That is why it is called "iambic" now, because it was in this meter that they used to lampoon (iambizein) each other.
@@ -1480,6 +1493,7 @@
 14	.	.	PUNCT	u--------	_	4	punct	_	gloss=.|Ref=4.10
 
 # sentence_id = 50
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.11
 # prose_translation = And so of the ancients, some became poets of heroic verse and others of iambic verse.
@@ -1499,6 +1513,7 @@
 
 
 # sentence_id = 51
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.12
 # prose_translation = Just as Homer was the supreme poet in the serious style (being the only one who was not only good but also made his imitations dramatic), so too he was the first to sketch the forms of Comedy, by dramatizing not a lampoon but the ridiculous.
@@ -1545,6 +1560,7 @@
 40	.	.	PUNCT	u--------	_	32	punct	_	gloss=.|Ref=4.12
 
 # sentence_id = 52
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.12
 # prose_translation = For the Margites stands in the same relation to Comedy as the Iliad and Odyssey stand to Tragedy.
@@ -1572,6 +1588,7 @@
 21	.	.	PUNCT	u--------	_	5	punct	_	gloss=.|Ref=4.12
 
 # sentence_id = 53
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.13
 # prose_translation = When Tragedy and Comedy appeared, those who were drawn to either kind of poetry according to their own nature became either comic poets instead of iambic writers, or tragedy-teachers instead of epic poets, because these forms were greater and more honorable than the others.
@@ -1621,6 +1638,7 @@
 43	.	.	PUNCT	u--------	_	24	punct	_	gloss=.|Ref=4.13
 
 # sentence_id = 54
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.13
 # prose_translation = Whether Tragedy has by now reached a sufficient development of its types, judged either in itself or in relation to the theaters, is another question.
@@ -1656,6 +1674,7 @@
 29	.	.	PUNCT	u--------	_	28	punct	_	gloss=.|Ref=4.13
 
 # sentence_id = 55
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.14
 # prose_translation = Arising then at first from improvisations (both Tragedy and Comedy—the former from the leaders of the Dithyramb, the latter from the leaders of the phallic songs, which even now remain in use in many cities), Tragedy grew little by little as they developed as much of it as became apparent; and after undergoing many changes, Tragedy stopped when it achieved its own natural form.
@@ -1757,6 +1776,7 @@
 26	·	·	PUNCT	u--------	_	13	punct	_	gloss=;|Ref=4.16
 
 # sentence_id = 57
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.16
 # prose_translation = Sophocles introduced three actors and scene-painting.
@@ -1769,6 +1789,7 @@
 6	.	.	PUNCT	u--------	_	4	punct	_	gloss=.|Ref=4.16
 
 # sentence_id = 58
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.17
 # prose_translation = Moreover, Tragedy attained its dignified stature only late in its development, evolving from slight plots and ridiculous diction because of its transformation from a satyric form; also, the meter changed from tetrameter to iambic.
@@ -1803,6 +1824,7 @@
 28	·	·	PUNCT	u--------	_	19	punct	_	gloss=;|Ref=4.17
 
 # sentence_id = 59
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.18
 # prose_translation = For at first they used the tetrameter because the poetry was satyric and more dance-like; but once dialogue was introduced, nature itself found the appropriate meter.
@@ -1835,6 +1857,7 @@
 26	·	·	PUNCT	u--------	_	6	punct	_	gloss=;|Ref=4.18
 
 # sentence_id = 60
+# translation_lang = en
 # document_id = 0086-034
 # subdoc = 4.18
 # prose_translation = For the iambic is the most conversational of all meters.

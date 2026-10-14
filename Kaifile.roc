@@ -76,10 +76,16 @@ kaifile = Std.kaifile([
 	Task("check-preload-tool", [Use("dev"), Run(["roc", "check", "scripts/build-corpus-preload.roc"])]),
 
 	# Builds the committed works' preload into ARCHEION_RELEASE_DIR/preload-<version>/ and tags preload-<version>.
-	Task("release-preload", [Use("dev"), Run(["roc", "scripts/release-preload.roc", "build"])]),
+	Task("release-preload", [Use("dev"), Run(["roc", "scripts/release-preload.roc", "build", "aristos"])]),
 
 	# Requires ARCHEION_GITHUB_RELEASE=1 and the preload tag on GitHub.
-	Task("release-preload-github", [Use("dev"), Run(["roc", "scripts/release-preload.roc", "github"])]),
+	Task("release-preload-github", [Use("dev"), Run(["roc", "scripts/release-preload.roc", "github", "aristos"])]),
+
+	# The CoNLL-U visualizer's treebanks (conllu/conllu-viz.json lists them), as conllu-viz-<version>; conllu-viz pins
+	# it in its data.lock.json.
+	Task("release-conllu-viz", [Use("dev"), Run(["roc", "scripts/release-preload.roc", "build", "conllu-viz"])]),
+
+	Task("release-conllu-viz-github", [Use("dev"), Run(["roc", "scripts/release-preload.roc", "github", "conllu-viz"])]),
 
 	Task("check-release-preload-tool", [Use("dev"), Run(["roc", "check", "scripts/release-preload.roc"])]),
 

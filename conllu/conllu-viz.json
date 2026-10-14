@@ -1,0 +1,336 @@
+{
+  "authors": [
+    { "id": "xenophon", "name": "Xenophon", "pathPrefix": "/preload/xenophon/" },
+    { "id": "aristotle", "name": "Aristotle", "pathPrefix": "/preload/aristotle/" },
+    { "id": "aesop", "name": "Aesop", "pathPrefix": "/preload/aesop/" }
+  ],
+  "files": [
+    {
+      "id": "xenophon-anabasis-book-01.conllu",
+      "name": "Xenophon, Anabasis Book 1",
+      "path": "/preload/xenophon/anabasis/book-01.tb.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aristotle-poetics.conllu",
+      "name": "Aristotle, Poetics",
+      "path": "/preload/aristotle/poetics/aristotle.poetics.tb.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-bear-and-the-fox-perry-288-difficulty-006.conllu",
+      "name": "Aesop, The Bear and the Fox (Perry 288, difficulty 6)",
+      "path": "/preload/aesop/fables/bear-and-the-fox-perry-288-difficulty-006.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-boy-and-fortune-perry-174-difficulty-019.conllu",
+      "name": "Aesop, The Boy and Fortune (Perry 174, difficulty 19)",
+      "path": "/preload/aesop/fables/boy-and-fortune-perry-174-difficulty-019.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-boy-bathing-perry-211-difficulty-035.conllu",
+      "name": "Aesop, The Boy Bathing (Perry 211, difficulty 35)",
+      "path": "/preload/aesop/fables/boy-bathing-perry-211-difficulty-035.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-boy-hunting-locusts-and-the-scorpion-perry-199-difficulty-011.conllu",
+      "name": "Aesop, The Boy Hunting Locusts and the Scorpion (Perry 199, difficulty 11)",
+      "path": "/preload/aesop/fables/boy-hunting-locusts-and-the-scorpion-perry-199-difficulty-011.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-bull-the-lion-and-the-goat-perry-217-difficulty-043.conllu",
+      "name": "Aesop, The Bull, the Lion, and the Goat (Perry 217, difficulty 43)",
+      "path": "/preload/aesop/fables/bull-the-lion-and-the-goat-perry-217-difficulty-043.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-camel-and-zeus-perry-184-difficulty-002.conllu",
+      "name": "Aesop, The Camel and Zeus (Perry 184, difficulty 2)",
+      "path": "/preload/aesop/fables/camel-and-zeus-perry-184-difficulty-002.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-charcoal-burner-and-the-fuller-perry-029-difficulty-023.conllu",
+      "name": "Aesop, The Charcoal Burner and the Fuller (Perry 29, difficulty 23)",
+      "path": "/preload/aesop/fables/charcoal-burner-and-the-fuller-perry-029-difficulty-023.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-crab-and-its-mother-perry-322-difficulty-014.conllu",
+      "name": "Aesop, The Crab and Its Mother (Perry 322, difficulty 14)",
+      "path": "/preload/aesop/fables/crab-and-its-mother-perry-322-difficulty-014.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-crow-and-the-figs-perry-126-difficulty-027.conllu",
+      "name": "Aesop, The Crow and the Figs (Perry 126, difficulty 27)",
+      "path": "/preload/aesop/fables/crow-and-the-figs-perry-126-difficulty-027.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-deer-and-the-lion-perry-076-difficulty-031.conllu",
+      "name": "Aesop, The Deer and the Lion (Perry 76, difficulty 31)",
+      "path": "/preload/aesop/fables/deer-and-the-lion-perry-076-difficulty-031.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-dog-and-the-hare-perry-136-difficulty-032.conllu",
+      "name": "Aesop, The Dog and the Hare (Perry 136, difficulty 32)",
+      "path": "/preload/aesop/fables/dog-and-the-hare-perry-136-difficulty-032.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-dog-and-the-snail-perry-253-difficulty-048.conllu",
+      "name": "Aesop, The Dog and the Snail (Perry 253, difficulty 48)",
+      "path": "/preload/aesop/fables/dog-and-the-snail-perry-253-difficulty-048.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-dove-and-the-crow-perry-202-difficulty-012.conllu",
+      "name": "Aesop, The Dove and the Crow (Perry 202, difficulty 12)",
+      "path": "/preload/aesop/fables/dove-and-the-crow-perry-202-difficulty-012.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-earthen-and-bronze-pots-perry-378-difficulty-013.conllu",
+      "name": "Aesop, The Earthen and Bronze Pots (Perry 378, difficulty 13)",
+      "path": "/preload/aesop/fables/earthen-and-bronze-pots-perry-378-difficulty-013.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-ethiopian-perry-393-difficulty-046.conllu",
+      "name": "Aesop, The Ethiopian (Perry 393, difficulty 46)",
+      "path": "/preload/aesop/fables/ethiopian-perry-393-difficulty-046.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-farmer-and-the-snake-perry-176-difficulty-047.conllu",
+      "name": "Aesop, The Farmer and the Snake (Perry 176, difficulty 47)",
+      "path": "/preload/aesop/fables/farmer-and-the-snake-perry-176-difficulty-047.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-flea-and-the-man-perry-231-difficulty-036.conllu",
+      "name": "Aesop, The Flea and the Man (Perry 231, difficulty 36)",
+      "path": "/preload/aesop/fables/flea-and-the-man-perry-231-difficulty-036.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-flies-and-the-honey-perry-080-difficulty-024.conllu",
+      "name": "Aesop, The Flies and the Honey (Perry 80, difficulty 24)",
+      "path": "/preload/aesop/fables/flies-and-the-honey-perry-080-difficulty-024.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-fox-and-the-actor-s-mask-perry-027-difficulty-022.conllu",
+      "name": "Aesop, The Fox and the Actor's Mask (Perry 27, difficulty 22)",
+      "path": "/preload/aesop/fables/fox-and-the-actor-s-mask-perry-027-difficulty-022.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-fox-and-the-grapes-perry-015-difficulty-010.conllu",
+      "name": "Aesop, The Fox and the Grapes (Perry 15, difficulty 10)",
+      "path": "/preload/aesop/fables/fox-and-the-grapes-perry-015-difficulty-010.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-fox-and-the-leopard-perry-012-difficulty-042.conllu",
+      "name": "Aesop, The Fox and the Leopard (Perry 12, difficulty 42)",
+      "path": "/preload/aesop/fables/fox-and-the-leopard-perry-012-difficulty-042.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-frog-physician-perry-289-difficulty-016.conllu",
+      "name": "Aesop, The Frog Physician (Perry 289, difficulty 16)",
+      "path": "/preload/aesop/fables/frog-physician-perry-289-difficulty-016.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-geese-and-the-cranes-perry-228-difficulty-033.conllu",
+      "name": "Aesop, The Geese and the Cranes (Perry 228, difficulty 33)",
+      "path": "/preload/aesop/fables/geese-and-the-cranes-perry-228-difficulty-033.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-goat-and-the-vine-shoot-perry-374-difficulty-005.conllu",
+      "name": "Aesop, The Goat and the Vine Shoot (Perry 374, difficulty 5)",
+      "path": "/preload/aesop/fables/goat-and-the-vine-shoot-perry-374-difficulty-005.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-hares-and-the-foxes-perry-256-difficulty-008.conllu",
+      "name": "Aesop, The Hares and the Foxes (Perry 256, difficulty 8)",
+      "path": "/preload/aesop/fables/hares-and-the-foxes-perry-256-difficulty-008.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-heifer-and-the-ox-perry-300-difficulty-041.conllu",
+      "name": "Aesop, The Heifer and the Ox (Perry 300, difficulty 41)",
+      "path": "/preload/aesop/fables/heifer-and-the-ox-perry-300-difficulty-041.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-hen-and-the-snake-eggs-perry-192-difficulty-018.conllu",
+      "name": "Aesop, The Hen and the Snake Eggs (Perry 192, difficulty 18)",
+      "path": "/preload/aesop/fables/hen-and-the-snake-eggs-perry-192-difficulty-018.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-hen-with-the-golden-eggs-perry-087-difficulty-020.conllu",
+      "name": "Aesop, The Hen with the Golden Eggs (Perry 87, difficulty 20)",
+      "path": "/preload/aesop/fables/hen-with-the-golden-eggs-perry-087-difficulty-020.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-horse-and-the-groom-perry-319-difficulty-049.conllu",
+      "name": "Aesop, The Horse and the Groom (Perry 319, difficulty 49)",
+      "path": "/preload/aesop/fables/horse-and-the-groom-perry-319-difficulty-049.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-kid-on-the-roof-and-the-wolf-perry-098-difficulty-021.conllu",
+      "name": "Aesop, The Kid on the Roof and the Wolf (Perry 98, difficulty 21)",
+      "path": "/preload/aesop/fables/kid-on-the-roof-and-the-wolf-perry-098-difficulty-021.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-kite-and-the-horses-perry-396-difficulty-050.conllu",
+      "name": "Aesop, The Kite and the Horses (Perry 396, difficulty 50)",
+      "path": "/preload/aesop/fables/kite-and-the-horses-perry-396-difficulty-050.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-lioness-and-the-fox-perry-257-difficulty-001.conllu",
+      "name": "Aesop, The Lioness and the Fox (Perry 257, difficulty 1)",
+      "path": "/preload/aesop/fables/lioness-and-the-fox-perry-257-difficulty-001.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-monkey-and-her-two-babies-perry-218-difficulty-044.conllu",
+      "name": "Aesop, The Monkey and Her Two Babies (Perry 218, difficulty 44)",
+      "path": "/preload/aesop/fables/monkey-and-her-two-babies-perry-218-difficulty-044.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-monkey-and-the-camel-perry-083-difficulty-051.conllu",
+      "name": "Aesop, The Monkey and the Camel (Perry 83, difficulty 51)",
+      "path": "/preload/aesop/fables/monkey-and-the-camel-perry-083-difficulty-051.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-oxen-and-the-squeaking-axle-perry-045-difficulty-004.conllu",
+      "name": "Aesop, The Oxen and the Squeaking Axle (Perry 45, difficulty 4)",
+      "path": "/preload/aesop/fables/oxen-and-the-squeaking-axle-perry-045-difficulty-004.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-peacock-and-the-crane-perry-294-difficulty-030.conllu",
+      "name": "Aesop, The Peacock and the Crane (Perry 294, difficulty 30)",
+      "path": "/preload/aesop/fables/peacock-and-the-crane-perry-294-difficulty-030.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-pine-tree-and-the-wedges-perry-303-difficulty-025.conllu",
+      "name": "Aesop, The Pine Tree and the Wedges (Perry 303, difficulty 25)",
+      "path": "/preload/aesop/fables/pine-tree-and-the-wedges-perry-303-difficulty-025.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-pomegranate-the-apple-tree-and-the-bramble-perry-213-difficulty-015.conllu",
+      "name": "Aesop, The Pomegranate, the Apple Tree, and the Bramble (Perry 213, difficulty 15)",
+      "path": "/preload/aesop/fables/pomegranate-the-apple-tree-and-the-bramble-perry-213-difficulty-015.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-raven-and-hermes-perry-323-difficulty-037.conllu",
+      "name": "Aesop, The Sick Raven (Perry 323, difficulty 37)",
+      "path": "/preload/aesop/fables/raven-and-hermes-perry-323-difficulty-037.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-seagull-and-the-kite-perry-139-difficulty-026.conllu",
+      "name": "Aesop, The Seagull and the Kite (Perry 139, difficulty 26)",
+      "path": "/preload/aesop/fables/seagull-and-the-kite-perry-139-difficulty-026.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-shepherd-about-to-enclose-a-wolf-in-the-fold-perry-365-difficulty-003.conllu",
+      "name": "Aesop, The Shepherd about to enclose a Wolf in the Fold (Perry 365, difficulty 3)",
+      "path": "/preload/aesop/fables/shepherd-about-to-enclose-a-wolf-in-the-fold-perry-365-difficulty-003.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-shepherd-and-the-wolf-cub-perry-366-difficulty-034.conllu",
+      "name": "Aesop, The Shepherd and the Wolf Cub (Perry 366, difficulty 34)",
+      "path": "/preload/aesop/fables/shepherd-and-the-wolf-cub-perry-366-difficulty-034.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-sick-crow-perry-324-difficulty-038.conllu",
+      "name": "Aesop, The Sick Crow (Perry 324, difficulty 38)",
+      "path": "/preload/aesop/fables/sick-crow-perry-324-difficulty-038.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-smith-and-his-little-dog-perry-415-difficulty-039.conllu",
+      "name": "Aesop, The Smith and His Little Dog (Perry 415, difficulty 39)",
+      "path": "/preload/aesop/fables/smith-and-his-little-dog-perry-415-difficulty-039.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-swallow-and-the-raven-perry-229-difficulty-009.conllu",
+      "name": "Aesop, The Swallow and the Raven (Perry 229, difficulty 9)",
+      "path": "/preload/aesop/fables/swallow-and-the-raven-perry-229-difficulty-009.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-three-bulls-and-the-lion-perry-372-difficulty-040.conllu",
+      "name": "Aesop, The Three Bulls and the Lion (Perry 372, difficulty 40)",
+      "path": "/preload/aesop/fables/three-bulls-and-the-lion-perry-372-difficulty-040.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-thrush-and-the-birdlime-perry-086-difficulty-029.conllu",
+      "name": "Aesop, The Thrush and the Birdlime (Perry 86, difficulty 29)",
+      "path": "/preload/aesop/fables/thrush-and-the-birdlime-perry-086-difficulty-029.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-wagoner-and-hercules-perry-291-difficulty-045.conllu",
+      "name": "Aesop, The Wagoner and Hercules (Perry 291, difficulty 45)",
+      "path": "/preload/aesop/fables/wagoner-and-hercules-perry-291-difficulty-045.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-walnut-tree-perry-250-difficulty-007.conllu",
+      "name": "Aesop, The Walnut Tree (Perry 250, difficulty 7)",
+      "path": "/preload/aesop/fables/walnut-tree-perry-250-difficulty-007.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-wasp-and-the-snake-perry-216-difficulty-028.conllu",
+      "name": "Aesop, The Wasp and the Snake (Perry 216, difficulty 28)",
+      "path": "/preload/aesop/fables/wasp-and-the-snake-perry-216-difficulty-028.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-wolf-and-his-shadow-perry-260-difficulty-052.conllu",
+      "name": "Aesop, The Wolf and His Shadow (Perry 260, difficulty 52)",
+      "path": "/preload/aesop/fables/wolf-and-his-shadow-perry-260-difficulty-052.conllu",
+      "source": "default"
+    },
+    {
+      "id": "aesop-wolf-and-the-dog-in-chain-perry-346-difficulty-017.conllu",
+      "name": "Aesop, The Wolf and the Dog in Chain (Perry 346, difficulty 17)",
+      "path": "/preload/aesop/fables/wolf-and-the-dog-in-chain-perry-346-difficulty-017.conllu",
+      "source": "default"
+    }
+  ],
+  "retiredIds": [
+    "sample-greek.conllu"
+  ]
+}
