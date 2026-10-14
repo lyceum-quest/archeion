@@ -50,7 +50,7 @@ main! = |args| {
 				value => "preload-${value}"
 			}
 			release = "${releases}/${tag}"
-			_ = run!("sha256sum", ["--check", "--quiet", "--", "${release}/SHA256SUMS.txt"]) ? |_| Publish("${release} fails its SHA256SUMS.txt")
+			_ = run!("env", ["--chdir", release, "sha256sum", "--check", "--quiet", "--", "SHA256SUMS.txt"]) ? |_| Publish("${release} fails its SHA256SUMS.txt")
 			repo = if setting!("ARCHEION_GITHUB_REPO") == "" "lyceum-quest/archeion" else setting!("ARCHEION_GITHUB_REPO")
 			notes = "The Aristos preload (corpora, passages, and lemma index) built from `conllu/generated/` at this tag. Aristos pins it in `preload.lock.json`."
 			_ = Cmd.new_str("gh").args_str(["release", "create", tag, "--repo", repo, "--verify-tag", "--title", "Aristos preload ${Str.drop_prefix(tag, "preload-")}", "--notes", notes, "--latest=false", "${release}/${asset}", "${release}/SHA256SUMS.txt"]).exec_cmd!()?

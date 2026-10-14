@@ -35,7 +35,7 @@ main! = |args| {
 			_ = require(manifest.verified_against.target == "production", "${version} was verified against ${manifest.verified_against.target}; only a production snapshot becomes a GitHub release")?
 			repo = if setting!("ARCHEION_GITHUB_REPO") == "" "lyceum-quest/archeion" else setting!("ARCHEION_GITHUB_REPO")
 			sums = Str.split_on(Path.read_utf8!(Path.utf8("${release}/SHA256SUMS.txt"))?, "\n").keep_if(|line| Str.trim(line) != "")
-			_ = run!("sha256sum", ["--check", "--quiet", "--", "${release}/SHA256SUMS.txt"]) ? |_| Publish("${release} fails its SHA256SUMS.txt")
+			_ = run!("env", ["--chdir", release, "sha256sum", "--check", "--quiet", "--", "SHA256SUMS.txt"]) ? |_| Publish("${release} fails its SHA256SUMS.txt")
 			assets = List.append(sums.map(|line| "${release}/${List.last(Str.split_on(line, " ")) ?? ""}"), "${release}/SHA256SUMS.txt")
 			_ = Cmd.new_str("gh").args_str(List.concat(["release", "create", version, "--repo", repo, "--verify-tag", "--title", version, "--notes-file", "${release}/NOTES.md"], assets)).exec_cmd!()?
 			Stdout.line!("Created the GitHub release ${version} in ${repo}")
