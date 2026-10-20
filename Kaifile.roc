@@ -138,6 +138,15 @@ kaifile = Std.kaifile([
 
 	Task("check-study-tool", [Use("dev"), Run(["roc", "check", "scripts/study.roc"])]),
 
+	# The changelogs of Archeion, Lyceum and Lyceum Study (scripts/changelog.roc): draft lists what changed since the
+	# last release under each Unreleased heading; release dates them, tags release-YYYY.MM.DD and pushes
+	# (ARCHEION_PUSH=1).
+	Task("changelog-draft", [Use("dev"), Run(["roc", "scripts/changelog.roc", "draft"])]),
+
+	Task("changelog-release", [Use("dev"), Run(["roc", "scripts/changelog.roc", "release"])]),
+
+	Task("check-changelog-tool", [Use("dev"), Run(["roc", "check", "scripts/changelog.roc"])]),
+
 	# Stage, verify, back up, and replace only the reader's two content databases.
 	Task("deploy-lyceum-data", [Use("dev"), Run(["roc", "scripts/deploy-lyceum-data.roc", "staging"])]),
 
@@ -174,6 +183,7 @@ kaifile = Std.kaifile([
 		[
 			RunTask("check-sync-lyceum-tool", []),
 			RunTask("check-study-tool", []),
+			RunTask("check-changelog-tool", []),
 			RunTask("check-lyceum-import", []),
 			RunTask("check-lyceum-import-config-tool", []),
 			RunTask("check-lyceum-data-deploy", []),
@@ -182,15 +192,18 @@ kaifile = Std.kaifile([
 			RunTask("push-lyceum-data", []),
 			RunTask("deploy-lyceum-data", []),
 			RunTask("study-stage", []),
+			RunTask("changelog-draft", []),
 		],
 	),
 
-	# Promote what staging shows: Lyceum's data to production and its Archeion release (release-lyceum's steps), then
+	# Promote what staging shows: date the three changelogs (tagged and pushed), Lyceum's data to production and its
+	# Archeion release (release-lyceum's steps), then
 	# Lyceum Study's pinned preload published and deployed. Needs LYCEUM_DEPLOY_PRODUCTION=1, ARCHEION_PUSH=1,
 	# ARCHEION_GITHUB_RELEASE=1, and ARISTOS_DEPLOY_PRODUCTION=1.
 	Workflow(
 		"release-production",
 		[
+			RunTask("changelog-release", []),
 			RunTask("deploy-lyceum-data-prod", []),
 			RunTask("publish-archeion", []),
 			RunTask("push-archeion", []),
