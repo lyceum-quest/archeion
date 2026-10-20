@@ -1,0 +1,21 @@
+{
+  "version": "v2026.10.20",
+  "verified_against": { "target": "production", "host": "lyceum-production", "url": "https://lyceum.quest" },
+  "sources": { "archeion": "839b4d92b823727fa526fe54fa8cbe84a1b2642e", "website": "b57a372d4092d6f2844ff4ea281fa90f236fdbe6" },
+  "databases": [
+    { "name": "texts.db", "sha256": "9dce5259f11e32f1616e18c5cdd436c121e04b23e60c63dc5c2ef4ff1b48ecb2", "bytes": 1714966528, "asset": "texts.db.zst", "asset_sha256": "73e64159e967fa80a4d4ce411df50cd5f535c41a1206b9c987902aeee2c5b7a0" },
+    { "name": "editions.db", "sha256": "c03308f9e197e6830463571aa1f62197223ee74f8b5c05e7fa211315395ff50e", "bytes": 3514368, "asset": "editions.db.zst", "asset_sha256": "66386ab3efd1fd7fa5c7c8b5e4358eb52621d3a35c71a08eb3cca4933808f351" },
+    { "name": "morph.db", "sha256": "6ce7c237b3fd9d5edd6639cfb3ab066227d0aa734dca25640151aefda27029a5", "bytes": 397705216, "asset": "morph.db.zst", "asset_sha256": "6c4f4b678a06e469833678f0c3811ff48cd08b0967c953f0b88dbf111ef2fd68" },
+    { "name": "lsj.db", "sha256": "b137576d0c7544ca4dcb91bc30d7fca77828216816e615216c267504f7deb29f", "bytes": 16838656, "asset": "lsj.db.zst", "asset_sha256": "4ff662b2a60917a2b48d2787dd36b9d3e24912cd7ed639b10546b20ef405d143" }
+  ],
+  "lyceum_editions": [
+    { "folder": "1peter-claude-sonnet-5", "title": "First Epistle of Peter", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0031.tlg021.lyceum-grc1", "passages": 105, "generated_passages": 105 },
+    { "folder": "2john-claude-sonnet-5", "title": "Second Epistle of John", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0031.tlg024.lyceum-grc1", "passages": 13, "generated_passages": 13 },
+    { "folder": "2peter-claude-sonnet-5", "title": "Second Epistle of Peter", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0031.tlg022.lyceum-grc1", "passages": 61, "generated_passages": 61 },
+    { "folder": "3john-claude-sonnet-5", "title": "Third Epistle of John", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0031.tlg025.lyceum-grc1", "passages": 15, "generated_passages": 15 },
+    { "folder": "crito-claude-sonnet-5", "title": "Plato, Crito", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0059.tlg003.lyceum-grc1", "passages": 139, "generated_passages": 139 },
+    { "folder": "luke-claude-sonnet-5", "title": "Gospel of Luke", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0031.tlg003.lyceum-grc1", "passages": 80, "generated_passages": 80 },
+    { "folder": "meditations-claude-sonnet-5", "title": "Marcus Aurelius, Meditations", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0562.tlg001.workspace-grc1", "passages": 42, "generated_passages": 42 },
+    { "folder": "romans-claude-sonnet-5", "title": "Epistle to the Romans", "model": "claude-sonnet-5", "edition": "urn:cts:greekLit:tlg0031.tlg006.lyceum-grc1", "passages": 432, "generated_passages": 432 }
+  ]
+}
