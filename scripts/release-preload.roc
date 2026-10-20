@@ -62,7 +62,7 @@ main! = |args| {
 			release = "${releases}/${tag}"
 			_ = run!("env", ["--chdir", release, "sha256sum", "--check", "--quiet", "--", "SHA256SUMS.txt"]) ? |_| Publish("${release} fails its SHA256SUMS.txt")
 			repo = if setting!("ARCHEION_GITHUB_REPO") == "" "lyceum-quest/archeion" else setting!("ARCHEION_GITHUB_REPO")
-			_ = Cmd.new_str("gh").args_str(["release", "create", tag, "--repo", repo, "--verify-tag", "--title", "${preload.title} ${Str.drop_prefix(tag, preload.prefix)}", "--notes", preload.notes, "--latest=false", "${release}/${preload.asset}", "${release}/SHA256SUMS.txt"]).exec_cmd!()?
+			_ = gh!(repo, ["release", "create", tag, "--repo", repo, "--verify-tag", "--title", "${preload.title} ${Str.drop_prefix(tag, preload.prefix)}", "--notes", preload.notes, "--latest=false", "${release}/${preload.asset}", "${release}/SHA256SUMS.txt"])?
 			Stdout.line!("Created the GitHub release ${tag} in ${repo}")
 		}
 		_ => Err(Publish("Usage: release-preload build|github aristos|conllu-viz"))
@@ -106,3 +106,16 @@ run! = |program, args| {
 }
 
 setting! = |key| LyceumWebsite.setting(key, Env.var_str!(OsStr.from_str(key)) ?? "", Path.read_utf8!(Path.utf8(LyceumWebsite.dotenv_path)) ?? "")
+
+# gh as the repository's owner: with ~/.config/github-tokens/<owner> (the token git pushes with, through blu-dev's
+# credential helper), gh runs with it as GH_TOKEN; the personal gh login can't reach organisation repositories.
+gh! = |repo, args| {
+	owner = match Str.split_first(repo, "/") {
+		Ok({ before, after: _ }) => before
+		Err(_) => repo
+	}
+	home = Env.var_str!(OsStr.from_str("HOME")) ?? ""
+	token = Str.trim(Path.read_utf8!(Path.utf8("${home}/.config/github-tokens/${owner}")) ?? "")
+	cmd = Cmd.new_str("gh").args_str(args)
+	if token == "" cmd.exec_cmd!() else cmd.env_str("GH_TOKEN", token).exec_cmd!()
+}
