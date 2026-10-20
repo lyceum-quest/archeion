@@ -4,7 +4,7 @@
 - Do not follow non-local reference links unless external context is important to the task.
 - Read [`docs/rules.md`](./docs/rules.md) for development rules.
 - Read [`PIPELINE.md`](./PIPELINE.md) before changing how data is generated, imported, deployed, or released.
-- Archeion is the single source of Lyceum's corpus data. The apps generate no data: Aristos pins a preload release
+- Archeion is the single source of Lyceum's corpus data. The apps generate no data: Lyceum Study pins a preload release
   (`preload-v*`), and the Lyceum website installs the databases of a `v*` release. Publish learner data (`users.db`)
   never.
 - The local Opera Graeca Adnotata v0.2.0 corpus is installed at `../OGA/opera_graeca_adnotata_v0.2.0` relative to this

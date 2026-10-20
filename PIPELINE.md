@@ -2,7 +2,7 @@
 
 Archeion holds the whole path from source corpora to what the apps serve. The apps generate no data:
 
-- **Aristos** (the study app) pins a preload release in its `preload.lock.json` and fetches it.
+- **Lyceum Study** (the study app) pins a preload release in its `preload.lock.json` and fetches it.
 - **conllu-viz** (the CoNLL-U visualizer) pins a `conllu-viz-v*` release in its `data.lock.json`.
 - **Lyceum** (the reader at lyceum.quest) is deployed the databases imported here and published as `v*` releases.
 
@@ -17,9 +17,9 @@ environment or a git-ignored `.env` (copy `.env.example`).
 source, prompts), and `costs.tsv`. It resumes from its checkpoints; missing work makes model calls. Work configs are
 in `scripts/generate/works/`. `RESEARCH.md` and `experiments/` record how the prompts and models were chosen.
 
-## Aristos preload
+## Lyceum Study preload
 
-The preload is every generated work as Aristos loads it: `corpora.json` (version 1), `corpora/<work>.conllu`,
+The preload is every generated work as Lyceum Study loads it: `corpora.json` (version 1), `corpora/<work>.conllu`,
 `corpora/<work>.units.json`, and `lemmas.json`. `kai run preload` builds it into `preload/` for inspection.
 
 ```sh
@@ -29,7 +29,7 @@ ARCHEION_GITHUB_RELEASE=1 kai run release-preload-github
 ```
 
 The archive `aristos-preload.tar.zst` is reproducible (sorted entries, zero mtimes and owners, `zstd -19`), so the
-same commit always gives the same SHA-256. Pin it in Aristos by setting `preload.lock.json` to the release's URL and
+same commit always gives the same SHA-256. Pin it in Lyceum Study by setting `preload.lock.json` to the release's URL and
 checksum.
 
 ## CoNLL-U visualizer preload
@@ -43,7 +43,7 @@ git push origin conllu-viz-vYYYY.MM.DD
 ARCHEION_GITHUB_RELEASE=1 kai run release-conllu-viz-github
 ```
 
-The archive `conllu-viz-preload.tar.gz` is reproducible like the Aristos one; conllu-viz pins it in `data.lock.json`.
+The archive `conllu-viz-preload.tar.gz` is reproducible like the Lyceum Study one; conllu-viz pins it in `data.lock.json`.
 
 ## Lyceum reader data
 

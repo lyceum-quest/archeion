@@ -89,7 +89,7 @@ kaifile = Std.kaifile([
 
 	Task("check-release-preload-tool", [Use("dev"), Run(["roc", "check", "scripts/release-preload.roc"])]),
 
-	# kai workflow preload-release, then push the tag and run release-preload-github; Aristos pins the release in
+	# kai workflow preload-release, then push the tag and run release-preload-github; Lyceum Study pins the release in
 	# its preload.lock.json.
 	Workflow(
 		"preload-release",

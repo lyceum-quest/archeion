@@ -5,12 +5,12 @@ import cli.Path
 import cli.Stdout
 import Citation
 
-# Prepares a generated work for import-lyceum so Lyceum shows the same passages as Aristos: one reader passage per
+# Prepares a generated work for import-lyceum so Lyceum shows the same passages as Lyceum Study: one reader passage per
 # canonical passage in units.jsonl (a verse, a section, a Stephanus page part), with that passage's own prose and
 # literal translations and its glossed rows from output.conllu.
 # Writes /tmp/aristos-lyceum-<folder>.conllu (one block per passage, `# ref` set, rows renumbered) and
 # scripts/lyceum-imports/<folder>.json, which adds a `lyceum` edition (`<work>.lyceum-grc1` and `-versified-eng1`), or with --replace overwrites two
-# existing editions wholesale (as for Meditations, whose Lyceum edition predates Aristos passages).
+# existing editions wholesale (as for Meditations, whose Lyceum edition predates Lyceum Study passages).
 # Lyceum references are dotted numbers, so a split unit's `43~2` becomes `43.2`.
 # Usage: roc scripts/lyceum-import-config.roc <conllu/generated/work-model> [--replace <greek-urn> <english-urn>]
 Unit : { ref : Str, tokens : List(Str), prose : Str, literal : Str }

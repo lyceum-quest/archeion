@@ -9,7 +9,7 @@ import LyceumWebsite
 
 # Packs an app's preload as a release the app pins and fetches; the apps generate no data.
 #   aristos:    corpora.json, corpora/, and lemmas.json (see build-corpus-preload.roc) built from the committed
-#               conllu/generated/, as preload-<version>/aristos-preload.tar.zst, pinned in Aristos's preload.lock.json.
+#               conllu/generated/, as preload-<version>/aristos-preload.tar.zst, pinned in Lyceum Study's preload.lock.json.
 #   conllu-viz: conllu/conllu-viz.json (as conllu-files.json) and the treebanks it lists, in the layout it serves under
 #               /preload/, as conllu-viz-<version>/conllu-viz-preload.tar.gz, pinned in conllu-viz's data.lock.json.
 # build writes the archive (reproducible: sorted, zero mtimes and owners) and SHA256SUMS.txt to
@@ -20,7 +20,7 @@ import LyceumWebsite
 Kind : { target : Str, prefix : Str, asset : Str, compress : Str, sources : List(Str), title : Str, notes : Str }
 
 kind = |target| match target {
-	"aristos" => Ok({ target, prefix: "preload-", asset: "aristos-preload.tar.zst", compress: "zstd -19 -T1", sources: ["conllu/generated", "data/oga", "scripts"], title: "Aristos preload", notes: "The Aristos preload (corpora, passages, and lemma index) built from `conllu/generated/` at this tag. Aristos pins it in `preload.lock.json`." })
+	"aristos" => Ok({ target, prefix: "preload-", asset: "aristos-preload.tar.zst", compress: "zstd -19 -T1", sources: ["conllu/generated", "data/oga", "scripts"], title: "Lyceum Study preload", notes: "The Lyceum Study preload (corpora, passages, and lemma index) built from `conllu/generated/` at this tag. Lyceum Study pins it in `preload.lock.json`." })
 	"conllu-viz" => Ok({ target, prefix: "conllu-viz-", asset: "conllu-viz-preload.tar.gz", compress: "gzip -n -9", sources: ["conllu"], title: "CoNLL-U visualizer preload", notes: "The treebanks the CoNLL-U visualizer preloads, with their manifest (`conllu/conllu-viz.json` at this tag, as `conllu-files.json`). conllu-viz pins it in `data.lock.json`." })
 	_ => Err(Publish("Usage: release-preload build|github aristos|conllu-viz"))
 }
