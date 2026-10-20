@@ -27,22 +27,37 @@ main! = |args| {
 	releases = if setting!("ARCHEION_RELEASE_DIR") == "" "/var/tmp/archeion-releases" else setting!("ARCHEION_RELEASE_DIR")
 	match args.map(OsStr.display) {
 		[_, "stage"] => {
-			version = free_version!(run!("date", ["-u", "+v%Y.%m.%d"])?, 1)?
-			tag = "preload-${version}"
-			_ = Stdout.line!("Packing ${tag}")?
-			_ = Cmd.new_str("roc").args_str(["scripts/release-preload.roc", "build", "aristos"]).env_str("ARCHEION_VERSION", version).exec_cmd!()?
-			archive = "${releases}/${tag}/aristos-preload.tar.zst"
-			sum = List.first(Str.split_on(run!("sha256sum", ["--", archive])?, " ")) ?? ""
-			github = if setting!("ARCHEION_GITHUB_REPO") == "" "lyceum-quest/archeion" else setting!("ARCHEION_GITHUB_REPO")
-			lock = "{\n  \"release\": \"${tag}\",\n  \"url\": \"https://github.com/${github}/releases/download/${tag}/aristos-preload.tar.zst\",\n  \"sha256\": \"${sum}\"\n}\n"
-			_ = Path.write_utf8!(Path.utf8("${study}/preload.lock.json"), lock)?
-			changed = run!("git", ["-C", study, "status", "--porcelain", "--", "preload.lock.json"])? != ""
-			_ = run!("git", ["-C", study, "add", "preload.lock.json"])?
-			_ = (if !changed Ok("") else run!("git", ["-C", study, "commit", "--quiet", "--message", "data: pin Archeion ${tag}\n\nStaged by Archeion's release-staging; the archive is published when it is promoted\n(release-production), before this build reaches production."]))?
+			pinned : { release : Str, url : Str, sha256 : Str }
+			pinned = Json.parse(Path.read_utf8!(Path.utf8("${study}/preload.lock.json"))?)?
 			host = if setting!(LyceumWebsite.staging_host) == "" "lyceum-staging" else setting!(LyceumWebsite.staging_host)
-			_ = in_study!(study, kai, ["workflow", "release-staging"], [("ARISTOS_PRELOAD_ARCHIVE", archive)])?
-			_ = in_study!(study, kai, ["run", "deploy-site", "--", "staging"], [("ARISTOS_DEPLOY_HOST", host)])?
-			Stdout.line!("Lyceum Study staging now serves ${tag} (${sum}). Promote with release-production.")
+			# The preload's sources unchanged since the pinned release: reuse it rather than cut another.
+			unchanged = match run!("git", ["diff", "--quiet", "refs/tags/${pinned.release}", "HEAD", "--", "conllu/generated", "data/oga", "scripts"]) {
+				Ok(_) => Bool.True
+				Err(_) => Bool.False
+			}
+			pinned_archive = "${releases}/${pinned.release}/aristos-preload.tar.zst"
+			if unchanged and (Path.exists!(Path.utf8(pinned_archive)) ?? Bool.False) {
+				_ = Stdout.line!("Archeion's data is unchanged since ${pinned.release}; Lyceum Study keeps it")?
+				_ = in_study!(study, kai, ["workflow", "release-staging"], [("ARISTOS_PRELOAD_ARCHIVE", pinned_archive)])?
+				_ = in_study!(study, kai, ["run", "deploy-site", "--", "staging"], [("ARISTOS_DEPLOY_HOST", host)])?
+				Stdout.line!("Lyceum Study staging serves ${pinned.release}.")
+			} else {
+				version = free_version!(run!("date", ["-u", "+v%Y.%m.%d"])?, 1)?
+				tag = "preload-${version}"
+				_ = Stdout.line!("Packing ${tag}")?
+				_ = Cmd.new_str("roc").args_str(["scripts/release-preload.roc", "build", "aristos"]).env_str("ARCHEION_VERSION", version).exec_cmd!()?
+				archive = "${releases}/${tag}/aristos-preload.tar.zst"
+				sum = List.first(Str.split_on(run!("sha256sum", ["--", archive])?, " ")) ?? ""
+				github = if setting!("ARCHEION_GITHUB_REPO") == "" "lyceum-quest/archeion" else setting!("ARCHEION_GITHUB_REPO")
+				lock = "{\n  \"release\": \"${tag}\",\n  \"url\": \"https://github.com/${github}/releases/download/${tag}/aristos-preload.tar.zst\",\n  \"sha256\": \"${sum}\"\n}\n"
+				_ = Path.write_utf8!(Path.utf8("${study}/preload.lock.json"), lock)?
+				changed = run!("git", ["-C", study, "status", "--porcelain", "--", "preload.lock.json"])? != ""
+				_ = run!("git", ["-C", study, "add", "preload.lock.json"])?
+				_ = (if !changed Ok("") else run!("git", ["-C", study, "commit", "--quiet", "--message", "data: pin Archeion ${tag}\n\nStaged by Archeion's release-staging; the archive is published when it is promoted\n(release-production), before this build reaches production."]))?
+				_ = in_study!(study, kai, ["workflow", "release-staging"], [("ARISTOS_PRELOAD_ARCHIVE", archive)])?
+				_ = in_study!(study, kai, ["run", "deploy-site", "--", "staging"], [("ARISTOS_DEPLOY_HOST", host)])?
+				Stdout.line!("Lyceum Study staging now serves ${tag} (${sum}). Promote with release-production.")
+			}
 		}
 		[_, "promote"] => {
 			pinned : { release : Str, url : Str, sha256 : Str }

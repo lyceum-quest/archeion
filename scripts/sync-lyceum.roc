@@ -10,19 +10,25 @@ import LyceumWebsite
 
 # Brings the Lyceum website's reader databases (LYCEUM_WEBSITE_DIR/data/texts.db and editions.db) up to date with
 # Archeion. The works on the site are the ones with a config in scripts/lyceum-imports/ (as publish-archeion counts
-# them); each is prepared afresh from its conllu/generated/ folder (lyceum-import-config.roc, keeping a work's
-# --replace editions, as for Meditations) and imported (import-lyceum.roc). An import replaces the work's passages,
-# so an unchanged work comes out the same and an extended one gains its new passages.
-# Without --apply nothing is written: it lists each work's passages in Archeion and in the website's editions.db.
-# With --apply it backs up both databases once (texts.db is large: a backup per work would fill the disk; the
-# previous sync's backups are removed first), imports every work, and lists the counts again. Deploy the result
-# with deploy-lyceum-data. A changed data/editions.db is committed in the website checkout (texts.db is not in git);
-# `push` pushes that checkout's branch to its origin.
+# them). The website records what it holds in data/lyceum-editions.json: each work's passages and a fingerprint of
+# the Archeion files it was imported from. A work is imported when its fingerprint or passage count differs; one
+# that matches is left alone, so a sync with nothing new writes nothing (a re-import would renumber the database's
+# rows even for identical texts).
+# Without --apply nothing is written: it lists each work's passages in Archeion and in Lyceum, and what would be
+# imported. With --apply it backs up both databases once (texts.db is large: a backup per work would fill the disk;
+# the previous sync's backups are removed first), prepares and imports each work that needs it
+# (lyceum-import-config.roc, keeping a work's --replace editions, as for Meditations; then import-lyceum.roc),
+# checks every count matches, and commits data/editions.db and data/lyceum-editions.json in the website checkout
+# (texts.db is not in git). `push` pushes that checkout's branch to its origin. Deploy with deploy-lyceum-data.
 # Usage: roc scripts/sync-lyceum.roc [--apply | push]
 
 imports_dir = "scripts/lyceum-imports"
 
-Work : { folder : Str, config_path : Str, greek_urn : Str, replace_args : List(Str) }
+record_path = "data/lyceum-editions.json"
+
+Work : { folder : Str, config_path : Str, greek_urn : Str, replace_args : List(Str), title : Str, source : Str, passages : U64 }
+
+Recorded : { folder : Str, title : Str, passages : U64, source : Str }
 
 main! = |args| {
 	website = website_dir!({})?
@@ -40,47 +46,75 @@ main! = |args| {
 sync! = |website, apply| {
 	texts_db = "${website}/data/texts.db"
 	editions_db = "${website}/data/editions.db"
+	recorded = read_record!(website)
 	works = List.sort_with(collect_works!(Path.list!(Path.utf8(imports_dir))?, [])?, |a, b| compare_str(a.folder, b.folder))
-	_ = Stdout.line!("Lyceum Editions (passages in Archeion / in ${editions_db}):")?
-	changes = report!(works, editions_db, 0)?
-	if !apply {
-		Stdout.line!(
-			if changes == 0 {
-				"Lyceum matches Archeion. Nothing written (dry run)."
-			} else {
-				"${U64.to_str(changes)} work(s) differ. Nothing written (dry run); --apply imports every work after one backup of both databases."
-			},
-		)
+	_ = Stdout.line!("Lyceum Editions (passages in Archeion / in Lyceum):")?
+	todo = plan!(works, recorded, editions_db, [])?
+	if List.is_empty(todo) {
+		Stdout.line!("Lyceum matches Archeion; nothing to import.")
+	} else if !apply {
+		Stdout.line!("${U64.to_str(List.len(todo))} work(s) to import. Nothing written (dry run); --apply imports them after one backup of both databases.")
 	} else {
 		_ = remove_old_backups!(Path.list!(Path.utf8("${website}/data"))?)?
 		_ = backup!(texts_db)?
 		_ = backup!(editions_db)?
-		_ = import_all!(works)?
+		_ = import_all!(todo)?
 		_ = Stdout.line!("After the sync:")?
-		left = report!(works, editions_db, 0)?
-		if left == 0 {
-			_ = commit_data!(website)?
+		left = plan!(works, List.map(works, |w| { folder: w.folder, title: w.title, passages: w.passages, source: w.source }), editions_db, [])?
+		if List.is_empty(left) {
+			_ = Path.write_utf8!(Path.utf8("${website}/${record_path}"), record_json(works))?
+			_ = commit_data!(website, todo)?
 			Stdout.line!("Lyceum matches Archeion. Deploy with: kai run deploy-lyceum-data")
 		} else {
-			Err(Sync("${U64.to_str(left)} work(s) still differ after importing"))
+			Err(Sync("${U64.to_str(List.len(left))} work(s) still differ after importing"))
 		}
 	}
 }
 
-# Commits the website's data/editions.db if the sync changed it, naming this Archeion commit.
-commit_data! = |website| {
-	changed = run!("git", ["-C", website, "status", "--porcelain", "--", "data/editions.db"])? != ""
+# Prints each work and returns the ones to import: a new fingerprint, or Lyceum's count differing from Archeion's.
+plan! = |works, recorded, editions_db, todo|
+	match works {
+		[] => Ok(todo)
+		[work, .. as rest] => {
+			lyceum = lyceum_passages!(editions_db, work.greek_urn)?
+			known = List.keep_if(recorded, |r| r.folder == work.folder)
+			same_source = List.any(known, |r| r.source == work.source)
+			needed = !same_source or lyceum != work.passages
+			reason = if lyceum != work.passages "  <- import (counts differ)" else if !same_source "  <- import (Archeion changed)" else ""
+			_ = Stdout.line!("  ${work.folder}: ${U64.to_str(work.passages)} / ${U64.to_str(lyceum)}${reason}")?
+			plan!(rest, recorded, editions_db, if needed List.append(todo, work) else todo)
+		}
+	}
+
+read_record! = |website| {
+	text = Path.read_utf8!(Path.utf8("${website}/${record_path}")) ?? "{ \"editions\": [] }"
+	parsed : { editions : List(Recorded) }
+	parsed = Json.parse(text) ?? { editions: [] }
+	parsed.editions
+}
+
+record_json = |works| {
+	entry = |w| "    { \"folder\": ${json_str(w.folder)}, \"title\": ${json_str(w.title)}, \"passages\": ${U64.to_str(w.passages)}, \"source\": ${json_str(w.source)} }"
+	"{\n  \"note\": \"Lyceum Editions this website holds, written by Archeion's sync-lyceum. source: SHA-256 of the work's Archeion files.\",\n  \"editions\": [\n${Str.join_with(List.map(works, entry), ",\n")}\n  ]\n}\n"
+}
+
+json_str = |s| "\"${Str.replace_each(Str.replace_each(s, "\\", "\\\\"), "\"", "\\\"")}\""
+
+# Commits data/editions.db and the record in the website checkout, naming the imported works and this Archeion commit.
+commit_data! = |website, imported| {
+	changed = run!("git", ["-C", website, "status", "--porcelain", "--", "data/editions.db", record_path])? != ""
 	if changed {
 		archeion = run!("git", ["rev-parse", "--short", "HEAD"])?
-		_ = run!("git", ["-C", website, "add", "--", "data/editions.db"])?
-		_ = run!("git", ["-C", website, "commit", "--quiet", "--message", "data: sync Lyceum Editions from Archeion ${archeion}\n\nWritten by Archeion's sync-lyceum: every work in its scripts/lyceum-imports/."])?
-		Stdout.line!("committed data/editions.db in ${website}")
+		lines = Str.join_with(List.map(imported, |w| "- ${w.title}: ${U64.to_str(w.passages)} passages"), "\n")
+		_ = run!("git", ["-C", website, "add", "--", "data/editions.db", record_path])?
+		_ = run!("git", ["-C", website, "commit", "--quiet", "--message", "data: sync Lyceum Editions from Archeion ${archeion}\n\n${lines}\n\nWritten by Archeion's sync-lyceum."])?
+		Stdout.line!("committed data/editions.db and ${record_path} in ${website}")
 	} else {
-		Stdout.line!("data/editions.db unchanged; nothing to commit")
+		Stdout.line!("nothing to commit")
 	}
 }
 
-# One Work per scripts/lyceum-imports/<folder>.json.
+# One Work per scripts/lyceum-imports/<folder>.json, with its Archeion passages, title, and source fingerprint.
 collect_works! = |entries, found|
 	match entries {
 		[] => Ok(found)
@@ -88,38 +122,28 @@ collect_works! = |entries, found|
 			path = Path.display(entry)
 			name = List.last(Str.split_on(path, "/")) ?? path
 			if Str.ends_with(name, ".json") {
+				folder = Str.drop_suffix(name, ".json")
 				config : LyceumImportSql.Config
 				config = Json.parse(Path.read_utf8!(entry)?)?
-				work = match (config.edition_slug, config.replace_editions) {
-					(Ok(slug), Err(Missing)) => Ok({ folder: Str.drop_suffix(name, ".json"), config_path: path, greek_urn: "${config.work_urn}.${slug}-grc1", replace_args: [] })
-					(Err(Missing), Ok(editions)) => Ok({ folder: Str.drop_suffix(name, ".json"), config_path: path, greek_urn: editions.greek_urn, replace_args: ["--replace", editions.greek_urn, editions.english_urn] })
+				dir = "conllu/generated/${folder}"
+				units = Path.read_utf8!(Path.utf8("${dir}/units.jsonl"))?
+				passages = List.len(List.keep_if(Str.split_on(units, "\n"), |line| Str.trim(line) != ""))
+				settings : { title : Str }
+				settings = Json.parse(Path.read_utf8!(Path.utf8("${dir}/config.json"))?) ?? { title: folder }
+				sums = run!("sha256sum", ["--", "${dir}/output.conllu", "${dir}/units.jsonl", "${dir}/config.json", path])?
+				source = List.first(Str.split_on(run!("sh", ["-c", "printf %s \"$1\" | sha256sum", "sh", sums])?, " ")) ?? ""
+				(greek_urn, replace_args) = match (config.edition_slug, config.replace_editions) {
+					(Ok(slug), Err(Missing)) => Ok(("${config.work_urn}.${slug}-grc1", []))
+					(Err(Missing), Ok(editions)) => Ok((editions.greek_urn, ["--replace", editions.greek_urn, editions.english_urn]))
 					_ => Err(Sync("${path}: specify exactly one of edition_slug or replace_editions"))
 				}?
+				work = { folder, config_path: path, title: settings.title, source, passages, greek_urn, replace_args }
 				collect_works!(rest, List.append(found, work))
 			} else {
 				collect_works!(rest, found)
 			}
 		}
 	}
-
-# Prints each work's counts and returns how many differ.
-report! = |works, editions_db, differing|
-	match works {
-		[] => Ok(differing)
-		[work, .. as rest] => {
-			archeion = archeion_passages!(work)?
-			lyceum = lyceum_passages!(editions_db, work.greek_urn)?
-			same = archeion == lyceum
-			_ = Stdout.line!("  ${work.folder}: ${U64.to_str(archeion)} / ${U64.to_str(lyceum)}${if same "" else "  <- differs"}")?
-			report!(rest, editions_db, if same differing else differing + 1)
-		}
-	}
-
-# One passage per line of units.jsonl (lyceum-import-config makes one Lyceum passage of each).
-archeion_passages! = |work| {
-	units = Path.read_utf8!(Path.utf8("conllu/generated/${work.folder}/units.jsonl"))?
-	Ok(List.len(List.keep_if(Str.split_on(units, "\n"), |line| Str.trim(line) != "")))
-}
 
 lyceum_passages! = |editions_db, urn| {
 	quoted = Str.replace_each(urn, "'", "''")
@@ -161,11 +185,7 @@ backup! = |path| {
 	Stdout.line!("backup: ${backup}")
 }
 
-compare_str = |a, b| {
-	x = Str.to_utf8(a)
-	y = Str.to_utf8(b)
-	compare_bytes(x, y)
-}
+compare_str = |a, b| compare_bytes(Str.to_utf8(a), Str.to_utf8(b))
 
 compare_bytes = |x, y|
 	match (x, y) {
