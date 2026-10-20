@@ -119,6 +119,13 @@ kaifile = Std.kaifile([
 
 	Task("format-lyceum-import", [Use("dev"), Run(["roc", "fmt", "scripts/import-lyceum.roc", "scripts/LyceumConllu.roc", "scripts/LyceumImportSql.roc", "scripts/LyceumWebsite.roc", "scripts/lyceum-import-config.roc"])]),
 
+	# Bring Lyceum's databases up to date with every work on the site (scripts/lyceum-imports/): dry run by default,
+	# listing each work's passages in Archeion and in Lyceum; `kai run sync-lyceum -- --apply` imports them all after
+	# one backup of both databases.
+	Task("sync-lyceum", [Use("dev"), Run(["roc", "scripts/sync-lyceum.roc"])]),
+
+	Task("check-sync-lyceum-tool", [Use("dev"), Run(["roc", "check", "scripts/sync-lyceum.roc"])]),
+
 	# Stage, verify, back up, and replace only the reader's two content databases.
 	Task("deploy-lyceum-data", [Use("dev"), Run(["roc", "scripts/deploy-lyceum-data.roc", "staging"])]),
 
