@@ -16,20 +16,28 @@ import LyceumWebsite
 # Without --apply nothing is written: it lists each work's passages in Archeion and in the website's editions.db.
 # With --apply it backs up both databases once (texts.db is large: a backup per work would fill the disk; the
 # previous sync's backups are removed first), imports every work, and lists the counts again. Deploy the result
-# with deploy-lyceum-data.
-# Usage: roc scripts/sync-lyceum.roc [--apply]
+# with deploy-lyceum-data. A changed data/editions.db is committed in the website checkout (texts.db is not in git);
+# `push` pushes that checkout's branch to its origin.
+# Usage: roc scripts/sync-lyceum.roc [--apply | push]
 
 imports_dir = "scripts/lyceum-imports"
 
 Work : { folder : Str, config_path : Str, greek_urn : Str, replace_args : List(Str) }
 
 main! = |args| {
-	apply = match args.map(OsStr.display) {
-		[_] => Ok(Bool.False)
-		[_, "--apply"] => Ok(Bool.True)
-		_ => Err(Usage("roc scripts/sync-lyceum.roc [--apply]"))
-	}?
 	website = website_dir!({})?
+	match args.map(OsStr.display) {
+		[_] => sync!(website, Bool.False)
+		[_, "--apply"] => sync!(website, Bool.True)
+		[_, "push"] => {
+			_ = run!("git", ["-C", website, "push", "origin", "HEAD"])?
+			Stdout.line!("pushed ${website} to origin")
+		}
+		_ => Err(Usage("roc scripts/sync-lyceum.roc [--apply | push]"))
+	}
+}
+
+sync! = |website, apply| {
 	texts_db = "${website}/data/texts.db"
 	editions_db = "${website}/data/editions.db"
 	works = List.sort_with(collect_works!(Path.list!(Path.utf8(imports_dir))?, [])?, |a, b| compare_str(a.folder, b.folder))
@@ -51,10 +59,24 @@ main! = |args| {
 		_ = Stdout.line!("After the sync:")?
 		left = report!(works, editions_db, 0)?
 		if left == 0 {
+			_ = commit_data!(website)?
 			Stdout.line!("Lyceum matches Archeion. Deploy with: kai run deploy-lyceum-data")
 		} else {
 			Err(Sync("${U64.to_str(left)} work(s) still differ after importing"))
 		}
+	}
+}
+
+# Commits the website's data/editions.db if the sync changed it, naming this Archeion commit.
+commit_data! = |website| {
+	changed = run!("git", ["-C", website, "status", "--porcelain", "--", "data/editions.db"])? != ""
+	if changed {
+		archeion = run!("git", ["rev-parse", "--short", "HEAD"])?
+		_ = run!("git", ["-C", website, "add", "--", "data/editions.db"])?
+		_ = run!("git", ["-C", website, "commit", "--quiet", "--message", "data: sync Lyceum Editions from Archeion ${archeion}\n\nWritten by Archeion's sync-lyceum: every work in its scripts/lyceum-imports/."])?
+		Stdout.line!("committed data/editions.db in ${website}")
+	} else {
+		Stdout.line!("data/editions.db unchanged; nothing to commit")
 	}
 }
 

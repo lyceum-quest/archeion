@@ -126,6 +126,18 @@ kaifile = Std.kaifile([
 
 	Task("check-sync-lyceum-tool", [Use("dev"), Run(["roc", "check", "scripts/sync-lyceum.roc"])]),
 
+	Task("sync-lyceum-apply", [Use("dev"), Run(["roc", "scripts/sync-lyceum.roc", "--apply"])]),
+
+	Task("push-lyceum-data", [Use("dev"), Run(["roc", "scripts/sync-lyceum.roc", "push"])]),
+
+	# Lyceum Study (LYCEUM_STUDY_DIR): stage packs and pins the preload and deploys the staging site; promote publishes
+	# that preload and deploys production (see scripts/study.roc).
+	Task("study-stage", [Use("dev"), Run(["roc", "scripts/study.roc", "stage"])]),
+
+	Task("study-promote", [Use("dev"), Run(["roc", "scripts/study.roc", "promote"])]),
+
+	Task("check-study-tool", [Use("dev"), Run(["roc", "check", "scripts/study.roc"])]),
+
 	# Stage, verify, back up, and replace only the reader's two content databases.
 	Task("deploy-lyceum-data", [Use("dev"), Run(["roc", "scripts/deploy-lyceum-data.roc", "staging"])]),
 
@@ -154,6 +166,39 @@ kaifile = Std.kaifile([
 
 	# Deploy the content databases to production, then publish exactly what it serves.
 	# Needs LYCEUM_DEPLOY_PRODUCTION=1, ARCHEION_PUSH=1, and ARCHEION_GITHUB_RELEASE=1.
+	# A release, staging first: bring Lyceum's data up to date with Archeion (committed and pushed in the website
+	# repository), deploy it to Lyceum staging, and stage Lyceum Study with the same data. Nothing is published; look
+	# at both staging sites, then promote with release-production.
+	Workflow(
+		"release-staging",
+		[
+			RunTask("check-sync-lyceum-tool", []),
+			RunTask("check-study-tool", []),
+			RunTask("check-lyceum-import", []),
+			RunTask("check-lyceum-import-config-tool", []),
+			RunTask("check-lyceum-data-deploy", []),
+			RunTask("check-release-preload-tool", []),
+			RunTask("sync-lyceum-apply", []),
+			RunTask("push-lyceum-data", []),
+			RunTask("deploy-lyceum-data", []),
+			RunTask("study-stage", []),
+		],
+	),
+
+	# Promote what staging shows: Lyceum's data to production and its Archeion release (release-lyceum's steps), then
+	# Lyceum Study's pinned preload published and deployed. Needs LYCEUM_DEPLOY_PRODUCTION=1, ARCHEION_PUSH=1,
+	# ARCHEION_GITHUB_RELEASE=1, and ARISTOS_DEPLOY_PRODUCTION=1.
+	Workflow(
+		"release-production",
+		[
+			RunTask("deploy-lyceum-data-prod", []),
+			RunTask("publish-archeion", []),
+			RunTask("push-archeion", []),
+			RunTask("release-archeion-github", []),
+			RunTask("study-promote", []),
+		],
+	),
+
 	Workflow(
 		"release-lyceum",
 		[
