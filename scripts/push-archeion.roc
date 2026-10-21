@@ -75,5 +75,10 @@ gh! = |repo, args| {
 	home = Env.var_str!(OsStr.from_str("HOME")) ?? ""
 	token = Str.trim(Path.read_utf8!(Path.utf8("${home}/.config/github-tokens/${owner}")) ?? "")
 	cmd = Cmd.new_str("gh").args_str(args)
-	if token == "" cmd.exec_cmd!() else cmd.env_str("GH_TOKEN", token).exec_cmd!()
+	# The error names gh's arguments only: Cmd's own error text would print the environment, token included.
+	result = if token == "" cmd.exec_cmd!() else cmd.env_str("GH_TOKEN", token).exec_cmd!()
+	match result {
+		Ok(_) => Ok({})
+		Err(_) => Err(GitHub("gh ${Str.join_with(args.take_first(2), " ")} failed (its output is above)"))
+	}
 }

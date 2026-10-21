@@ -62,8 +62,14 @@ main! = |args| {
 			release = "${releases}/${tag}"
 			_ = run!("env", ["--chdir", release, "sha256sum", "--check", "--quiet", "--", "SHA256SUMS.txt"]) ? |_| Publish("${release} fails its SHA256SUMS.txt")
 			repo = if setting!("ARCHEION_GITHUB_REPO") == "" "lyceum-quest/archeion" else setting!("ARCHEION_GITHUB_REPO")
-			_ = gh!(repo, ["release", "create", tag, "--repo", repo, "--verify-tag", "--title", "${preload.title} ${Str.drop_prefix(tag, preload.prefix)}", "--notes", preload.notes, "--latest=false", "${release}/${preload.asset}", "${release}/SHA256SUMS.txt"])?
-			Stdout.line!("Created the GitHub release ${tag} in ${repo}")
+			# Already published (e.g. promoting the same data again): nothing to do.
+			published = match gh!(repo, ["release", "view", tag, "--repo", repo, "--json", "tagName"]) {
+				Ok(_) => Bool.True
+				Err(_) => Bool.False
+			}
+			_ = if published Stdout.line!("${tag} is already published in ${repo}")? else {}
+			_ = if published {} else gh!(repo, ["release", "create", tag, "--repo", repo, "--verify-tag", "--title", "${preload.title} ${Str.drop_prefix(tag, preload.prefix)}", "--notes", preload.notes, "--latest=false", "${release}/${preload.asset}", "${release}/SHA256SUMS.txt"])?
+			if published Ok({}) else Stdout.line!("Created the GitHub release ${tag} in ${repo}")
 		}
 		_ => Err(Publish("Usage: release-preload build|github aristos|conllu-viz"))
 	}
@@ -117,5 +123,10 @@ gh! = |repo, args| {
 	home = Env.var_str!(OsStr.from_str("HOME")) ?? ""
 	token = Str.trim(Path.read_utf8!(Path.utf8("${home}/.config/github-tokens/${owner}")) ?? "")
 	cmd = Cmd.new_str("gh").args_str(args)
-	if token == "" cmd.exec_cmd!() else cmd.env_str("GH_TOKEN", token).exec_cmd!()
+	# The error names gh's arguments only: Cmd's own error text would print the environment, token included.
+	result = if token == "" cmd.exec_cmd!() else cmd.env_str("GH_TOKEN", token).exec_cmd!()
+	match result {
+		Ok(_) => Ok({})
+		Err(_) => Err(GitHub("gh ${Str.join_with(args.take_first(2), " ")} failed (its output is above)"))
+	}
 }
