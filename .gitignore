@@ -24,3 +24,6 @@ __pycache__/
 
 # Per-work scratch files from scripts/generate/loop.roc
 conllu/generated/*/.scratch/
+
+# apo run stores and outputs (apo export writes finished runs into conllu/generated/)
+/apo/runs/

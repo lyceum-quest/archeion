@@ -1,0 +1,10 @@
+{
+  "name": "luke",
+  "providers": "../../providers.json",
+  "pipeline": "../../pipeline.json",
+  "models": [
+    { "name": "claude-sonnet-5", "provider": "claude-subscription", "id": "claude-sonnet-5" }
+  ],
+  "variables": { "context": "context.md" },
+  "runs": "../../runs"
+}

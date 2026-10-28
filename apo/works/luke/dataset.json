@@ -1,0 +1,9 @@
+{
+  "name": "luke",
+  "title": "Gospel of Luke",
+  "input": "../../../../OGA/opera_graeca_adnotata_v0.2.0/workspace/conllu/tlg0031.tlg003.perseus-grc2.tok01_sentence-seg01_annotated_lemma.conllu",
+  "token_ids": "misc-first",
+  "omitted_misc_prefix": "e_",
+  "passages": { "kind": "refs", "path": "../../../data/oga/refs/tlg0031.tlg003.perseus-grc2.tsv", "label_separator": ":" },
+  "limit": 80
+}

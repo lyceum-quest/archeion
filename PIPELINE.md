@@ -17,6 +17,25 @@ environment or a git-ignored `.env` (copy `.env.example`).
 source, prompts), and `costs.tsv`. It resumes from its checkpoints; missing work makes model calls. Work configs are
 in `scripts/generate/works/`. `RESEARCH.md` and `experiments/` record how the prompts and models were chosen.
 
+### Generating through apo
+
+[apo](../apo) runs the same three steps from configuration, keeping every request and reply so a run can be
+resumed, replayed and scored. `apo/` holds Archeion's prompts as apo templates (`apo/prompts/`, the texts of
+`scripts/generate/base.json`) and one experiment per work (`apo/works/<work>/`: the dataset, with OGA's citations as
+passages, and the work's context). Its rendered prompts are byte-identical to `loop.roc`'s.
+
+```sh
+kai run apo -- seed apo/works/luke/experiment.json --from conllu/generated/luke-claude-sonnet-5   # once per work
+kai run apo -- plan apo/works/luke/experiment.json      # raise `limit` in its dataset.json first
+kai run apo -- run apo/works/luke/experiment.json       # calls the model only for the new passages
+kai run apo -- export apo/runs/luke/<run> conllu/generated/luke-claude-sonnet-5
+```
+
+`seed` answers each call from the work's existing outputs, so only passages past them are generated; seeding Luke
+reproduces its 62 sentences and 80 passages exactly. `apo validate --profile ../apo/examples/profiles/apo-gloss.json`
+checks the result, and `apo eval` scores it against external gold data (the Berean Interlinear for the New
+Testament, the Ugarit alignments for Crito).
+
 ## Lyceum Study preload
 
 The preload is every generated work as Lyceum Study loads it: `corpora.json` (version 1), `corpora/<work>.conllu`,

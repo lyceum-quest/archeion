@@ -1,0 +1,7 @@
+{
+  "providers": {
+    "claude-subscription": { "protocol": "claude-cli" },
+    "ppq": { "protocol": "openai-chat", "base_url": "https://api.ppq.ai/v1", "key_env": "PPQ_API_KEY" },
+    "anthropic": { "protocol": "anthropic-messages", "key_env": "ANTHROPIC_API_KEY", "batch": true }
+  }
+}
