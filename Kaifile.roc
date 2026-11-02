@@ -36,7 +36,7 @@ kaifile = Std.kaifile([
 	# kai run apo -- <command> ...: generation, validation, evaluation and comparison through apo (see PIPELINE.md),
 	# e.g. kai run apo -- plan apo/works/luke/experiment.json. Runs are kept in apo/runs/ (git-ignored);
 	# `apo export` writes a finished run into conllu/generated/.
-	Task("apo", [Use("apo"), Run(["roc", "../apo/cli/main.roc"])]),
+	Task("apo", [Use("apo"), Run(["roc", "../apo/cli/main.roc", "--"])]),
 
 	# kai run generate -- <work> <config.json> <passage-count|all>
 	# e.g. kai run generate -- 1peter scripts/generate/works/1peter.json 25
