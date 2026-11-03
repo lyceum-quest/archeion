@@ -116,6 +116,12 @@ kaifile = Std.kaifile([
 
 	Task("check-lyceum-import-config-tool", [Use("dev"), Run(["roc", "check", "scripts/lyceum-import-config.roc"])]),
 
+	# kai run adopt-apo -- <apo-output-dir> <conllu/generated/work-model>: a stopgap that continues a generated work with
+	# apo's output for later sentences of the same text (see PIPELINE.md), so it imports and releases as before.
+	Task("adopt-apo", [Use("dev"), Run(["roc", "scripts/adopt-apo.roc"])]),
+
+	Task("check-adopt-apo-tool", [Use("dev"), Run(["roc", "check", "scripts/adopt-apo.roc"])]),
+
 	# Export SQL by default. Configs: scripts/lyceum-{import,replace}.example.json. The databases are
 	# LYCEUM_WEBSITE_DIR/data/{texts,editions}.db (see .env.example).
 	# LYCEUM_IMPORT_CONFIG selects the config; LYCEUM_IMPORT_APPLY=1 writes.

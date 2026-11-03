@@ -17,24 +17,26 @@ environment or a git-ignored `.env` (copy `.env.example`).
 source, prompts), and `costs.tsv`. It resumes from its checkpoints; missing work makes model calls. Work configs are
 in `scripts/generate/works/`. `RESEARCH.md` and `experiments/` record how the prompts and models were chosen.
 
-### Generating through apo
+### Continuing a work with apo (stopgap)
 
-[apo](../apo) runs the same three steps from configuration, keeping every request and reply so a run can be
-resumed, replayed and scored. `apo/` holds Archeion's prompts as apo templates (`apo/prompts/`, the texts of
-`scripts/generate/base.json`) and one experiment per work (`apo/works/<work>/`: the dataset, with OGA's citations as
-passages, and the work's context). Its rendered prompts are byte-identical to `loop.roc`'s.
+[apo](https://github.com/lyceum-quest/apo) 0.1.0 glosses and translates OGA CoNLL-U with any model, but writes no
+literal translations, no `config.json`, and its own folder layout. Until Archeion and apo settle on one format,
+`adopt-apo` continues a work here with apo's output for its later sentences, and the work then imports and releases
+as before:
 
-```sh
-kai run apo -- seed apo/works/luke/experiment.json --from conllu/generated/luke-claude-sonnet-5   # once per work
-kai run apo -- plan apo/works/luke/experiment.json      # raise `limit` in its dataset.json first
-kai run apo -- run apo/works/luke/experiment.json       # calls the model only for the new passages
-kai run apo -- export apo/runs/luke/<run> conllu/generated/luke-claude-sonnet-5
-```
+1. Give apo the work from the first sentence after this one's last: the OGA file's sentences from that token on as
+   `<work>.conllu`, OGA's citations from that token on as `<work>.refs.tsv`, and the work's guidance as
+   `<work>.context.md`. Use the same model as the work, and `"works": { "<work>": { "label_separator": ":" } }`.
+2. `apo run --count N` as often as needed; it resumes.
+3. `kai run adopt-apo -- <apo-output>/<work>/<model> conllu/generated/<work>-<model>` appends apo's sentences
+   (renumbered after the work's own) and passages, and copies apo's output to `<work>-<model>/apo/<first token>/`.
+   Run it again after each apo session: everything from apo's first token on is replaced.
+4. `kai workflow release-staging`, then `release-production`, as for any work.
 
-`seed` answers each call from the work's existing outputs, so only passages past them are generated; seeding Luke
-reproduces its 62 sentences and 80 passages exactly. `apo validate --profile ../apo/examples/profiles/apo-gloss.json`
-checks the result, and `apo eval` scores it against external gold data (the Berean Interlinear for the New
-Testament, the Ugarit alignments for Crito).
+apo's passages have an empty `literal`, which Lyceum shows as no literal translation. `config.json` keeps describing
+the work's first generation; each `apo/<first token>/output.conllu` names the model and
+apo version of the sentences from that token on. A later session needs no earlier workspace: start its text at the
+token after the work's last.
 
 ## Lyceum Study preload
 

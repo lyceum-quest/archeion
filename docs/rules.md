@@ -11,7 +11,8 @@
 ## Data
 
 - Do not hand-edit `conllu/lyceum/` or `releases/`; `publish-archeion` writes them from what Lyceum serves.
-- Keep `conllu/generated/<work>-<model>/` as `scripts/generate/loop.roc` writes it; change it by regenerating.
+- Keep `conllu/generated/<work>-<model>/` as `scripts/generate/loop.roc` writes it; change it by regenerating, or
+  continue it with apo's output through `kai run adopt-apo` (a stopgap; see `PIPELINE.md`).
 - Every release states its sources (commits, upstream corpora, licenses) and checksums.
 
 ## Implementation

@@ -89,7 +89,9 @@ passage_blocks = |units, rows, index, refs, found| match units {
 		ref = lyceum_ref(unit.ref)
 		_ = (if List.contains(refs, ref) Err(DuplicateReference(ref)) else Ok({}))?
 		lines = renumber(unit.tokens, rows, 1, [])?
-		comments = ["# sentence_id = ${U64.to_str(index)}", "# ref = ${ref}", "# prose_translation = ${unit.prose}", "# literal_translation = ${unit.literal}"]
+		# Passages adopted from apo have no literal translation; Lyceum reads a missing one as empty, but not an empty one.
+		literal = if unit.literal == "" [] else ["# literal_translation = ${unit.literal}"]
+		comments = List.concat(["# sentence_id = ${U64.to_str(index)}", "# ref = ${ref}", "# prose_translation = ${unit.prose}"], literal)
 		passage_blocks(rest, rows, index + 1, List.append(refs, ref), List.append(found, Str.join_with(List.concat(comments, lines), "\n")))
 	}
 }
