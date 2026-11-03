@@ -1,0 +1,1189 @@
+# newdoc id = luke
+# generator = apo 0.1.0
+# model = claude-sonnet-5
+# config_sha256 = b2d6c6c04d28ba61d1273295dec4c5c6e3413e5b35bbd4029bb07e118d908811
+# sent_id = luke-1
+# text = Ἐγένετο δὲ ἐν ταῖς ἡμέραις ἐκείναις ἐξῆλθεν δόγμα παρὰ Καίσαρος Αὐγούστου ἀπογράφεσθαι πᾶσαν τὴν οἰκουμένην ·
+# sentence_id = 1
+# translation_lang = en
+# prose_translation = Now it came about in those days that a decree went out from Caesar Augustus that all the inhabited world should be registered.
+1	Ἐγένετο	γίγνομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	0	PRED	_	t_1333|gloss=it-came-about
+2	δὲ	δέ	d	d--------	_	1	AuxY	_	t_1334|gloss=now
+3	ἐν	ἐν	r	r--------	_	1	AuxP	_	t_1335|gloss=in
+4	ταῖς	ὁ	l	l-p---fd-	Case=d|Gender=f|Number=p	5	ATR	_	t_1336|gloss=the
+5	ἡμέραις	ἡμέρα	n	n-p---fd-	Case=d|Gender=f|Number=p	3	ADV	_	t_1337|gloss=days
+6	ἐκείναις	ἐκεῖνος	a	a-p---fd-	Case=d|Gender=f|Number=p	5	ATR	_	t_1338|gloss=those
+7	ἐξῆλθεν	ἐξέρχομαι	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	1	PNOM	_	t_1339|gloss=went-out
+8	δόγμα	δόγμα	n	n-s---nn-	Case=n|Gender=n|Number=s	7	SBJ	_	t_1340|gloss=a-decree
+9	παρὰ	παρά	r	r--------	_	7	AuxP	_	t_1341|gloss=from
+10	Καίσαρος	καῖσαρ	n	n-s---mg-	Case=g|Gender=m|Number=s	11	ATR	_	t_1342|gloss=caesar
+11	Αὐγούστου	αὔγουστος	n	n-s---mg-	Case=g|Gender=m|Number=s	9	ADV	_	t_1343|gloss=augustus
+12	ἀπογράφεσθαι	ἀπογράφω	v	v--pne---	Mood=n|Tense=p|Voice=e	8	ATR	_	t_1344|gloss=to-be-registered
+13	πᾶσαν	πᾶς	a	a-s---fa-	Case=a|Gender=f|Number=s	15	ATR	_	t_1345|gloss=all
+14	τὴν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	15	ATR	_	t_1346|gloss=the
+15	οἰκουμένην	οἰκέω	n	n-s---fa-	Case=a|Gender=f|Number=s	12	OBJ	_	t_1347|gloss=inhabited-world
+16	·	·	u	u--------	_	1	AuxK	_	t_1348|gloss=·
+
+# sent_id = luke-2
+# text = ( αὕτη ἀπογραφὴ πρώτη ἐγένετο ἡγεμονεύοντος τῆς Συρίας Κυρηνίο · )
+# sentence_id = 2
+# translation_lang = en
+# prose_translation = (This census was the first [taken] while Quirinius was governing Syria.)
+1	(	̔	u	u--------	_	5	AuxG	_	t_1349|gloss=(
+2	αὕτη	οὗτος	a	a-s---fn-	Case=n|Gender=f|Number=s	3	ATR	_	t_1350|gloss=this
+3	ἀπογραφὴ	ἀπογραφή	n	n-s---fn-	Case=n|Gender=f|Number=s	5	PNOM	_	t_1351|gloss=census
+4	πρώτη	πρῶτος	a	a-s---fn-	Case=n|Gender=f|Number=s	3	ATR	_	t_1352|gloss=first
+5	ἐγένετο	γίγνομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	0	PRED	_	t_1353|gloss=took-place
+6	ἡγεμονεύοντος	ἡγεμονεύω	v	v-sppamg-	Case=g|Gender=m|Mood=p|Number=s|Tense=p|Voice=a	5	ADV	_	t_1354|gloss=while-governing
+7	τῆς	ὁ	l	l-s---fg-	Case=g|Gender=f|Number=s	8	ATR	_	t_1355|gloss=the
+8	Συρίας	συρία	n	n-s---fg-	Case=g|Gender=f|Number=s	6	OBJ	_	t_1356|gloss=Syria
+9	Κυρηνίο	κυρηνίος	n	n-s---mg-	Case=g|Gender=m|Number=s	6	SBJ	_	t_1357|gloss=Quirinius
+10	·	·	u	u--------	_	5	AuxK	_	t_1358|gloss=·
+11	)	)	u	u--------	_	5	AuxG	_	t_1359|gloss=)
+
+# sent_id = luke-3
+# text = καὶ ἐπορεύοντο πάντες ἀπογράφεσθαι , ἔκαστος εἰς τὴν ἑαυτοῦ πόλιν .
+# sentence_id = 3
+# translation_lang = en
+# prose_translation = And everyone was going to be registered, each to his own city.
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_1360|gloss=and
+2	ἐπορεύοντο	πορεύω	v	v3piie---	Mood=i|Number=p|Person=3|Tense=i|Voice=e	0	PRED	_	t_1361|gloss=were-going
+3	πάντες	πᾶς	a	a-p---mn-	Case=n|Gender=m|Number=p	2	SBJ	_	t_1362|gloss=everyone
+4	ἀπογράφεσθαι	ἀπογράφω	v	v--pne---	Mood=n|Tense=p|Voice=e	2	ADV	_	t_1363|gloss=to-be-registered
+5	,	,	u	u--------	_	2	AuxX	_	t_1364|gloss=,
+6	ἔκαστος	ἕκαστος	a	a-s---mn-	Case=n|Gender=m|Number=s	2	SBJ	_	t_1365|gloss=each-one
+7	εἰς	εἰς	r	r--------	_	4	AuxP	_	t_1366|gloss=to
+8	τὴν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	10	ATR	_	t_1367|gloss=the
+9	ἑαυτοῦ	ἑαυτοῦ	p	p-s---mg-	Case=g|Gender=m|Number=s	10	ATR	_	t_1368|gloss=his-own
+10	πόλιν	πόλις	n	n-s---fa-	Case=a|Gender=f|Number=s	7	OBJ	_	t_1369|gloss=city
+11	.	.	u	u--------	_	2	AuxK	_	t_1370|gloss=.
+
+# sent_id = luke-4
+# text = Ἀνέβη δὲ καὶ Ἰωσὴφ ἀπὸ τῆς Γαλιλαίας ἐκ πόλεως Ναζαρὲτ εἰς τὴν Ἰουδαίαν εἰς πόλιν Δαυεὶδ ἥτις καλεῖται Βηθλεἐμ , διὰ τὸ εἶναι αὐτὸν ἐξ οἴκου καὶ πατριᾶς Δαυείδ , ἀπογράψασθαι σὺν Μαριὰμ τῇ ἐμνηστευμένῃ αὐτῷ , οὔσῃ ἐνκύῳ .
+# sentence_id = 4
+# translation_lang = en
+# prose_translation = Joseph also went up from Galilee, from the city of Nazareth, into Judea, to the city of David which is called Bethlehem, because he was of the house and lineage of David, to register with Mary, who was betrothed to him, she being pregnant.
+1	Ἀνέβη	ἀναβαίνω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	0	PRED	_	t_1371|gloss=went-up
+2	δὲ	δέ	d	d--------	_	1	AuxY	_	t_1372|gloss=and
+3	καὶ	καί	d	d--------	_	4	AuxZ	_	t_1373|gloss=also
+4	Ἰωσὴφ	ἰωσήφ	n	n-s---mn-	Case=n|Gender=m|Number=s	1	SBJ	_	t_1374|gloss=Joseph
+5	ἀπὸ	ἀπό	r	r--------	_	1	AuxP	_	t_1375|gloss=from
+6	τῆς	ὁ	l	l-s---fg-	Case=g|Gender=f|Number=s	7	ATR	_	t_1376|gloss=the
+7	Γαλιλαίας	γαλιλαία	a	a-s---fg-	Case=g|Gender=f|Number=s	9	ATR	_	t_1377|gloss=Galilee
+8	ἐκ	ἐκ	r	r--------	_	1	AuxP	_	t_1378|gloss=out-of
+9	πόλεως	πόλις	n	n-s---fg-	Case=g|Gender=f|Number=s	8	ADV	_	t_1379|gloss=city
+10	Ναζαρὲτ	ναζαρέτ	n	n-p---mn-	Case=n|Gender=m|Number=s	1	SBJ	_	t_1380|gloss=Nazareth
+11	εἰς	εἰς	r	r--------	_	1	AuxP	_	t_1381|gloss=into
+12	τὴν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	13	ATR	_	t_1382|gloss=the
+13	Ἰουδαίαν	ἰουδαία	n	n-s---fa-	Case=a|Gender=f|Number=s	11	OBJ	_	t_1383|gloss=Judea
+14	εἰς	εἰς	r	r--------	_	1	AuxP	_	t_1384|gloss=into
+15	πόλιν	πόλις	n	n-s---fa-	Case=a|Gender=f|Number=s	14	OBJ	_	t_1385|gloss=city
+16	Δαυεὶδ	δαυείδ	n	n--------	_	15	APOS	_	t_1386|gloss=of-David
+17	ἥτις	ὅστις	p	p-s---fn-	Case=n|Gender=f|Number=s	18	SBJ	_	t_1387|gloss=which
+18	καλεῖται	καλέω	v	v3spie---	Mood=i|Number=s|Person=3|Tense=p|Voice=e	15	ATR	_	t_1388|gloss=is-called
+19	Βηθλεἐμ	βηθλεέμ	n	n--------	Case=n|Number=s	18	PNOM	_	t_1389|gloss=Bethlehem
+20	,	,	u	u--------	_	1	AuxX	_	t_1390|gloss=,
+21	διὰ	διά	r	r--------	_	1	AuxP	_	t_1391|gloss=because
+22	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	23	ATR	_	t_1392|gloss=the
+23	εἶναι	εἰμί	v	v--pna---	Mood=n|Tense=p|Voice=a	21	ADV	_	t_1393|gloss=being
+24	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	23	SBJ	_	t_1394|gloss=he
+25	ἐξ	ἐκ	r	r--------	_	23	AuxP	_	t_1395|gloss=from
+26	οἴκου	οἶκος	n	n-s---mg-	Case=g|Gender=m|Number=s	27	ADV	_	t_1396|gloss=house
+27	καὶ	καί	c	c--------	_	25	COORD	_	t_1397|gloss=and
+28	πατριᾶς	πατριά	n	n-s---fg-	Case=g|Gender=f|Number=s	27	PNOM	_	t_1398|gloss=lineage
+29	Δαυείδ	δαυείδ	n	n-s---fg-	_	27	PNOM	_	t_1399|gloss=of-David
+30	,	,	u	u--------	_	1	AuxX	_	t_1400|gloss=,
+31	ἀπογράψασθαι	ἀπογράφω	v	v--anm---	Mood=n|Tense=a|Voice=m	1	ADV	_	t_1401|gloss=to-register
+32	σὺν	σύν	r	r--------	_	31	AuxP	_	t_1402|gloss=with
+33	Μαριὰμ	μαριὰμ	n	n-s---fd-	Case=d|Gender=f|Number=s	32	ADV	_	t_1403|gloss=Mary
+34	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	33	ATR	_	t_1404|gloss=the
+35	ἐμνηστευμένῃ	μνηστεύω	v	v-sppefd-	Case=d|Gender=f|Mood=p|Number=s|Tense=p|Voice=e	33	ATR	_	t_1405|gloss=having-been-betrothed
+36	αὐτῷ	αὐτός	p	p-s---md-	Case=d|Gender=m|Number=s	35	OBJ	_	t_1406|gloss=to-him
+37	,	,	u	u--------	_	1	AuxX	_	t_1407|gloss=,
+38	οὔσῃ	εἰμί	v	v-sppafd-	Case=d|Gender=f|Mood=p|Number=s|Tense=p|Voice=a	33	ATR	_	t_1408|gloss=being
+39	ἐνκύῳ	ἔνκυος	n	n-s---fd-	Case=d|Gender=f|Number=s	38	PNOM	_	t_1409|gloss=pregnant
+40	.	.	u	u--------	_	1	AuxK	_	t_1410|gloss=.
+
+# sent_id = luke-5
+# text = Ἐγένετο δὲ ἐν τῷ εἶναι αὐτοὺς ἐκεῖ ἐπλήσθησαν αἱ ἡμέραι τοῦ τεκεῖν αὐτήν , καὶ ἔτεκεν τὸν υἱὸν αὐτῆς τὸν πρωτότοκον , καὶ ἐσπαργάνωσεν αὐτὸν καὶ ἀνέκλινεν αὐτὸν ἐν φάτνῃ , διότι οὐκ ἦν αὐτοῖς τόπος ἐν τῷ καταλύματι .
+# sentence_id = 5
+# translation_lang = en
+# prose_translation = And while they were there, the days for her to give birth were fulfilled, and she gave birth to her son, the firstborn, and wrapped him in swaddling cloths and laid him in a manger, because there was no place for them in the inn.
+1	Ἐγένετο	γίγνομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	2	PRED	_	t_1411|gloss=it-came-to-pass
+2	δὲ	δέ	d	d--------	_	0	COORD	_	t_1412|gloss=and
+3	ἐν	ἐν	r	r--------	_	1	AuxP	_	t_1413|gloss=while
+4	τῷ	ὁ	l	l-s---nd-	Case=d|Gender=n|Number=s	5	ATR	_	t_1414|gloss=the
+5	εἶναι	εἰμί	v	v--pna---	Mood=n|Tense=p|Voice=a	3	ADV	_	t_1415|gloss=being
+6	αὐτοὺς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	5	SBJ	_	t_1416|gloss=they
+7	ἐκεῖ	ἐκεῖ	d	d--------	_	5	ADV	_	t_1417|gloss=there
+8	ἐπλήσθησαν	πίμπλημι	v	v3paip---	Mood=i|Number=p|Person=3|Tense=a|Voice=p	1	PNOM	_	t_1418|gloss=were-fulfilled
+9	αἱ	ὁ	l	l-p---fn-	Case=n|Gender=f|Number=p	10	ATR	_	t_1419|gloss=the
+10	ἡμέραι	ἡμέρα	n	n-p---fn-	Case=n|Gender=f|Number=p	1	SBJ	_	t_1420|gloss=days
+11	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	12	ATR	_	t_1421|gloss=of-the
+12	τεκεῖν	τίκτω	v	v--ana---	Mood=n|Tense=a|Voice=a	10	ATR	_	t_1422|gloss=to-give-birth
+13	αὐτήν	αὐτός	p	p-s---fa-	Case=a|Gender=f|Number=s	12	OBJ	_	t_1423|gloss=she
+14	,	,	u	u--------	_	5	AuxX	_	t_1424|gloss=,
+15	καὶ	καί	c	c--------	_	26	AuxY	_	t_1425|gloss=and
+16	ἔτεκεν	τίκτω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	26	PRED	_	t_1426|gloss=she-gave-birth-to
+17	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	18	ATR	_	t_1427|gloss=the
+18	υἱὸν	υἱός	n	n-s---ma-	Case=a|Gender=m|Number=s	16	OBJ	_	t_1428|gloss=son
+19	αὐτῆς	αὐτός	p	p-s---fg-	Case=g|Gender=f|Number=s	18	ATR	_	t_1429|gloss=her
+20	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	18	ATR	_	t_1430|gloss=the
+21	πρωτότοκον	πρωτότοκος	a	a-s---ma-	Case=a|Gender=m|Number=s	18	ATR	_	t_1431|gloss=firstborn
+22	,	,	u	u--------	_	18	AuxX	_	t_1432|gloss=,
+23	καὶ	καί	c	c--------	_	26	AuxY	_	t_1433|gloss=and
+24	ἐσπαργάνωσεν	σπαργανόω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	26	PRED	_	t_1434|gloss=wrapped-in-swaddling-cloths
+25	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	24	OBJ	_	t_1435|gloss=him
+26	καὶ	καί	c	c--------	_	2	COORD	_	t_1436|gloss=and
+27	ἀνέκλινεν	ἀνακλίνω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	26	PRED	_	t_1437|gloss=laid-down
+28	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	27	OBJ	_	t_1438|gloss=him
+29	ἐν	ἐν	r	r--------	_	27	AuxP	_	t_1439|gloss=in
+30	φάτνῃ	φάτνη	n	n-s---fd-	Case=d|Gender=f|Number=s	29	ADV	_	t_1440|gloss=manger
+31	,	,	u	u--------	_	32	AuxX	_	t_1441|gloss=,
+32	διότι	διότι	c	c--------	_	26	AuxC	_	t_1442|gloss=because
+33	οὐκ	οὐ	d	d--------	_	34	AuxZ	_	t_1443|gloss=not
+34	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	32	ADV	_	t_1444|gloss=there-was
+35	αὐτοῖς	αὐτός	p	p-p---md-	Case=d|Gender=m|Number=p	36	ATR	_	t_1445|gloss=for-them
+36	τόπος	τόπος	n	n-s---mn-	Case=n|Gender=m|Number=s	34	SBJ	_	t_1446|gloss=place
+37	ἐν	ἐν	r	r--------	_	34	AuxP	_	t_1447|gloss=in
+38	τῷ	ὁ	l	l-s---nd-	Case=d|Gender=n|Number=s	39	ATR	_	t_1448|gloss=the
+39	καταλύματι	κατάλυμα	n	n-s---nd-	Case=d|Gender=n|Number=s	37	ADV	_	t_1449|gloss=inn
+40	.	.	u	u--------	_	2	AuxK	_	t_1450|gloss=.
+
+# sent_id = luke-6
+# text = Καὶ ποιμένες ἦσαν ἐν τῇ χώρᾳ τῇ αὐτῇ ἀγραυλοῦντες καὶ φυλάσσοντες φυλακὰς τῆς νυκτὸς ἐπὶ τὴν ποίμνην αὐτῶν .
+# sentence_id = 6
+# translation_lang = en
+# prose_translation = And there were shepherds in that same region, living in the fields and keeping watch over their flock by night.
+1	Καὶ	καί	c	c--------	_	0	COORD	_	t_1451|gloss=and
+2	ποιμένες	ποιμήν	n	n-p---mn-	Case=n|Gender=m|Number=p	3	SBJ	_	t_1452|gloss=shepherds
+3	ἦσαν	εἰμί	v	v3piia---	Mood=i|Number=p|Person=3|Tense=i|Voice=a	1	PRED	_	t_1453|gloss=were
+4	ἐν	ἐν	r	r--------	_	3	AuxP	_	t_1454|gloss=in
+5	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	6	ATR	_	t_1455|gloss=the
+6	χώρᾳ	χώρα	n	n-s---fd-	Case=d|Gender=f|Number=s	4	PNOM	_	t_1456|gloss=region
+7	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	6	ATR	_	t_1457|gloss=the
+8	αὐτῇ	αὐτός	a	a-s---fd-	Case=d|Gender=f|Number=s	6	ATR	_	t_1458|gloss=same
+9	ἀγραυλοῦντες	ἀγραυλέω	v	v-pppamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	10	PNOM	_	t_1459|gloss=living-in-the-fields
+10	καὶ	καί	c	c--------	_	3	COORD	_	t_1460|gloss=and
+11	φυλάσσοντες	φυλάσσω	v	v-pppamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	10	PNOM	_	t_1461|gloss=keeping
+12	φυλακὰς	φυλακή	n	n-p---fa-	Case=a|Gender=f|Number=p	11	OBJ	_	t_1462|gloss=watches
+13	τῆς	ὁ	l	l-s---fg-	Case=g|Gender=f|Number=s	14	ATR	_	t_1463|gloss=the
+14	νυκτὸς	νύξ	n	n-s---fg-	Case=g|Gender=f|Number=s	11	ADV	_	t_1464|gloss=night's
+15	ἐπὶ	ἐπί	r	r--------	_	11	AuxP	_	t_1465|gloss=over
+16	τὴν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	17	ATR	_	t_1466|gloss=the
+17	ποίμνην	ποίμνη	n	n-s---fa-	Case=a|Gender=f|Number=s	15	ADV	_	t_1467|gloss=flock
+18	αὐτῶν	αὐτός	p	p-p---mg-	Case=g|Gender=m|Number=p	17	ATR	_	t_1468|gloss=their
+19	.	.	u	u--------	_	1	AuxK	_	t_1469|gloss=.
+
+# sent_id = luke-7
+# text = καὶ ἄγγελος Κυρίου ἐπέστη αὐτοῖς καὶ δόξα Κυρίου περιέλαμψεν αὐτούς , καὶ ἐφοβήθησαν φόβον μέγαν ·
+# sentence_id = 7
+# translation_lang = en
+# prose_translation = And an angel of the Lord stood by them, and the glory of the Lord shone around them, and they were greatly afraid.
+1	καὶ	καί	d	d--------	_	12	AuxY	_	t_1470|gloss=and
+2	ἄγγελος	ἄγγελος	n	n-s---mn-	Case=n|Gender=m|Number=s	4	SBJ	_	t_1471|gloss=an-angel
+3	Κυρίου	κύριος	n	n-s---mg-	Case=g|Gender=m|Number=s	2	ATR	_	t_1472|gloss=of-the-Lord
+4	ἐπέστη	ἐφίστημι	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	12	PRED	_	t_1473|gloss=stood-by
+5	αὐτοῖς	αὐτός	p	p-p---md-	Case=d|Gender=m|Number=p	4	OBJ	_	t_1474|gloss=them
+6	καὶ	καί	d	d--------	_	12	AuxY	_	t_1475|gloss=and
+7	δόξα	δόξα	n	n-s---fn-	Case=n|Gender=f|Number=s	9	SBJ	_	t_1476|gloss=the-glory
+8	Κυρίου	κύριος	n	n-s---mg-	Case=g|Gender=m|Number=s	7	ATR	_	t_1477|gloss=of-the-Lord
+9	περιέλαμψεν	περιλάμπω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	12	PRED	_	t_1478|gloss=shone-around
+10	αὐτούς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	9	OBJ	_	t_1479|gloss=them
+11	,	,	u	u--------	_	0	AuxX	_	t_1480|gloss=,
+12	καὶ	καί	c	c--------	_	11	COORD	_	t_1481|gloss=and
+13	ἐφοβήθησαν	φοβέω	v	v3paip---	Mood=i|Number=p|Person=3|Tense=a|Voice=p	12	PRED	_	t_1482|gloss=they-were-afraid
+14	φόβον	φόβος	n	n-s---ma-	Case=a|Gender=m|Number=s	13	OBJ	_	t_1483|gloss=fear
+15	μέγαν	μέγας	a	a-s---ma-	Case=a|Gender=m|Number=s	14	ATR	_	t_1484|gloss=great
+16	·	·	u	u--------	_	11	AuxK	_	t_1485|gloss=·
+
+# sent_id = luke-8
+# text = καὶ εἶπεν αὐτοῖς ὁ ἄγγελος Μὴ φοβεῖσθε , ἰδοὺ γὰρ εὐαγγελίζομαι ὑμῖν χαρὰν μεγάλην ἥτις ἔσται παντὶ τῷ λαῷ , ὅτι ἐτέχθη ὑμῖν σήμερον σωτὴρ ὅς ἐστιν χριστὸς κύριος ἐν πόλει Δαυείδ ·
+# sentence_id = 8
+# translation_lang = en
+# prose_translation = And the angel said to them, "Do not be afraid, for behold, I bring you good news of great joy that will be for all the people, that today a Savior was born for you in the city of David, who is Christ the Lord;
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_1486|gloss=and
+2	εἶπεν	λέγω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	0	PRED	_	t_1487|gloss=said
+3	αὐτοῖς	αὐτός	p	p-p---md-	Case=d|Gender=m|Number=p	2	OBJ	_	t_1488|gloss=to-them
+4	ὁ	ὁ	l	l-s---mn-	Case=n|Gender=m|Number=s	5	ATR	_	t_1489|gloss=the
+5	ἄγγελος	ἄγγελος	n	n-s---mn-	Case=n|Gender=m|Number=s	2	SBJ	_	t_1490|gloss=angel
+6	Μὴ	μή	d	d--------	_	7	AuxZ	_	t_1491|gloss=not
+7	φοβεῖσθε	φοβέω	v	v2ppme---	Mood=m|Number=p|Person=2|Tense=p|Voice=e	2	OBJ	_	t_1492|gloss=be-afraid
+8	,	,	u	u--------	_	2	AuxX	_	t_1493|gloss=,
+9	ἰδοὺ	ἰδού	i	i--------	_	2	ExD	_	t_1494|gloss=behold
+10	γὰρ	γάρ	d	d--------	_	11	AuxY	_	t_1495|gloss=for
+11	εὐαγγελίζομαι	εὐαγγελίζομαι	v	v1spie---	Mood=i|Number=s|Person=1|Tense=p|Voice=e	2	ExD	_	t_1496|gloss=i-bring-good-news
+12	ὑμῖν	σύ	p	p-p---md-	Case=d|Gender=m|Number=p	11	OBJ	_	t_1497|gloss=to-you
+13	χαρὰν	χαρά	n	n-s---fa-	Case=a|Gender=f|Number=s	11	OBJ	_	t_1498|gloss=joy
+14	μεγάλην	μέγας	a	a-s---fa-	Case=a|Gender=f|Number=s	13	ATR	_	t_1499|gloss=great
+15	ἥτις	ὅστις	p	p-s---fn-	Case=n|Gender=f|Number=s	16	SBJ	_	t_1500|gloss=which
+16	ἔσται	εἰμί	v	v3sfim---	Mood=i|Number=s|Person=3|Tense=f|Voice=m	13	ATR	_	t_1501|gloss=will-be
+17	παντὶ	πᾶς	a	a-s---md-	Case=d|Gender=m|Number=s	19	ATR	_	t_1502|gloss=all
+18	τῷ	ὁ	l	l-s---md-	Case=d|Gender=m|Number=s	19	ATR	_	t_1503|gloss=the
+19	λαῷ	λαός	n	n-s---md-	Case=d|Gender=m|Number=s	16	ADV	_	t_1504|gloss=people
+20	,	,	u	u--------	_	11	APOS	_	t_1505|gloss=,
+21	ὅτι	ὅτι	c	c--------	_	20	AuxC	_	t_1506|gloss=that
+22	ἐτέχθη	τίκτω	v	v3saip---	Mood=i|Number=s|Person=3|Tense=a|Voice=p	21	OBJ	_	t_1507|gloss=was-born
+23	ὑμῖν	σύ	p	p-p----d-	Case=d|Gender=c|Number=p|Person=2	22	OBJ	_	t_1508|gloss=for-you
+24	σήμερον	σήμερον	d	d--------	_	22	ADV	_	t_1509|gloss=today
+25	σωτὴρ	σωτήρ	n	n-s---mn-	Case=n|Gender=m|Number=s	22	SBJ	_	t_1510|gloss=a-savior
+26	ὅς	ὅς	p	p-s---mn-	Case=n|Gender=m|Number=s	27	SBJ	_	t_1511|gloss=who
+27	ἐστιν	εἰμί	v	v3spia---	Mood=i|Number=s|Person=3|Tense=p|Voice=a	25	ATR	_	t_1512|gloss=is
+28	χριστὸς	χριστός	a	a-s---mn-	Case=n|Gender=m|Number=s	29	ATR	_	t_1513|gloss=christ
+29	κύριος	κύριος	n	n-s---mn-	Case=n|Gender=m|Number=s	27	PNOM	_	t_1514|gloss=Lord
+30	ἐν	ἐν	r	r--------	_	27	AuxP	_	t_1515|gloss=in
+31	πόλει	πόλις	n	n-s---fd-	Case=d|Gender=f|Number=s	30	ADV	_	t_1516|gloss=city
+32	Δαυείδ	δαυείδ	d	d--------	_	31	ATR	_	t_1517|gloss=of-david
+33	·	·	u	u--------	_	2	AuxK	_	t_1518|gloss=·
+
+# sent_id = luke-9
+# text = καὶ τοῦτο ὑμῖν σημεῖον , εὑρήσετε βρέφος ἐσπαργανωμένον καὶ κείμενον ἐν φάτνῃ .
+# sentence_id = 9
+# translation_lang = en
+# prose_translation = And this will be a sign for you: you will find a baby wrapped in swaddling clothes and lying in a manger.
+1	καὶ	καί	d	d--------	_	6	AuxY	_	t_1519|gloss=and
+2	τοῦτο	οὗτος	p	p-s---na-	Case=a|Gender=n|Number=s	4	ATR	_	t_1520|gloss=this
+3	ὑμῖν	σύ	p	p2p---cd-	Case=d|Gender=c|Number=p|Person=2	4	ATR	_	t_1521|gloss=for-you
+4	σημεῖον	σημεῖον	n	n-s---na-	Case=a|Gender=n|Number=s	6	OCOMP	_	t_1522|gloss=sign
+5	,	,	u	u--------	_	6	AuxX	_	t_1523|gloss=,
+6	εὑρήσετε	εὑρίσκω	v	v2pfia---	Mood=i|Number=p|Person=2|Tense=f|Voice=a	0	PRED	_	t_1524|gloss=you-will-find
+7	βρέφος	βρέφος	n	n-s---na-	Case=a|Gender=n|Number=s	6	OBJ	_	t_1525|gloss=baby
+8	ἐσπαργανωμένον	σπαργανόω	v	v-srpena-	Case=a|Gender=n|Mood=p|Number=s|Tense=r|Voice=e	9	ATR	_	t_1526|gloss=wrapped-in-swaddling-clothes
+9	καὶ	καί	c	c--------	_	7	COORD	_	t_1527|gloss=and
+10	κείμενον	κεῖμαι	v	v-srpena-	Case=a|Gender=n|Mood=p|Number=s|Tense=p|Voice=e	9	ATR	_	t_1528|gloss=lying
+11	ἐν	ἐν	r	r--------	_	10	AuxP	_	t_1529|gloss=in
+12	φάτνῃ	φάτνη	n	n-s---fd-	Case=d|Gender=f|Number=s	11	ADV	_	t_1530|gloss=manger
+13	.	.	u	u--------	_	6	AuxK	_	t_1531|gloss=.
+
+# sent_id = luke-10
+# text = καὶ ἐξέφνης ἐγένετο σὺν τῷ ἀγγέλῳ πλῆθος στρατιᾶς οὐρανίου αἰνούντων τὸν θεὸν καὶ λεγόντων Δόξα ἐν ὑψίστοις θεῷ καὶ ἐπὶ γῆς εἰρήνη ἐν ἀνθρώποις εὐδοκίας [0] .
+# sentence_id = 10
+# translation_lang = en
+# prose_translation = And suddenly there was with the angel a multitude of the heavenly host, praising God and saying, "Glory to God in the highest, and on earth peace, among men of [his] good pleasure."
+1	καὶ	καί	d	d--------	_	3	AuxY	_	t_1532|gloss=and
+2	ἐξέφνης	ἐξωμός	d	d--------	_	3	ADV	_	t_1533|gloss=suddenly
+3	ἐγένετο	γίγνομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	0	PRED	_	t_1534|gloss=there-was
+4	σὺν	σύν	r	r--------	_	3	AuxP	_	t_1535|gloss=with
+5	τῷ	ὁ	l	l-s---md-	Case=d|Gender=m|Number=s	6	ATR	_	t_1536|gloss=the
+6	ἀγγέλῳ	ἄγγελος	n	n-s---md-	Case=d|Gender=m|Number=s	4	ADV	_	t_1537|gloss=angel
+7	πλῆθος	πλῆθος	n	n-s---nn-	Case=n|Gender=n|Number=s	3	SBJ	_	t_1538|gloss=a-multitude
+8	στρατιᾶς	στρατιά	n	n-s---fg-	Case=g|Gender=f|Number=s	7	ATR	_	t_1539|gloss=of-a-host
+9	οὐρανίου	οὐράνιος	a	a-s---fg-	Case=g|Gender=f|Number=s	8	ATR	_	t_1540|gloss=heavenly
+10	αἰνούντων	αἰνέω	v	v-pppamg-	Case=g|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	13	ATR	_	t_1541|gloss=praising
+11	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	12	ATR	_	t_1542|gloss=the
+12	θεὸν	θεός	n	n-s---ma-	Case=a|Gender=m|Number=s	10	OBJ	_	t_1543|gloss=God
+13	καὶ	καί	c	c--------	_	8	COORD	_	t_1544|gloss=and
+14	λεγόντων	λέγω3	v	v-pppamg-	Case=g|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	13	ATR	_	t_1545|gloss=saying
+15	Δόξα	δόξα	n	n-s---fn-	Case=n|Gender=f|Number=s	19	SBJ	_	t_1546|gloss=glory
+16	ἐν	ἐν	r	r--------	_	14	AuxP	_	t_1547|gloss=in
+17	ὑψίστοις	ὕψιστος	a	a-p---mds	Case=d|Degree=s|Gender=m|Number=p	18	ATR	_	t_1548|gloss=highest
+18	θεῷ	θεός	n	n-s---md-	Case=d|Gender=m|Number=s	16	ADV	_	t_1549|gloss=to-God
+19	καὶ	καί	c	c--------	_	8	COORD	_	t_1550|gloss=and
+20	ἐπὶ	ἐπί	r	r--------	_	26	AuxP	_	t_1551|gloss=on
+21	γῆς	γῆ	n	n-s---fg-	Case=g|Gender=f|Number=s	20	ATR	_	t_1552|gloss=earth
+22	εἰρήνη	εἰρήνη	n	n-s---fn-	Case=n|Gender=f|Number=s	26	SBJ	_	t_1553|gloss=peace
+23	ἐν	ἐν	r	r--------	_	26	AuxP	_	t_1554|gloss=among
+24	ἀνθρώποις	ἄνθρωπος	n	n-p---md-	Case=d|Gender=m|Number=p	23	ADV	_	t_1555|gloss=men
+25	εὐδοκίας	εὐδοκία	n	n-s---fg-	Case=g|Gender=f|Number=s	26	PNOM	_	t_1556|gloss=of-good-pleasure
+26	[0]	[0]	-	---------	_	19	ATR	_	e_11
+27	.	.	u	u--------	_	3	AuxK	_	t_1557|gloss=.
+
+# sent_id = luke-11
+# text = Καὶ ἐγένετο ὡς ἀπῆλθον ἀπʼ αὐτῶν εἰς τὸν οὐρανὸν οἱ ἄγγελοι , οἱ ποιμένες ἐλάλουν πρὸς ἀλλήλους Διέλθωμεν δὴ ἕως Βηθλεὲμ καὶ ἴδωμεν τὸ ῥῆμα τοῦτο τὸ γεγονὸς ὃ ὁ κύριος ἐγνώρισεν ἡμῖν .
+# sentence_id = 11
+# translation_lang = en
+# prose_translation = And it happened, when the angels went away from them into heaven, that the shepherds said to one another, "Let us go now as far as Bethlehem and see this thing that has happened, which the Lord has made known to us."
+1	Καὶ	καί	c	c--------	_	0	COORD	_	t_1558|gloss=and
+2	ἐγένετο	γίγνομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	1	PRED	_	t_1559|gloss=it-happened
+3	ὡς	ὡς	c	c--------	_	2	AuxC	_	t_1560|gloss=when
+4	ἀπῆλθον	ἀπέρχομαι	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	3	ADV	_	t_1561|gloss=went-away
+5	ἀπʼ	ἀπό	r	r--------	_	4	AuxP	_	t_1562|gloss=from
+6	αὐτῶν	αὐτός	p	p-p---mg-	Case=g|Gender=m|Number=p	5	OBJ	_	t_1563|gloss=them
+7	εἰς	εἰς	r	r--------	_	4	AuxP	_	t_1564|gloss=into
+8	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	9	ATR	_	t_1565|gloss=the
+9	οὐρανὸν	οὐρανός	n	n-s---ma-	Case=a|Gender=m|Number=s	7	OBJ	_	t_1566|gloss=heaven
+10	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	11	ATR	_	t_1567|gloss=the
+11	ἄγγελοι	ἄγγελος	n	n-p---mn-	Case=n|Gender=m|Number=p	4	SBJ	_	t_1568|gloss=angels
+12	,	,	u	u--------	_	2	AuxX	_	t_1569|gloss=,
+13	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	14	ATR	_	t_1570|gloss=the
+14	ποιμένες	ποιμήν	n	n-p---mn-	Case=n|Gender=m|Number=p	15	SBJ	_	t_1571|gloss=shepherds
+15	ἐλάλουν	λαλέω	v	v3piia---	Mood=i|Number=p|Person=3|Tense=i|Voice=a	22	ADV	_	t_1572|gloss=were-saying
+16	πρὸς	πρός	r	r--------	_	15	AuxP	_	t_1573|gloss=to
+17	ἀλλήλους	ἀλλήλων	p	p-p---ma-	Case=a|Gender=m|Number=p	16	OBJ	_	t_1574|gloss=one-another
+18	Διέλθωμεν	διέρχομαι	v	v1pasa---	Mood=s|Number=p|Person=1|Tense=a|Voice=a	22	ADV	_	t_1575|gloss=let-us-go
+19	δὴ	δή	d	d--------	_	18	AuxY	_	t_1576|gloss=now
+20	ἕως	ἕως	r	r--------	_	18	AuxP	_	t_1577|gloss=as-far-as
+21	Βηθλεὲμ	βηθλεέμ	n	n-s----g-	_	20	ADV	_	t_1578|gloss=Bethlehem
+22	καὶ	καί	c	c--------	_	3	COORD	_	t_1579|gloss=and
+23	ἴδωμεν	εἶδον	v	v1pasa---	Mood=s|Number=p|Person=1|Tense=a|Voice=a	22	ADV	_	t_1580|gloss=let-us-see
+24	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	25	ATR	_	t_1581|gloss=the
+25	ῥῆμα	ῥῆμα	n	n-s---na-	Case=a|Gender=n|Number=s	23	OBJ	_	t_1582|gloss=thing
+26	τοῦτο	οὗτος	a	a-s---na-	Case=a|Gender=n|Number=s	25	ATR	_	t_1583|gloss=this
+27	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	25	ATR	_	t_1584|gloss=the
+28	γεγονὸς	γίγνομαι	v	v-srpana-	Case=a|Gender=n|Mood=p|Number=s|Tense=r|Voice=a	25	ATR	_	t_1585|gloss=having-happened
+29	ὃ	ὅς	p	p-s---na-	Case=a|Gender=n|Number=s	32	OBJ	_	t_1586|gloss=which
+30	ὁ	ὁ	l	l-s---mn-	Case=n|Gender=m|Number=s	31	ATR	_	t_1587|gloss=the
+31	κύριος	κύριος	n	n-s---mn-	Case=n|Gender=m|Number=s	32	SBJ	_	t_1588|gloss=Lord
+32	ἐγνώρισεν	γνωρίζω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	25	ATR	_	t_1589|gloss=made-known
+33	ἡμῖν	ἐγώ	p	p1p---cd-	Case=d|Gender=c|Number=p|Person=1	32	OBJ	_	t_1590|gloss=to-us
+34	.	.	u	u--------	_	1	AuxK	_	t_1591|gloss=.
+
+# sent_id = luke-12
+# text = καὶ ἦλθαν σπεύσαντες καὶ ἀνεῦραν τήν τε Μαριὰμ καὶ τὸν Ἰωσὴφ καὶ τὸ βρέφος κείμενον ἐν τῇ φάτνῃ ·
+# sentence_id = 12
+# translation_lang = en
+# prose_translation = And they came hastily and found both Mary and Joseph, and the baby lying in the manger.
+1	καὶ	καί	d	d--------	_	4	AuxY	_	t_1592|gloss=and
+2	ἦλθαν	ἔρχομαι	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	4	PRED	_	t_1593|gloss=they-came
+3	σπεύσαντες	σπεύδω	v	v-papamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=a|Voice=a	2	ADV	_	t_1594|gloss=hastening
+4	καὶ	καί	c	c--------	_	0	COORD	_	t_1595|gloss=and
+5	ἀνεῦραν	ἀνευρίσκω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	4	PRED	_	t_1596|gloss=they-found
+6	τήν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	8	ATR	_	t_1597|gloss=the
+7	τε	τε	d	d--------	_	12	AuxY	_	t_1598|gloss=both
+8	Μαριὰμ	μαριὰμ	n	n-s---fa-	Case=a|Gender=f|Number=s	12	OBJ	_	t_1599|gloss=Mary
+9	καὶ	καί	c	c--------	_	12	AuxY	_	t_1600|gloss=and
+10	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	11	ATR	_	t_1601|gloss=the
+11	Ἰωσὴφ	ἰωσήφ	n	n-s---ma-	Case=a|Gender=m|Number=s	12	OBJ	_	t_1602|gloss=Joseph
+12	καὶ	καί	c	c--------	_	5	COORD	_	t_1603|gloss=and
+13	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	14	ATR	_	t_1604|gloss=the
+14	βρέφος	βρέφος	n	n-s---na-	Case=a|Gender=n|Number=s	12	OBJ	_	t_1605|gloss=infant
+15	κείμενον	κεῖμαι	v	v-srpena-	Case=a|Gender=n|Mood=p|Number=s|Tense=r|Voice=e	14	ATR	_	t_1606|gloss=lying
+16	ἐν	ἐν	r	r--------	_	15	AuxP	_	t_1607|gloss=in
+17	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	18	ATR	_	t_1608|gloss=the
+18	φάτνῃ	φάτνη	n	n-s---fd-	Case=d|Gender=f|Number=s	16	ADV	_	t_1609|gloss=manger
+19	·	·	u	u--------	_	4	AuxK	_	t_1610|gloss=·
+
+# sent_id = luke-13
+# text = ἰδόντες δὲ ἐγνώρισαν περὶ τοῦ ῥήματος τοῦ λαληθέντος αὐτοῖς περὶ τοῦ παιδίου τούτου .
+# sentence_id = 13
+# translation_lang = en
+# prose_translation = And when they had seen it, they made known concerning the saying that had been spoken to them about this child.
+1	ἰδόντες	εἶδον	v	v-papamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=a|Voice=a	3	ADV	_	t_1611|gloss=having-seen
+2	δὲ	δέ	d	d--------	_	3	AuxY	_	t_1612|gloss=and
+3	ἐγνώρισαν	γνωρίζω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	0	PRED	_	t_1613|gloss=they-made-known
+4	περὶ	περί	r	r--------	_	3	AuxP	_	t_1614|gloss=concerning
+5	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	6	ATR	_	t_1615|gloss=the
+6	ῥήματος	ῥῆμα	n	n-s---ng-	Case=g|Gender=n|Number=s	4	ADV	_	t_1616|gloss=saying
+7	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	8	ATR	_	t_1617|gloss=that
+8	λαληθέντος	λαλέω	v	v-sappng-	Case=g|Gender=n|Mood=p|Number=s|Tense=a|Voice=p	6	ATR	_	t_1618|gloss=had-been-spoken
+9	αὐτοῖς	αὐτός	p	p-p---md-	Case=d|Gender=m|Number=p	8	OBJ	_	t_1619|gloss=to-them
+10	περὶ	περί	r	r--------	_	8	AuxP	_	t_1620|gloss=concerning
+11	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	12	ATR	_	t_1621|gloss=the
+12	παιδίου	παιδίον	n	n-s---ng-	Case=g|Gender=n|Number=s	10	ADV	_	t_1622|gloss=child
+13	τούτου	οὗτος	a	a-s---mg-	Case=g|Gender=m|Number=s	12	ATR	_	t_1623|gloss=this
+14	.	.	u	u--------	_	3	AuxK	_	t_1624|gloss=.
+
+# sent_id = luke-14
+# text = καὶ πάντες οἱ ἀκούσαντες ἐθαύμασαν περὶ τῶν λαληθέντων ὑπὸ τῶν ποιμένων πρὸς αὐτούς , ἡ δὲ Μαρία πάντα συνετήρει τὰ ῥήματα ταῦτα συνβάλλουσα ἐν τῇ καρδίᾳ αὐτῆς .
+# sentence_id = 14
+# translation_lang = en
+# prose_translation = And all who heard it were amazed at the things spoken to them by the shepherds, but Mary kept all these words, pondering them in her heart.
+1	καὶ	καί	d	d--------	_	16	AuxY	_	t_1625|gloss=and
+2	πάντες	πᾶς	a	a-p---mn-	Case=n|Gender=m|Number=p	4	ATR	_	t_1626|gloss=all
+3	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	4	ATR	_	t_1627|gloss=the-ones
+4	ἀκούσαντες	ἀκούω	v	v-papamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=a|Voice=a	5	SBJ	_	t_1628|gloss=having-heard
+5	ἐθαύμασαν	θαυμάζω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	16	PRED	_	t_1629|gloss=were-amazed
+6	περὶ	περί	r	r--------	_	5	AuxP	_	t_1630|gloss=concerning
+7	τῶν	ὁ	l	l-p---ng-	Case=g|Gender=n|Number=p	8	ATR	_	t_1631|gloss=the
+8	λαληθέντων	λαλέω	v	v-pappmg-	Case=g|Gender=m|Mood=p|Number=p|Tense=a|Voice=p	6	ADV	_	t_1632|gloss=things-spoken
+9	ὑπὸ	ὑπό	r	r--------	_	8	AuxP	_	t_1633|gloss=by
+10	τῶν	ὁ	l	l-p---mg-	Case=g|Gender=m|Number=p	11	ATR	_	t_1634|gloss=the
+11	ποιμένων	ποιμήν	n	n-p---mg-	Case=g|Gender=m|Number=p	9	OBJ	_	t_1635|gloss=shepherds
+12	πρὸς	πρός	r	r--------	_	8	AuxP	_	t_1636|gloss=to
+13	αὐτούς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	12	OBJ	_	t_1637|gloss=them
+14	,	,	u	u--------	_	0	AuxX	_	t_1638|gloss=,
+15	ἡ	ὁ	l	l-s---fn-	Case=n|Gender=f|Number=s	17	ATR	_	t_1639|gloss=the
+16	δὲ	δέ	d	d--------	_	14	COORD	_	t_1640|gloss=but
+17	Μαρία	μαρία	n	n-s---fn-	Case=n|Gender=f|Number=s	19	SBJ	_	t_1641|gloss=Mary
+18	πάντα	πᾶς	a	a-p---na-	Case=a|Gender=n|Number=p	21	ATR	_	t_1642|gloss=all
+19	συνετήρει	συντηρέω	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	16	PRED	_	t_1643|gloss=was-keeping
+20	τὰ	ὁ	l	l-p---na-	Case=a|Gender=n|Number=p	21	ATR	_	t_1644|gloss=the
+21	ῥήματα	ῥῆμα	n	n-p---na-	Case=a|Gender=n|Number=p	23	OBJ	_	t_1645|gloss=words
+22	ταῦτα	οὗτος	a	a-p---na-	Case=a|Gender=n|Number=p	21	ATR	_	t_1646|gloss=these
+23	συνβάλλουσα	συμβάλλω	v	v-sppafn-	Case=n|Gender=f|Mood=p|Number=s|Tense=p|Voice=a	19	ADV	_	t_1647|gloss=pondering
+24	ἐν	ἐν	r	r--------	_	23	AuxP	_	t_1648|gloss=in
+25	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	26	ATR	_	t_1649|gloss=the
+26	καρδίᾳ	καρδία	n	n-s---fd-	Case=d|Gender=f|Number=s	24	ADV	_	t_1650|gloss=heart
+27	αὐτῆς	αὐτός	p	p-s---fg-	Case=g|Gender=f|Number=s	26	ATR	_	t_1651|gloss=her
+28	.	.	u	u--------	_	14	AuxK	_	t_1652|gloss=.
+
+# sent_id = luke-15
+# text = καὶ ὑπέστρεψαν οἱ ποιμένες δοξάζοντες καὶ αἰνοῦντες τὸν θεὸν ἐπὶ πᾶσιν οἷς ἤκουσαν καὶ εἶδον καθὼς ἐλαλήθη πρὸς αὐτούς .
+# sentence_id = 15
+# translation_lang = en
+# prose_translation = And the shepherds returned, glorifying and praising God for all the things they had heard and seen, just as it had been told them.
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_1653|gloss=and
+2	ὑπέστρεψαν	ἐπανέρχομαι	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	0	PRED	_	t_1654|gloss=returned
+3	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	4	ATR	_	t_1655|gloss=the
+4	ποιμένες	ποιμήν	n	n-p---mn-	Case=n|Gender=m|Number=p	2	SBJ	_	t_1656|gloss=shepherds
+5	δοξάζοντες	δοξάζω	v	v-pppamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	6	ADV	_	t_1657|gloss=glorifying
+6	καὶ	καί	c	c--------	_	2	COORD	_	t_1658|gloss=and
+7	αἰνοῦντες	αἰνέω	v	v-pppamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	6	ADV	_	t_1659|gloss=praising
+8	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	9	ATR	_	t_1660|gloss=the
+9	θεὸν	θεός	n	n-s---ma-	Case=a|Gender=m|Number=s	7	OBJ	_	t_1661|gloss=God
+10	ἐπὶ	ἐπί	r	r--------	_	2	AuxP	_	t_1662|gloss=for
+11	πᾶσιν	πᾶς	a	a-p---nd-	Case=d|Gender=n|Number=p	10	ADV	_	t_1663|gloss=all
+12	οἷς	ὅς	p	p-p---nd-	Case=d|Gender=n|Number=p	14	OBJ	_	t_1664|gloss=that-which
+13	ἤκουσαν	ἀκούω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	14	OBJ	_	t_1665|gloss=they-heard
+14	καὶ	καί	c	c--------	_	11	COORD	_	t_1666|gloss=and
+15	εἶδον	εἶδον	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	14	ATR	_	t_1667|gloss=they-saw
+16	καθὼς	καθώς	d	d--------	_	15	ADV	_	t_1668|gloss=just-as
+17	ἐλαλήθη	λαλέω	v	v3saip---	Mood=i|Number=s|Person=3|Tense=a|Voice=p	16	OBJ	_	t_1669|gloss=it-had-been-told
+18	πρὸς	πρός	r	r--------	_	17	AuxP	_	t_1670|gloss=to
+19	αὐτούς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	18	ADV	_	t_1671|gloss=them
+20	.	.	u	u--------	_	2	AuxK	_	t_1672|gloss=.
+
+# sent_id = luke-16
+# text = Καὶ ὅτε ἐπλήσθησαν ἡμέραι ὀκτὼ τοῦ περιτεμεῖν αὐτόν , καὶ ἐκλήθη τὸ ὄνομα αὐτοῦ Ἰησοῦς , τὸ κληθὲν ὑπὸ τοῦ ἀγγέλου πρὸ τοῦ συλλημφθῆναι αὐτὸν ἐν τῇ κοιλία .
+# sentence_id = 16
+# translation_lang = en
+# prose_translation = And when eight days were fulfilled for circumcising him, his name was called Jesus, the name given by the angel before he was conceived in the womb.
+1	Καὶ	καί	d	d--------	_	0	COORD	_	t_1673|gloss=and
+2	ὅτε	ὅτε	c	c--------	_	1	AuxC	_	t_1674|gloss=when
+3	ἐπλήσθησαν	πίμπλημι	v	v3paip---	Mood=i|Number=p|Person=3|Tense=a|Voice=p	10	ADV	_	t_1675|gloss=were-fulfilled
+4	ἡμέραι	ἡμέρα	n	n-p---fn-	Case=n|Gender=f|Number=p	3	SBJ	_	t_1676|gloss=days
+5	ὀκτὼ	ὀκτώ	a	a--------	_	4	ATR	_	t_1677|gloss=eight
+6	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	7	ATR	_	t_1678|gloss=the
+7	περιτεμεῖν	περιτέμνω	v	v--ana---	Mood=n|Tense=a|Voice=a	4	ATR	_	t_1679|gloss=to-circumcise
+8	αὐτόν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	7	SBJ	_	t_1680|gloss=him
+9	,	,	u	u--------	_	3	AuxX	_	t_1681|gloss=,
+10	καὶ	καί	c	c--------	_	2	COORD	_	t_1682|gloss=and
+11	ἐκλήθη	καλέω	v	v3saip---	Mood=i|Number=s|Person=3|Tense=a|Voice=p	10	ADV	_	t_1683|gloss=was-called
+12	τὸ	ὁ	l	l-s---nn-	Case=n|Gender=n|Number=s	13	ATR	_	t_1684|gloss=the
+13	ὄνομα	ὄνομα	n	n-s---nn-	Case=n|Gender=n|Number=s	11	SBJ	_	t_1685|gloss=name
+14	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	13	ATR	_	t_1686|gloss=his
+15	Ἰησοῦς	ἰησοῦς	n	n-s---mn-	Case=n|Gender=m|Number=s	11	PNOM	_	t_1687|gloss=Jesus
+16	,	,	u	u--------	_	1	AuxX	_	t_1688|gloss=,
+17	τὸ	ὁ	l	l-s---nn-	Case=a|Gender=n|Number=s	18	ATR	_	t_1689|gloss=the
+18	κληθὲν	καλέω	v	v-sappnn-	Case=n|Gender=n|Mood=p|Number=s|Tense=a|Voice=p	13	ATR	_	t_1690|gloss=having-been-called
+19	ὑπὸ	ὑπό	r	r--------	_	18	AuxP	_	t_1691|gloss=by
+20	τοῦ	ὁ	l	l-s---mg-	Case=g|Gender=m|Number=s	21	ATR	_	t_1692|gloss=the
+21	ἀγγέλου	ἄγγελος	n	n-s---mg-	Case=g|Gender=m|Number=s	19	OBJ	_	t_1693|gloss=angel
+22	πρὸ	πρό	r	r--------	_	18	AuxP	_	t_1694|gloss=before
+23	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	24	ATR	_	t_1695|gloss=the
+24	συλλημφθῆναι	συλλαμβάνω	v	v--anp---	Mood=n|Tense=a|Voice=p	22	ADV	_	t_1696|gloss=to-be-conceived
+25	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	24	SBJ	_	t_1697|gloss=him
+26	ἐν	ἐν	r	r--------	_	24	AuxP	_	t_1698|gloss=in
+27	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	28	ATR	_	t_1699|gloss=the
+28	κοιλία	κοιλία	n	n-s---fd-	Case=d|Gender=f|Number=s	26	ADV	_	t_1700|gloss=womb
+29	.	.	u	u--------	_	1	AuxK	_	t_1701|gloss=.
+
+# sent_id = luke-17
+# text = Καὶ ὅτε ἐπλήσθησαν αἱ ἡμέραι τοῦ καθαρισμοῦ αὐτῶν κατὰ τὸν νόμον Μωυσέως , ἀνήγαγον αὐτὸν εἰς Ἰεροσόλυμα παραστῆσαι τῷ κυρίῳ , καθὼς γέγραπται ἐν νόμῳ Κυρίου ὅτι Πᾶν ἄρσεν διανοῖγον μήτραν ἅγιον τῷ κυρίῳ κληθήσεται , καὶ τοῦ δοῦναι θυσίαν κατὰ τὸ εἰρημένον ἐν τῷ νόμῳ Κυρίου , ζεῦγος τρυγόνων ἢ δύο νοσσοὺς περιστερῶν .
+# sentence_id = 17
+# translation_lang = en
+# prose_translation = And when the days of their purification according to the law of Moses were fulfilled, they brought him up to Jerusalem to present him to the Lord, as it is written in the law of the Lord, "Every male that opens the womb shall be called holy to the Lord," and to offer a sacrifice according to what is said in the law of the Lord, a pair of turtledoves or two young pigeons.
+1	Καὶ	καί	d	d--------	_	14	AuxY	_	t_1702|gloss=and
+2	ὅτε	ὅτε	c	c--------	_	14	AuxC	_	t_1703|gloss=when
+3	ἐπλήσθησαν	πίμπλημι	v	v3paip---	Mood=i|Number=p|Person=3|Tense=a|Voice=p	2	ADV	_	t_1704|gloss=were-fulfilled
+4	αἱ	ὁ	l	l-p---fn-	Case=n|Gender=f|Number=p	5	ATR	_	t_1705|gloss=the
+5	ἡμέραι	ἡμέρα	n	n-p---fn-	Case=n|Gender=f|Number=p	3	SBJ	_	t_1706|gloss=days
+6	τοῦ	ὁ	l	l-s---mg-	Case=g|Gender=m|Number=s	7	ATR	_	t_1707|gloss=of-the
+7	καθαρισμοῦ	καθαρισμός	n	n-s---mg-	Case=g|Gender=m|Number=s	5	ATR	_	t_1708|gloss=purification
+8	αὐτῶν	αὐτός	p	p-p---mg-	Case=g|Gender=m|Number=p	7	ATR	_	t_1709|gloss=their
+9	κατὰ	κατά	r	r--------	_	3	AuxP	_	t_1710|gloss=according-to
+10	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	11	ATR	_	t_1711|gloss=the
+11	νόμον	νόμος	n	n-s---ma-	Case=a|Gender=m|Number=s	9	ADV	_	t_1712|gloss=law
+12	Μωυσέως	μωυσῆς	n	n-s---mg-	Case=g|Gender=m|Number=s	11	ATR	_	t_1713|gloss=of-Moses
+13	,	,	u	u--------	_	14	AuxX	_	t_1714|gloss=,
+14	ἀνήγαγον	ἀνάγω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	0	PRED	_	t_1715|gloss=they-brought-up
+15	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	14	OBJ	_	t_1716|gloss=him
+16	εἰς	εἰς	r	r--------	_	14	AuxP	_	t_1717|gloss=to
+17	Ἰεροσόλυμα	ἰεροσόλυμα	n	n-p---na-	Case=a|Gender=n|Number=p	16	OBJ	_	t_1718|gloss=Jerusalem
+18	παραστῆσαι	παρίστημι	v	v--ana---	Mood=n|Tense=a|Voice=a	14	OBJ	_	t_1719|gloss=to-present
+19	τῷ	ὁ	l	l-s---md-	Case=d|Gender=m|Number=s	20	ATR	_	t_1720|gloss=to-the
+20	κυρίῳ	κύριος	n	n-s---md-	Case=d|Gender=m|Number=s	18	OBJ	_	t_1721|gloss=Lord
+21	,	,	u	u--------	_	14	AuxX	_	t_1722|gloss=,
+22	καθὼς	καθώς	c	c--------	_	14	AuxC	_	t_1723|gloss=as
+23	γέγραπται	γράφω	v	v3srie---	Mood=i|Number=s|Person=3|Tense=r|Voice=e	22	ADV	_	t_1724|gloss=it-is-written
+24	ἐν	ἐν	r	r--------	_	23	AuxP	_	t_1725|gloss=in
+25	νόμῳ	νόμος	n	n-s---md-	Case=d|Gender=m|Number=s	24	ADV	_	t_1726|gloss=law
+26	Κυρίου	κύριος	n	n-s---mg-	Case=g|Gender=m|Number=s	25	ATR	_	t_1727|gloss=of-the-Lord
+27	ὅτι	ὅτι	c	c--------	_	23	AuxC	_	t_1728|gloss=that
+28	Πᾶν	πᾶς	n	n-s---ma-	Case=a|Gender=m|Number=s	30	OBJ	_	t_1729|gloss=every
+29	ἄρσεν	ἄρσην	n	n-s---ma-	Case=a|Gender=m|Number=s	31	ATR	_	t_1730|gloss=male
+30	διανοῖγον	διανοίγω	v	v-sppann-	Case=a|Gender=m|Number=s	31	ATR	_	t_1731|gloss=opening
+31	μήτραν	μήτρα	n	n-s---fa-	Case=a|Gender=m|Number=s	35	OBJ	_	t_1732|gloss=womb
+32	ἅγιον	ἅγιος	a	a-s---ma-	Case=a|Gender=m|Number=s	35	PNOM	_	t_1733|gloss=holy
+33	τῷ	ὁ	l	l-s---md-	Case=d|Gender=m|Number=s	34	ATR	_	t_1734|gloss=to-the
+34	κυρίῳ	κύριος	n	n-s---md-	Case=d|Gender=m|Number=s	32	ADV	_	t_1735|gloss=Lord
+35	κληθήσεται	καλέω	v	v3sfip---	Mood=i|Number=s|Person=3|Tense=f|Voice=p	27	OBJ	_	t_1736|gloss=shall-be-called
+36	,	,	u	u--------	_	14	AuxX	_	t_1737|gloss=,
+37	καὶ	καί	c	c--------	_	23	COORD	_	t_1738|gloss=and
+38	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	39	ATR	_	t_1739|gloss=of-the
+39	δοῦναι	δίδωμι	v	v--ana---	Mood=n|Tense=a|Voice=a	37	ATR	_	t_1740|gloss=to-offer
+40	θυσίαν	θυσία	n	n-s---fa-	Case=a|Gender=f|Number=s	39	OBJ	_	t_1741|gloss=sacrifice
+41	κατὰ	κατά	r	r--------	_	39	AuxP	_	t_1742|gloss=according-to
+42	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	43	ATR	_	t_1743|gloss=the
+43	εἰρημένον	ἐρῶ	v	v-srpena-	Case=a|Gender=n|Mood=p|Number=s|Tense=r|Voice=e	41	ADV	_	t_1744|gloss=what-is-said
+44	ἐν	ἐν	r	r--------	_	39	AuxP	_	t_1745|gloss=in
+45	τῷ	ὁ	l	l-s---md-	Case=d|Gender=m|Number=s	46	ATR	_	t_1746|gloss=the
+46	νόμῳ	νόμος	n	n-s---md-	Case=d|Gender=m|Number=s	44	ADV	_	t_1747|gloss=law
+47	Κυρίου	κύριος	n	n-s---mg-	Case=g|Gender=m|Number=s	46	ATR	_	t_1748|gloss=of-the-Lord
+48	,	,	u	u--------	_	14	AuxX	_	t_1749|gloss=,
+49	ζεῦγος	ζεῦγος	n	n-s---na-	Case=a|Gender=n|Number=s	51	OBJ	_	t_1750|gloss=pair
+50	τρυγόνων	τρυγών	n	n-p---mg-	Case=g|Gender=m|Number=p	49	ATR	_	t_1751|gloss=of-turtledoves
+51	ἢ	ἤ1	c	c--------	_	39	COORD	_	t_1752|gloss=or
+52	δύο	δύο	a	a--------	_	53	ATR	_	t_1753|gloss=two
+53	νοσσοὺς	νοσσός	a	a-p---ma-	Case=a|Gender=m|Number=p	54	OBJ	_	t_1754|gloss=young
+54	περιστερῶν	περιστερά	v	v-sfpamn-	Case=n|Gender=m|Mood=p|Number=s|Tense=f|Voice=a	51	ATR	_	t_1755|gloss=pigeons
+55	.	.	u	u--------	_	14	AuxK	_	t_1756|gloss=.
+
+# sent_id = luke-18
+# text = Καὶ ἰδοὺ ἄνθρωπος ἦν ἐν Ἰερουσαλὴμ ᾧ ὄνομα Συμεών , καὶ ὁ ἄνθρωπος οὗτος δίκαιος καὶ εὐλαβής , προσδεχόμενος παράκλησιν τοῦ Ἰσραήλ , καὶ πνεῦμα ἦν ἅγιον ἐπʼ αὐτόν [0] ·
+# sentence_id = 18
+# translation_lang = en
+# prose_translation = And behold, there was a man in Jerusalem whose name was Simeon, and this man was righteous and devout, awaiting the consolation of Israel, and the Holy Spirit was upon him.
+1	Καὶ	καί	d	d--------	_	24	AuxY	_	t_1757|gloss=and
+2	ἰδοὺ	ἰδού	d	d--------	_	4	ExD	_	t_1758|gloss=behold
+3	ἄνθρωπος	ἄνθρωπος	n	n-s---mn-	Case=n|Gender=m|Number=s	4	SBJ	_	t_1759|gloss=a-man
+4	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	24	PRED	_	t_1760|gloss=there-was
+5	ἐν	ἐν	r	r--------	_	4	AuxP	_	t_1761|gloss=in
+6	Ἰερουσαλὴμ	ἰερουσαλὴμ	n	n-s---fd-	Case=d|Gender=m|Number=s	5	PNOM	_	t_1762|gloss=Jerusalem
+7	ᾧ	ὅς	p	p-s---md-	Case=d|Gender=m|Number=s	6	ATR	_	t_1763|gloss=whose
+8	ὄνομα	ὄνομα	n	n-s---na-	Case=a|Gender=n|Number=s	30	ADV	_	t_1764|gloss=name
+9	Συμεών	συμεών	n	n-s---mn-	Case=n|Gender=m|Number=s	4	PNOM	_	t_1765|gloss=Simeon
+10	,	,	u	u--------	_	0	AuxX	_	t_1766|gloss=,
+11	καὶ	καί	c	c--------	_	24	AuxY	_	t_1767|gloss=and
+12	ὁ	ὁ	l	l-s---mn-	Case=n|Gender=m|Number=s	13	ATR	_	t_1768|gloss=the
+13	ἄνθρωπος	ἄνθρωπος	n	n-s---mn-	Case=n|Gender=m|Number=s	30	SBJ	_	t_1769|gloss=man
+14	οὗτος	οὗτος	a	a-s---mn-	Case=n|Gender=m|Number=s	13	ATR	_	t_1770|gloss=this
+15	δίκαιος	δίκαιος	a	a-s---mn-	Case=n|Gender=m|Number=s	16	PNOM	_	t_1771|gloss=righteous
+16	καὶ	καί	c	c--------	_	30	COORD	_	t_1772|gloss=and
+17	εὐλαβής	εὐλαβής	a	a-s---mn-	Case=n|Gender=m|Number=s	16	PNOM	_	t_1773|gloss=devout
+18	,	,	u	u--------	_	10	AuxX	_	t_1774|gloss=,
+19	προσδεχόμενος	προσδέχομαι	v	v-sppemn-	Case=n|Gender=m|Mood=p|Number=s|Tense=p|Voice=e	30	ADV	_	t_1775|gloss=awaiting
+20	παράκλησιν	παράκλησις	n	n-s---fa-	Case=a|Gender=f|Number=s	19	OBJ	_	t_1776|gloss=consolation
+21	τοῦ	ὁ	l	l-s---mg-	Case=g|Gender=m|Number=s	22	ATR	_	t_1777|gloss=of-the
+22	Ἰσραήλ	ἰσραήλ	n	n-s---mg-	Case=g|Gender=m|Number=s	20	ATR	_	t_1778|gloss=Israel
+23	,	,	u	u--------	_	10	AuxX	_	t_1779|gloss=,
+24	καὶ	καί	c	c--------	_	10	COORD	_	t_1780|gloss=and
+25	πνεῦμα	πνεῦμα	n	n-s---nn-	Case=n|Gender=n|Number=s	26	SBJ	_	t_1781|gloss=spirit
+26	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	24	PRED	_	t_1782|gloss=was
+27	ἅγιον	ἅγιος	a	a-s---nn-	Case=n|Gender=n|Number=s	26	PNOM	_	t_1783|gloss=holy
+28	ἐπʼ	ἐπί	r	r--------	_	26	AuxP	_	t_1784|gloss=upon
+29	αὐτόν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	28	ADV	_	t_1785|gloss=him
+30	[0]	[0]	-	---------	_	24	PRED	_	e_12
+31	·	·	u	u--------	_	10	AuxK	_	t_1786|gloss=·
+
+# sent_id = luke-19
+# text = καὶ ἦν αὐτῷ κεχρηματισμένον ὑπὸ τοῦ πνεύματος τοῦ ἁγίου μὴ ἰδεῖν θάνατον πρὶν [ ἢ ] ἂν ἴδῃ τὸν χριστὸν Κυρίου .
+# sentence_id = 19
+# translation_lang = en
+# prose_translation = And it had been revealed to him by the Holy Spirit that he would not see death before he had seen the Lord's Christ.
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_1787|gloss=and
+2	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	0	PRED	_	t_1788|gloss=it-was
+3	αὐτῷ	αὐτός	p	p-s---md-	Case=d|Gender=m|Number=s	2	PNOM	_	t_1789|gloss=to-him
+4	κεχρηματισμένον	καταχρηματίζομαι	v	v-srpenn-	Case=n|Gender=n|Mood=p|Number=s|Tense=r|Voice=e	2	PNOM	_	t_1790|gloss=having-been-revealed
+5	ὑπὸ	ὑπό	r	r--------	_	4	AuxP	_	t_1791|gloss=by
+6	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	7	ATR	_	t_1792|gloss=the
+7	πνεύματος	πνεῦμα	n	n-s---ng-	Case=g|Gender=n|Number=s	5	OBJ	_	t_1793|gloss=spirit
+8	τοῦ	ὁ	l	l-s---mg-	Case=g|Gender=m|Number=s	7	ATR	_	t_1794|gloss=the
+9	ἁγίου	ἅγιος	a	a-s---mg-	Case=g|Gender=m|Number=s	7	ATR	_	t_1795|gloss=holy
+10	μὴ	μή	d	d--------	_	11	AuxZ	_	t_1796|gloss=not
+11	ἰδεῖν	εἶδον	v	v--ana---	Mood=n|Tense=a|Voice=a	4	OBJ	_	t_1797|gloss=to-see
+12	θάνατον	θάνατος	n	n-s---ma-	Case=a|Gender=m|Number=s	11	OBJ	_	t_1798|gloss=death
+13	πρὶν	πρίν	d	d--------	_	11	AuxC	_	t_1799|gloss=before
+14	[	[	u	u--------	_	2	AuxX	_	t_1800|gloss=[
+15	ἢ	ἤ1	c	c--------	_	13	AuxC	_	t_1801|gloss=than
+16	]	]	u	u--------	_	2	AuxX	_	t_1802|gloss=]
+17	ἂν	ἄν	d	d--------	_	18	AuxY	_	t_1803|gloss=would
+18	ἴδῃ	ὁράω	v	v3sasa---	Mood=s|Number=s|Person=3|Tense=a|Voice=a	15	ADV	_	t_1804|gloss=he-see
+19	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	20	ATR	_	t_1805|gloss=the
+20	χριστὸν	χριστός	a	a-s---ma-	Case=a|Gender=m|Number=s	18	OBJ	_	t_1806|gloss=Christ
+21	Κυρίου	κύριος	n	n-s---mg-	Case=g|Gender=m|Number=s	20	ATR	_	t_1807|gloss=of-the-Lord
+22	.	.	u	u--------	_	2	AuxK	_	t_1808|gloss=.
+
+# sent_id = luke-20
+# text = καὶ ἦλθεν ἐν τῷ πνεύματι εἰς τὸ ἱερόν ·
+# sentence_id = 20
+# translation_lang = en
+# prose_translation = And he came in the Spirit into the temple;
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_1809|gloss=and
+2	ἦλθεν	ἔρχομαι	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	0	PRED	_	t_1810|gloss=he-came
+3	ἐν	ἐν	r	r--------	_	2	AuxP	_	t_1811|gloss=in
+4	τῷ	ὁ	l	l-s---nd-	Case=d|Gender=n|Number=s	5	ATR	_	t_1812|gloss=the
+5	πνεύματι	πνεῦμα	n	n-s---nd-	Case=d|Gender=n|Number=s	3	ADV	_	t_1813|gloss=Spirit
+6	εἰς	εἰς	r	r--------	_	2	AuxP	_	t_1814|gloss=into
+7	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	8	ATR	_	t_1815|gloss=the
+8	ἱερόν	ἱερόν	n	n-s---na-	Case=a|Gender=n|Number=s	6	OBJ	_	t_1816|gloss=temple
+9	·	·	u	u--------	_	2	AuxK	_	t_1817|gloss=;
+
+# sent_id = luke-21
+# text = καὶ ἐν τῷ εἰσαγαγεῖν τοὺς γονεῖς τὸ παιδίον Ἰησοῦν τοῦ ποιῆσαι αὐτοὺς κατὰ τὸ εἰθισμένον τοῦ νόμου περὶ αὐτοῦ καὶ αὐτὸς ἐδέξατο αὐτὸ εἰς τὰς ἀγκάλας καὶ εὐλόγησεν τὸν θεὸν καὶ εἶπεν Νῦν ἀπολύεις τὸν δοῦλόν σου , δέσποτα , κατὰ τὸ ῥῆμά σου ἐν εἰρήνῃ ·
+# sentence_id = 21
+# translation_lang = en
+# prose_translation = And when the parents brought in the child Jesus to do for him according to the custom of the law, he himself also took him into his arms and blessed God and said, "Now you dismiss your servant, Master, according to your word, in peace;"
+1	καὶ	καί	d	d--------	_	31	AuxY	_	t_1818|gloss=and
+2	ἐν	ἐν	r	r--------	_	31	AuxP	_	t_1819|gloss=during
+3	τῷ	ὁ	l	l-s---nd-	Case=d|Gender=n|Number=s	4	ATR	_	t_1820|gloss=the
+4	εἰσαγαγεῖν	εἰσάγω	v	v--ana---	Mood=n|Tense=a|Voice=a	2	ADV	_	t_1821|gloss=bringing-in
+5	τοὺς	ὁ	l	l-p---ma-	Case=a|Gender=m|Number=p	6	ATR	_	t_1822|gloss=the
+6	γονεῖς	γονεύς	n	n-p---ma-	Case=a|Gender=m|Number=p	4	SBJ	_	t_1823|gloss=parents
+7	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	8	ATR	_	t_1824|gloss=the
+8	παιδίον	παιδίον	n	n-s---na-	Case=a|Gender=n|Number=s	4	OBJ	_	t_1825|gloss=child
+9	Ἰησοῦν	ἰησοῦς	n	n-s---ma-	_	4	OBJ	_	t_1826|gloss=Jesus
+10	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	4	ATR	_	t_1827|gloss=the
+11	ποιῆσαι	ποιέω	v	v--ana---	Mood=n|Tense=a|Voice=a	4	ADV	_	t_1828|gloss=to-do
+12	αὐτοὺς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	11	OBJ	_	t_1829|gloss=them
+13	κατὰ	κατά	r	r--------	_	11	AuxP	_	t_1830|gloss=according-to
+14	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	15	ATR	_	t_1831|gloss=the
+15	εἰθισμένον	ἐθίζω	v	v-srpena-	Case=a|Gender=n|Mood=p|Number=s|Tense=r|Voice=e	13	ADV	_	t_1832|gloss=custom
+16	τοῦ	ὁ	l	l-s---mg-	Case=g|Gender=m|Number=s	17	ATR	_	t_1833|gloss=the
+17	νόμου	νόμος	n	n-s---mg-	Case=g|Gender=m|Number=s	15	ATR	_	t_1834|gloss=law
+18	περὶ	περί	r	r--------	_	11	AuxP	_	t_1835|gloss=concerning
+19	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	18	ADV	_	t_1836|gloss=him
+20	καὶ	καί	d	d--------	_	31	AuxY	_	t_1837|gloss=also
+21	αὐτὸς	αὐτός	p	p-s---mn-	Case=n|Gender=m|Number=s	22	SBJ	_	t_1838|gloss=he
+22	ἐδέξατο	δέχομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	31	PRED	_	t_1839|gloss=received
+23	αὐτὸ	αὐτός	p	p-s---na-	Case=a|Gender=n|Number=s	22	OBJ	_	t_1840|gloss=him
+24	εἰς	εἰς	r	r--------	_	22	AuxP	_	t_1841|gloss=into
+25	τὰς	ὁ	l	l-p---fa-	Case=a|Gender=f|Number=p	26	ATR	_	t_1842|gloss=the
+26	ἀγκάλας	ἀγκάλη	n	n-p---fa-	Case=a|Gender=f|Number=p	24	ADV	_	t_1843|gloss=arms
+27	καὶ	καί	d	d--------	_	31	AuxY	_	t_1844|gloss=and
+28	εὐλόγησεν	εὐλογέω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	31	PRED	_	t_1845|gloss=blessed
+29	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	30	ATR	_	t_1846|gloss=the
+30	θεὸν	θεός	n	n-s---ma-	Case=a|Gender=m|Number=s	28	OBJ	_	t_1847|gloss=God
+31	καὶ	καί	c	c--------	_	0	COORD	_	t_1848|gloss=and
+32	εἶπεν	λέγω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	31	PRED	_	t_1849|gloss=said
+33	Νῦν	νῦν	n	n-s---ma-	Case=a|Gender=m|Number=s	34	OBJ	_	t_1850|gloss=now
+34	ἀπολύεις	ἀπολύω	v	v2spia---	Mood=i|Number=s|Person=2|Tense=p|Voice=a	32	OBJ	_	t_1851|gloss=you-dismiss
+35	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	36	ATR	_	t_1852|gloss=the
+36	δοῦλόν	δοῦλος	n	n-s---ma-	Case=a|Gender=m|Number=s	33	ATR	_	t_1853|gloss=servant
+37	σου	σύ	p	p2s---cg-	Case=g|Gender=c|Number=s|Person=2	36	ATR	_	t_1854|gloss=your
+38	,	,	u	u--------	_	31	AuxX	_	t_1855|gloss=,
+39	δέσποτα	δεσπότης	n	n-s---mv-	Case=v|Gender=m|Number=s	34	ExD	_	t_1856|gloss=master
+40	,	,	u	u--------	_	31	AuxX	_	t_1857|gloss=,
+41	κατὰ	κατά	r	r--------	_	34	AuxP	_	t_1858|gloss=according-to
+42	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	43	ATR	_	t_1859|gloss=the
+43	ῥῆμά	ῥῆμα	n	n-s---na-	Case=a|Gender=n|Number=s	41	ADV	_	t_1860|gloss=word
+44	σου	σύ	p	p2s---cg-	Case=g|Gender=c|Number=s|Person=2	43	ATR	_	t_1861|gloss=your
+45	ἐν	ἐν	r	r--------	_	34	AuxP	_	t_1862|gloss=in
+46	εἰρήνῃ	εἰρήνη	n	n-s---fd-	Case=d|Gender=f|Number=s	45	ADV	_	t_1863|gloss=peace
+47	·	·	u	u--------	_	31	AuxK	_	t_1864|gloss=·
+
+# sent_id = luke-22
+# text = ὅτι εἶδον οἱ ὀφθαλμοί μου τὸ σωτήριόν σου ὃ ἡτοίμασας κατὰ πρόσωπον πάντων τῶν λαῶν , Φῶς εἰς ἀποκάλυψιν ἐθνῶν καὶ δόξαν λαοῦ σου Ἰσραήλ .
+# sentence_id = 22
+# translation_lang = en
+# prose_translation = for my eyes have seen your salvation, which you have prepared before the face of all peoples, a light for revelation to the Gentiles and glory to your people Israel.
+1	ὅτι	ὅτι	d	d--------	_	2	AuxY	_	t_1865|gloss=for
+2	εἶδον	εἶδον	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	0	PRED	_	t_1866|gloss=have-seen
+3	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	4	ATR	_	t_1867|gloss=the
+4	ὀφθαλμοί	ὀφθαλμός	n	n-p---mn-	Case=n|Gender=m|Number=p	2	SBJ	_	t_1868|gloss=eyes
+5	μου	ἐγώ	p	p1s---cg-	Case=g|Gender=c|Number=s|Person=1	4	ATR	_	t_1869|gloss=my
+6	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	7	ATR	_	t_1870|gloss=the
+7	σωτήριόν	σωτήριος	n	n-s---na-	Case=a|Gender=n|Number=s	2	OBJ	_	t_1871|gloss=salvation
+8	σου	σύ	p	p2s---cg-	Case=g|Gender=c|Number=s|Person=2	7	ATR	_	t_1872|gloss=your
+9	ὃ	ὅς	p	p-s---na-	Case=a|Gender=n|Number=s	10	OBJ	_	t_1873|gloss=which
+10	ἡτοίμασας	ἑτοιμάζω	v	v2saia---	Mood=i|Number=s|Person=2|Tense=a|Voice=a	7	ATR	_	t_1874|gloss=you-prepared
+11	κατὰ	κατά	r	r--------	_	10	AuxP	_	t_1875|gloss=before
+12	πρόσωπον	πρόσωπον	n	n-s---na-	Case=a|Gender=n|Number=s	11	ADV	_	t_1876|gloss=face
+13	πάντων	πᾶς	a	a-p---mg-	Case=g|Gender=m|Number=p	15	ATR	_	t_1877|gloss=all
+14	τῶν	ὁ	l	l-p---mg-	Case=g|Gender=m|Number=p	15	ATR	_	t_1878|gloss=the
+15	λαῶν	λαός	n	n-p---mg-	Case=g|Gender=m|Number=p	12	ATR	_	t_1879|gloss=peoples
+16	,	,	u	u--------	_	2	AuxX	_	t_1880|gloss=,
+17	Φῶς	φάος	n	n-s---na-	Case=a|Gender=n|Number=s	2	ADV	_	t_1881|gloss=a-light
+18	εἰς	εἰς	r	r--------	_	17	AuxP	_	t_1882|gloss=for
+19	ἀποκάλυψιν	ἀποκάλυψις	n	n-s---fa-	Case=a|Gender=f|Number=s	21	ADV	_	t_1883|gloss=revelation
+20	ἐθνῶν	ἔθνος	n	n-p---ng-	Case=g|Gender=n|Number=p	19	ATR	_	t_1884|gloss=of-gentiles
+21	καὶ	καί	c	c--------	_	18	COORD	_	t_1885|gloss=and
+22	δόξαν	δόξα	n	n-s---fa-	Case=a|Gender=f|Number=s	21	ADV	_	t_1886|gloss=glory
+23	λαοῦ	λαός	n	n-s---mg-	Case=g|Gender=m|Number=s	22	ATR	_	t_1887|gloss=of-people
+24	σου	σύ	p	p2s---cg-	Case=g|Gender=m|Number=s	23	ATR	_	t_1888|gloss=your
+25	Ἰσραήλ	ἰσραήλ	n	n-s---mn-	Case=n|Gender=m|Number=s	23	APOS	_	t_1889|gloss=Israel
+26	.	.	u	u--------	_	2	AuxK	_	t_1890|gloss=.
+
+# sent_id = luke-23
+# text = καὶ ἦν ὁ πατὴρ αὐτοῦ καὶ ἡ μήτηρ θαυμάζοντες ἐπὶ τοῖς λαλουμένοις περὶ αὐτοῦ .
+# sentence_id = 23
+# translation_lang = en
+# prose_translation = And his father and mother were marveling at the things being spoken about him.
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_1891|gloss=and
+2	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	0	PRED	_	t_1892|gloss=was
+3	ὁ	ὁ	l	l-s---mn-	Case=n|Gender=m|Number=s	4	ATR	_	t_1893|gloss=the
+4	πατὴρ	πατήρ	n	n-s---mn-	Case=n|Gender=m|Number=s	6	SBJ	_	t_1894|gloss=father
+5	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	4	ATR	_	t_1895|gloss=his
+6	καὶ	καί	c	c--------	_	2	COORD	_	t_1896|gloss=and
+7	ἡ	ὁ	l	l-s---fn-	Case=n|Gender=f|Number=s	8	ATR	_	t_1897|gloss=the
+8	μήτηρ	μήτηρ	n	n-s---fn-	Case=n|Gender=f|Number=s	6	SBJ	_	t_1898|gloss=mother
+9	θαυμάζοντες	θαυμάζω	v	v-pppamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	2	ADV	_	t_1899|gloss=marveling
+10	ἐπὶ	ἐπί	r	r--------	_	9	AuxP	_	t_1900|gloss=at
+11	τοῖς	ὁ	l	l-p---nd-	Case=d|Gender=n|Number=p	12	ATR	_	t_1901|gloss=the
+12	λαλουμένοις	λαλέω	v	v-pppend-	Case=d|Gender=n|Mood=p|Number=p|Tense=p|Voice=e	10	ADV	_	t_1902|gloss=things-being-spoken
+13	περὶ	περί	r	r--------	_	12	AuxP	_	t_1903|gloss=about
+14	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	13	ADV	_	t_1904|gloss=him
+15	.	.	u	u--------	_	2	AuxK	_	t_1905|gloss=.
+
+# sent_id = luke-24
+# text = καὶ εὐλόγησεν αὐτοὺς Συμεὼν καὶ εἶπεν πρὸς Μαριὰμ τὴν μητέρα αὐτοῦ Ἰδοὺ οὗτος κεῖται εἰς πτῶσιν καὶ ἀνάστασιν πολλῶν ἐν τῷ Ἰσραὴλ καὶ εἰς σημεῖον ἀντιλεγόμενον , καὶ σοῦ αὐτῆς τὴν ψυχὴν διελεύσεται ῥομφαία , ὅπως ἂν ἀποκαλυφθῶσιν ἐκ πολλῶν καρδιῶν διαλογισμοί .
+# sentence_id = 24
+# translation_lang = en
+# prose_translation = And Simeon blessed them and said to Mary his mother, "Behold, this one is set for the falling and rising of many in Israel, and for a sign that is spoken against, and a sword will pierce through your own soul, so that the thoughts out of many hearts may be revealed."
+1	καὶ	καί	d	d--------	_	5	AuxY	_	t_1906|gloss=and
+2	εὐλόγησεν	εὐλογέω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	5	PRED	_	t_1907|gloss=blessed
+3	αὐτοὺς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	2	OBJ	_	t_1908|gloss=them
+4	Συμεὼν	συμεών	n	n-s---mn-	Case=n|Gender=m|Number=s	5	SBJ	_	t_1909|gloss=Simeon
+5	καὶ	καί	c	c--------	_	0	COORD	_	t_1910|gloss=and
+6	εἶπεν	λέγω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	5	PRED	_	t_1911|gloss=said
+7	πρὸς	πρός	r	r--------	_	6	AuxP	_	t_1912|gloss=to
+8	Μαριὰμ	μαριὰμ	n	n-s---ma-	Case=a|Gender=m|Number=s	7	OBJ	_	t_1913|gloss=Mary
+9	τὴν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	10	ATR	_	t_1914|gloss=the
+10	μητέρα	μήτηρ	n	n-s---fa-	Case=a|Gender=f|Number=s	8	APOS	_	t_1915|gloss=mother
+11	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	10	ATR	_	t_1916|gloss=his
+12	Ἰδοὺ	ἰδού	n	n-s---mn-	Case=n|Gender=m|Number=s	14	SBJ	_	t_1917|gloss=behold
+13	οὗτος	οὗτος	p	p-s---mn-	Case=n|Gender=m|Number=s	14	SBJ	_	t_1918|gloss=this-one
+14	κεῖται	κεῖμαι	v	v3spie---	Mood=i|Number=s|Person=3|Tense=p|Voice=e	28	OBJ	_	t_1919|gloss=is-set
+15	εἰς	εἰς	r	r--------	_	23	AuxP	_	t_1920|gloss=for
+16	πτῶσιν	πτῶσις	n	n-s---fa-	Case=a|Gender=f|Number=s	17	OBJ	_	t_1921|gloss=falling
+17	καὶ	καί	c	c--------	_	15	COORD	_	t_1922|gloss=and
+18	ἀνάστασιν	ἀνάστασις	n	n-s---fa-	Case=a|Gender=f|Number=s	17	ADV	_	t_1923|gloss=rising
+19	πολλῶν	πολύς	a	a-p---mg-	Case=g|Gender=m|Number=p	17	ATR	_	t_1924|gloss=of-many
+20	ἐν	ἐν	r	r--------	_	23	AuxP	_	t_1925|gloss=in
+21	τῷ	ὁ	l	l-s---md-	Case=d|Gender=m|Number=s	22	ATR	_	t_1926|gloss=the
+22	Ἰσραὴλ	ἰσραήλ	n	n-s---md-	Case=d|Gender=m|Number=s	20	ADV	_	t_1927|gloss=Israel
+23	καὶ	καί	c	c--------	_	14	COORD	_	t_1928|gloss=and
+24	εἰς	εἰς	r	r--------	_	23	AuxP	_	t_1929|gloss=for
+25	σημεῖον	σημεῖον	n	n-s---na-	Case=a|Gender=n|Number=s	24	OBJ	_	t_1930|gloss=a-sign
+26	ἀντιλεγόμενον	ἀρνέομαι	v	v-sppena-	Case=a|Gender=n|Mood=p|Number=s|Tense=p|Voice=e	25	ATR	_	t_1931|gloss=spoken-against
+27	,	,	u	u--------	_	5	AuxX	_	t_1932|gloss=,
+28	καὶ	καί	c	c--------	_	5	COORD	_	t_1933|gloss=and
+29	σοῦ	σύ	a	a-s---ng-	Case=g|Gender=f|Number=s	32	ATR	_	t_1934|gloss=your
+30	αὐτῆς	αὐτός	p	p-s---fg-	Case=g|Gender=f|Number=s	32	ATR	_	t_1935|gloss=own
+31	τὴν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	32	ATR	_	t_1936|gloss=the
+32	ψυχὴν	ψυχή	n	n-s---fa-	Case=a|Gender=f|Number=s	33	OBJ	_	t_1937|gloss=soul
+33	διελεύσεται	διέρχομαι	v	v3sfim---	Mood=i|Number=s|Person=3|Tense=f|Voice=m	28	PRED	_	t_1938|gloss=will-pierce-through
+34	ῥομφαία	ῥομφαία	n	n-s---fn-	Case=n|Gender=f|Number=s	33	SBJ	_	t_1939|gloss=a-sword
+35	,	,	u	u--------	_	5	AuxX	_	t_1940|gloss=,
+36	ὅπως	ὅπως	c	c--------	_	33	AuxC	_	t_1941|gloss=so-that
+37	ἂν	ἄν	d	d--------	_	38	AuxY	_	t_1942|gloss=(particle-marking-contingency)
+38	ἀποκαλυφθῶσιν	ἀποκαλύπτω	v	v3pasp---	Mood=s|Number=p|Person=3|Tense=a|Voice=p	36	ADV	_	t_1943|gloss=may-be-revealed
+39	ἐκ	ἐκ	r	r--------	_	38	AuxP	_	t_1944|gloss=out-of
+40	πολλῶν	πολύς	a	a-p---fg-	Case=g|Gender=f|Number=p	41	ATR	_	t_1945|gloss=many
+41	καρδιῶν	καρδιά	n	n-p---fg-	Case=g|Gender=f|Number=p	39	ADV	_	t_1946|gloss=hearts
+42	διαλογισμοί	διαλογισμός	n	n-p---mn-	Case=n|Gender=m|Number=p	38	SBJ	_	t_1947|gloss=thoughts
+43	.	.	u	u--------	_	5	AuxK	_	t_1948|gloss=.
+
+# sent_id = luke-25
+# text = Καὶ ἦν Ἅννα προφῆτις , θυγάτηρ Φανουήλ , ἐκ φυλῆς Ἀσήρ , ( αὕτη προβεβηκυῖα ἐν ἡμέραις πολλαῖς , ζήσασα μετὰ ἀνδρὸς ἔτη ἑπτὰ ἀπὸ τῆς παρθενίας αὐτῆς , καὶ αὐτὴ χήρα ἕως ἐτῶν ὀγδοήκοντα τεσσάρων , ) ἣ οὐκ ἀφίστατο τοῦ ἱεροῦ νηστείαις καὶ δεήσεσιν λατρεύουσα νύκτα καὶ ἡμέραν [0] .
+# sentence_id = 25
+# translation_lang = en
+# prose_translation = And there was Anna, a prophetess, daughter of Phanuel, of the tribe of Asher (she was advanced in many days, having lived with a husband seven years from her virginity, and she [had remained] a widow until eighty-four years), who did not depart from the temple, serving [God] with fastings and prayers night and day.
+1	Καὶ	καί	c	c--------	_	0	COORD	_	t_1949|gloss=and
+2	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	1	PRED	_	t_1950|gloss=there-was
+3	Ἅννα	ὅς	n	n-s---fn-	Case=n|Gender=f|Number=s	2	SBJ	_	t_1951|gloss=Anna
+4	προφῆτις	προφῆτις	n	n-s---fn-	Case=n|Gender=f|Number=s	2	PNOM	_	t_1952|gloss=a-prophetess
+5	,	,	u	u--------	_	2	AuxX	_	t_1953|gloss=,
+6	θυγάτηρ	θυγάτηρ	n	n-s---fn-	Case=n|Gender=f|Number=s	51	PNOM	_	t_1954|gloss=daughter
+7	Φανουήλ	φανουήλ	n	n-s---mg-	Case=g|Gender=m|Number=s	6	ATR	_	t_1955|gloss=of-Phanuel
+8	,	,	u	u--------	_	2	AuxX	_	t_1956|gloss=,
+9	ἐκ	ἐκ	r	r--------	_	2	AuxP	_	t_1957|gloss=from
+10	φυλῆς	φυλή	n	n-s---fg-	Case=g|Gender=f|Number=s	9	ADV	_	t_1958|gloss=tribe
+11	Ἀσήρ	ἀήρ	n	n-s---fg-	Case=g|Gender=f|Number=s	10	ATR	_	t_1959|gloss=of-Asher
+12	,	,	u	u--------	_	2	AuxX	_	t_1960|gloss=,
+13	(	̔	u	u--------	_	2	AuxG	_	t_1961|gloss=(
+14	αὕτη	οὗτος	p	p-s---fn-	Case=n|Gender=f|Number=s	30	SBJ	_	t_1962|gloss=she
+15	προβεβηκυῖα	προβαίνω	v	v-srpafn-	Case=n|Gender=f|Mood=p|Number=s|Tense=r|Voice=a	30	ADV	_	t_1963|gloss=having-advanced
+16	ἐν	ἐν	r	r--------	_	15	AuxP	_	t_1964|gloss=in
+17	ἡμέραις	ἡμέρα	n	n-p---fd-	Case=d|Gender=f|Number=p	16	ADV	_	t_1965|gloss=days
+18	πολλαῖς	πολύς	a	a-p---fd-	Case=d|Gender=f|Number=p	17	ATR	_	t_1966|gloss=many
+19	,	,	u	u--------	_	2	AuxX	_	t_1967|gloss=,
+20	ζήσασα	ζάω	v	v-sapafn-	Case=n|Gender=f|Mood=p|Number=s|Tense=a|Voice=a	30	ADV	_	t_1968|gloss=having-lived
+21	μετὰ	μετά	r	r--------	_	20	AuxP	_	t_1969|gloss=with
+22	ἀνδρὸς	ἀνήρ	n	n-s---mg-	Case=g|Gender=m|Number=s	21	ADV	_	t_1970|gloss=a-husband
+23	ἔτη	ἔτος	n	n-p---na-	Case=a|Gender=n|Number=p	20	ADV	_	t_1971|gloss=years
+24	ἑπτὰ	ἑπτὰ	m	m--------	_	23	ATR	_	t_1972|gloss=seven
+25	ἀπὸ	ἀπό	r	r--------	_	20	AuxP	_	t_1973|gloss=from
+26	τῆς	ὁ	l	l-s---fg-	Case=g|Gender=f|Number=s	27	ATR	_	t_1974|gloss=the
+27	παρθενίας	παρθενία	n	n-s---fg-	Case=g|Gender=f|Number=s	25	ADV	_	t_1975|gloss=virginity
+28	αὐτῆς	αὐτός	p	p-s---fg-	Case=g|Gender=f|Number=s	27	ATR	_	t_1976|gloss=her
+29	,	,	u	u--------	_	2	AuxX	_	t_1977|gloss=,
+30	καὶ	καί	c	c--------	_	2	COORD	_	t_1978|gloss=and
+31	αὐτὴ	αὐτός	p	p-s---fn-	Case=n|Gender=f|Number=s	32	ATV	_	t_1979|gloss=she-herself
+32	χήρα	χήρα	a	a-s---fn-	Case=n|Gender=f|Number=s	30	PNOM	_	t_1980|gloss=a-widow
+33	ἕως	ἕως	r	r--------	_	32	AuxP	_	t_1981|gloss=until
+34	ἐτῶν	ἔτος	n	n-p---ng-	Case=g|Gender=n|Number=p	33	ADV	_	t_1982|gloss=years
+35	ὀγδοήκοντα	ὀγδοήκοντα	m	m--------	_	34	ATR	_	t_1983|gloss=eighty
+36	τεσσάρων	τέσσαρες	m	m-p---ng-	Case=g|Number=p	34	ATR	_	t_1984|gloss=four
+37	,	,	u	u--------	_	2	AuxX	_	t_1985|gloss=,
+38	)	)	u	u--------	_	2	AuxG	_	t_1986|gloss=)
+39	ἣ	ὅς	l	l-s---fn-	Case=n|Gender=f|Number=s	41	SBJ	_	t_1987|gloss=who
+40	οὐκ	οὐ	d	d--------	_	41	AuxZ	_	t_1988|gloss=not
+41	ἀφίστατο	ἀφεστήξω	v	v3siie---	Mood=i|Number=s|Person=3|Tense=i|Voice=e	30	ATR	_	t_1989|gloss=was-departing
+42	τοῦ	ὁ	l	l-s---ng-	Case=g|Gender=n|Number=s	43	ATR	_	t_1990|gloss=the
+43	ἱεροῦ	ἱερόν	n	n-s---ng-	Case=g|Gender=n|Number=s	45	OBJ	_	t_1991|gloss=temple
+44	νηστείαις	νηστεία	n	n-p---fd-	Case=d|Gender=f|Number=p	45	OBJ	_	t_1992|gloss=fastings
+45	καὶ	καί	c	c--------	_	41	COORD	_	t_1993|gloss=and
+46	δεήσεσιν	δέω2	n	n-p---fd-	Case=d|Gender=f|Number=p	45	OBJ	_	t_1994|gloss=prayers
+47	λατρεύουσα	λατρεύω	v	v-sppafn-	Case=n|Gender=f|Mood=p|Number=s|Tense=p|Voice=a	41	ADV	_	t_1995|gloss=serving-[God]
+48	νύκτα	νύξ	n	n-s---fa-	Case=a|Gender=f|Number=s	49	OBJ	_	t_1996|gloss=night
+49	καὶ	καί	c	c--------	_	47	COORD	_	t_1997|gloss=and
+50	ἡμέραν	ἡμέρα	n	n-s---fa-	Case=a|Gender=f|Number=s	49	OBJ	_	t_1998|gloss=day
+51	[0]	[0]	-	---------	_	30	ADV	_	e_13
+52	.	.	u	u--------	_	2	AuxK	_	t_1999|gloss=.
+
+# sent_id = luke-26
+# text = καὶ αὐτῇ τῇ ὥρᾳ ἐπιστᾶσα ἀνθωμολογεῖτο τῷ θεῷ καὶ ἐλάλει περὶ αὐτοῦ πᾶσιν τοῖς προσδεχομένοις λύτρωσιν Ἰερουσαλήμ .
+# sentence_id = 26
+# translation_lang = en
+# prose_translation = And coming up at that very hour, she gave thanks to God and spoke about him to all who were waiting for the redemption of Jerusalem.
+1	καὶ	καί	d	d--------	_	9	AuxY	_	t_2000|gloss=and
+2	αὐτῇ	αὐτός	a	a-s---fd-	Case=d|Gender=f|Number=s	4	ATR	_	t_2001|gloss=same
+3	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	4	ATR	_	t_2002|gloss=the
+4	ὥρᾳ	ὥρα	n	n-s---fd-	Case=d|Gender=f|Number=s	5	ADV	_	t_2003|gloss=hour
+5	ἐπιστᾶσα	ἐφίστημι	v	v-sapafn-	Case=n|Gender=f|Mood=p|Number=s|Tense=a|Voice=a	9	ADV	_	t_2004|gloss=coming-up
+6	ἀνθωμολογεῖτο	ἀνθομολογέομαι	v	v3siie---	Mood=i|Number=s|Person=3|Tense=i|Voice=e	9	PRED	_	t_2005|gloss=gave-thanks
+7	τῷ	ὁ	l	l-s---md-	Case=d|Gender=m|Number=s	8	ATR	_	t_2006|gloss=to-the
+8	θεῷ	θεός	n	n-s---md-	Case=d|Gender=m|Number=s	6	OBJ	_	t_2007|gloss=God
+9	καὶ	καί	c	c--------	_	0	COORD	_	t_2008|gloss=and
+10	ἐλάλει	λαλέω	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	9	PRED	_	t_2009|gloss=spoke
+11	περὶ	περί	r	r--------	_	10	AuxP	_	t_2010|gloss=about
+12	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	11	ADV	_	t_2011|gloss=him
+13	πᾶσιν	πᾶς	a	a-p---nd-	Case=d|Gender=n|Number=p	16	ATR	_	t_2012|gloss=to-all
+14	τοῖς	ὁ	l	l-p---nd-	Case=d|Gender=n|Number=p	16	ATR	_	t_2013|gloss=the
+15	προσδεχομένοις	προσδέχομαι	v	v-pppend-	Case=d|Gender=n|Mood=p|Number=p|Tense=p|Voice=e	16	ATR	_	t_2014|gloss=waiting
+16	λύτρωσιν	λύτρωσις	n	n-p---nd-	Case=d|Gender=n|Number=p	10	OBJ	_	t_2015|gloss=redemption
+17	Ἰερουσαλήμ	ἰερουσαλὴμ	n	n-s---mn-	Case=n|Gender=m|Number=s	10	SBJ	_	t_2016|gloss=of-Jerusalem
+18	.	.	u	u--------	_	9	AuxK	_	t_2017|gloss=.
+
+# sent_id = luke-27
+# text = Καὶ ὡς ἐτέλεσαν πάντα τὰ κατὰ τὸν νόμον Κυρίου , ἐπέστρεψαν εἰς τὴν Γαλιλαίαν εἰς πόλιν ἑαυτῶν Ναζαρέτ .
+# sentence_id = 27
+# translation_lang = en
+# prose_translation = And when they had finished everything according to the law of the Lord, they returned to Galilee, to their own city Nazareth.
+1	Καὶ	καί	d	d--------	_	11	AuxY	_	t_2018|gloss=and
+2	ὡς	ὡς	c	c--------	_	11	AuxC	_	t_2019|gloss=when
+3	ἐτέλεσαν	τελέω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	2	ADV	_	t_2020|gloss=they-finished
+4	πάντα	πᾶς	a	a-p---na-	Case=a|Gender=n|Number=p	3	OBJ	_	t_2021|gloss=everything
+5	τὰ	ὁ	l	l-p---na-	Case=a|Gender=n|Number=p	4	ATR	_	t_2022|gloss=the-things
+6	κατὰ	κατά	r	r--------	_	4	AuxP	_	t_2023|gloss=according-to
+7	τὸν	ὁ	l	l-s---ma-	Case=a|Gender=m|Number=s	8	ATR	_	t_2024|gloss=the
+8	νόμον	νόμος	n	n-s---ma-	Case=a|Gender=m|Number=s	6	ATR	_	t_2025|gloss=law
+9	Κυρίου	κύριος	n	n-s---mg-	Case=g|Gender=m|Number=s	8	ATR	_	t_2026|gloss=of-the-Lord
+10	,	,	u	u--------	_	11	AuxX	_	t_2027|gloss=,
+11	ἐπέστρεψαν	ἐπιστρέφω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	0	PRED	_	t_2028|gloss=they-returned
+12	εἰς	εἰς	r	r--------	_	11	AuxP	_	t_2029|gloss=to
+13	τὴν	ὁ	l	l-s---fa-	Case=a|Gender=f|Number=s	14	ATR	_	t_2030|gloss=the
+14	Γαλιλαίαν	γαλιλαία	n	n-s---fa-	Case=a|Gender=f|Number=s	12	OBJ	_	t_2031|gloss=Galilee
+15	εἰς	εἰς	r	r--------	_	11	AuxP	_	t_2032|gloss=to
+16	πόλιν	πόλις	n	n-s---fa-	Case=a|Gender=f|Number=s	15	OBJ	_	t_2033|gloss=city
+17	ἑαυτῶν	ἑαυτοῦ	p	p-p---mg-	Case=g|Gender=m|Number=p	16	ATR	_	t_2034|gloss=their-own
+18	Ναζαρέτ	ναζαρέτ	n	n-s---mn-	Case=n|Gender=m|Number=s	11	SBJ	_	t_2035|gloss=Nazareth
+19	.	.	u	u--------	_	11	AuxK	_	t_2036|gloss=.
+
+# sent_id = luke-28
+# text = Τὸ δὲ παιδίον ηὔξανεν καὶ ἐκραταιοῦτο πληρούμενον σοφίᾳ , καὶ χάρις θεοῦ ἦν ἐπʼ αὐτό .
+# sentence_id = 28
+# translation_lang = en
+# prose_translation = And the child grew and became strong, filled with wisdom, and the grace of God was upon him.
+1	Τὸ	ὁ	l	l-s---nn-	Case=n|Gender=n|Number=s	3	ATR	_	t_2037|gloss=the
+2	δὲ	δέ	d	d--------	_	0	COORD	_	t_2038|gloss=and
+3	παιδίον	παιδίον	n	n-s---nn-	Case=n|Gender=n|Number=s	5	SBJ	_	t_2039|gloss=child
+4	ηὔξανεν	αὐξάνω	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	5	PRED	_	t_2040|gloss=was-growing
+5	καὶ	καί	c	c--------	_	10	COORD	_	t_2041|gloss=and
+6	ἐκραταιοῦτο	κραταιόω	v	v3siie---	Mood=i|Number=s|Person=3|Tense=i|Voice=e	5	PRED	_	t_2042|gloss=was-becoming-strong
+7	πληρούμενον	πληρόω	v	v-sppenn-	Case=n|Gender=n|Mood=p|Number=s|Tense=p|Voice=e	6	ADV	_	t_2043|gloss=being-filled
+8	σοφίᾳ	σοφία	n	n-s---fd-	Case=d|Gender=f|Number=s	7	ADV	_	t_2044|gloss=with-wisdom
+9	,	,	u	u--------	_	7	AuxX	_	t_2045|gloss=,
+10	καὶ	καί	c	c--------	_	2	COORD	_	t_2046|gloss=and
+11	χάρις	χάρις	n	n-s---fn-	Case=n|Gender=f|Number=s	13	SBJ	_	t_2047|gloss=grace
+12	θεοῦ	θεός	n	n-s---mg-	Case=g|Gender=m|Number=s	11	ATR	_	t_2048|gloss=of-God
+13	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	10	PRED	_	t_2049|gloss=was
+14	ἐπʼ	ἐπί	r	r--------	_	13	AuxP	_	t_2050|gloss=upon
+15	αὐτό	αὐτός	p	p-s---nd-	Case=d|Gender=n|Number=s	14	PNOM	_	t_2051|gloss=him
+16	.	.	u	u--------	_	2	AuxK	_	t_2052|gloss=.
+
+# sent_id = luke-29
+# text = Καὶ ἐπορεύοντο οἱ γονεῖς αὐτοῦ κατʼ ἔτος εἰς Ἰερουσαλὴμ τῇ ἑορτῇ τοῦ πάσχα .
+# sentence_id = 29
+# translation_lang = en
+# prose_translation = And his parents went to Jerusalem every year at the feast of the Passover.
+1	Καὶ	καί	d	d--------	_	2	AuxY	_	t_2053|gloss=and
+2	ἐπορεύοντο	πορεύω	v	v3piie---	Mood=i|Number=p|Person=3|Tense=i|Voice=e	0	PRED	_	t_2054|gloss=went
+3	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	4	ATR	_	t_2055|gloss=the
+4	γονεῖς	γονεύς	n	n-p---mn-	Case=n|Gender=m|Number=p	2	SBJ	_	t_2056|gloss=parents
+5	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	4	ATR	_	t_2057|gloss=his
+6	κατʼ	κατά	r	r--------	_	2	AuxP	_	t_2058|gloss=every
+7	ἔτος	ἔτος	n	n-s---na-	Case=a|Gender=n|Number=s	6	ADV	_	t_2059|gloss=year
+8	εἰς	εἰς	r	r--------	_	2	AuxP	_	t_2060|gloss=to
+9	Ἰερουσαλὴμ	ἰερουσαλὴμ	n	n--------	_	8	OBJ	_	t_2061|gloss=Jerusalem
+10	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	11	ATR	_	t_2062|gloss=the
+11	ἑορτῇ	ἑορτή	n	n-s---fd-	Case=d|Gender=f|Number=s	2	ADV	_	t_2063|gloss=feast
+12	τοῦ	ὁ	p	p-s---ng-	Case=g|Gender=n|Number=s	13	ATR	_	t_2064|gloss=of-the
+13	πάσχα	πάσχα	n	n-s---mg-	Case=g|Gender=m|Number=s	11	ATR	_	t_2065|gloss=passover
+14	.	.	u	u--------	_	2	AuxK	_	t_2066|gloss=.
+
+# sent_id = luke-30
+# text = Καὶ ὅτε ἐγένετο ἐτῶν δώδεκα , ἀναβαινόντων αὐτῶν κατὰ τὸ ἔθος τῆς ἑορτῆς καὶ τελειωσάντων τὰς ἡμέρας , ἐν τῷ ὑποστρέφειν αὐτοὺς ὑπέμεινεν Ἰησοῦς ὁ παῖς ἐν Ἰερουσαλήμ , καὶ οὐκ ἔγνωσαν οἱ γονεῖς αὐτοῦ .
+# sentence_id = 30
+# translation_lang = en
+# prose_translation = And when he became twelve years old, as they were going up according to the custom of the feast, and when they had completed the days, and as they were returning, the boy Jesus stayed behind in Jerusalem, and his parents did not know it.
+1	Καὶ	καί	d	d--------	_	0	COORD	_	t_2067|gloss=and
+2	ὅτε	ὅτε	c	c--------	_	30	AuxC	_	t_2068|gloss=when
+3	ἐγένετο	γίγνομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	2	ADV	_	t_2069|gloss=he-became
+4	ἐτῶν	ἔτος	n	n-p---ng-	Case=g|Gender=n|Number=p	3	SBJ	_	t_2070|gloss=years
+5	δώδεκα	δώδεκα	a	a--------	_	4	ATR	_	t_2071|gloss=twelve
+6	,	,	u	u--------	_	7	AuxX	_	t_2072|gloss=,
+7	ἀναβαινόντων	ἀναβαίνω	v	v-pppamg-	Case=g|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	14	ADV	_	t_2073|gloss=as-they-were-going-up
+8	αὐτῶν	αὐτός	p	p-p---mg-	Case=g|Gender=m|Number=p	14	SBJ	_	t_2074|gloss=they
+9	κατὰ	κατά	r	r--------	_	7	AuxP	_	t_2075|gloss=according-to
+10	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	11	ATR	_	t_2076|gloss=the
+11	ἔθος	ἔθος	n	n-s---na-	Case=a|Gender=n|Number=s	9	ADV	_	t_2077|gloss=custom
+12	τῆς	ὁ	l	l-s---fg-	Case=g|Gender=f|Number=s	13	ATR	_	t_2078|gloss=of-the
+13	ἑορτῆς	ἑορτή	n	n-s---fg-	Case=g|Gender=f|Number=s	11	ATR	_	t_2079|gloss=feast
+14	καὶ	καί	c	c--------	_	30	COORD	_	t_2080|gloss=and
+15	τελειωσάντων	τελειόω	v	v-papamg-	Case=g|Gender=m|Mood=p|Number=p|Tense=a|Voice=a	14	ADV	_	t_2081|gloss=when-they-had-completed
+16	τὰς	ὁ	l	l-p---fa-	Case=a|Gender=f|Number=p	17	ATR	_	t_2082|gloss=the
+17	ἡμέρας	ἡμέρα	n	n-p---fa-	Case=a|Gender=f|Number=p	15	ADV	_	t_2083|gloss=days
+18	,	,	u	u--------	_	15	AuxX	_	t_2084|gloss=,
+19	ἐν	ἐν	r	r--------	_	23	AuxP	_	t_2085|gloss=in
+20	τῷ	ὁ	l	l-s---nd-	Case=d|Gender=n|Number=s	21	ATR	_	t_2086|gloss=the
+21	ὑποστρέφειν	ὑποστρέφω	v	v--pna---	Mood=n|Tense=p|Voice=a	19	ADV	_	t_2087|gloss=returning
+22	αὐτοὺς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	21	OBJ	_	t_2088|gloss=them
+23	ὑπέμεινεν	ὑπομένω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	30	PRED	_	t_2089|gloss=he-stayed-behind
+24	Ἰησοῦς	ἰησοῦς	n	n-s---mn-	Case=n|Gender=m|Number=s	26	ATR	_	t_2090|gloss=Jesus
+25	ὁ	ὁ	l	l-s---mn-	Case=n|Gender=m|Number=s	26	ATR	_	t_2091|gloss=the
+26	παῖς	παῖς	n	n-s---mn-	Case=n|Gender=m|Number=s	23	SBJ	_	t_2092|gloss=boy
+27	ἐν	ἐν	r	r--------	_	23	AuxP	_	t_2093|gloss=in
+28	Ἰερουσαλήμ	ἰερουσαλὴμ	n	n-s---fd-	Case=d|Gender=f|Number=s	27	ADV	_	t_2094|gloss=Jerusalem
+29	,	,	u	u--------	_	23	AuxX	_	t_2095|gloss=,
+30	καὶ	καί	c	c--------	_	1	COORD	_	t_2096|gloss=and
+31	οὐκ	οὐ	d	d--------	_	32	AuxZ	_	t_2097|gloss=not
+32	ἔγνωσαν	γιγνώσκω	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	30	PRED	_	t_2098|gloss=they-knew
+33	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	34	ATR	_	t_2099|gloss=the
+34	γονεῖς	γονεύς	n	n-p---mn-	Case=n|Gender=m|Number=p	32	SBJ	_	t_2100|gloss=parents
+35	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	34	ATR	_	t_2101|gloss=his
+36	.	.	u	u--------	_	6	AuxK	_	t_2102|gloss=.
+
+# sent_id = luke-31
+# text = νομίσαντες δὲ αὐτὸν εἶναι ἐν τῇ συνοδίᾳ ἦλθον ἡμέρας ὁδὸν καὶ ἀνεζήτουν αὐτὸν ἐν τοῖς συγγενεῦσιν καὶ τοῖς γνωστοῖς , καὶ μὴ εὑρόντες ὑπέστρεψαν εἰς Ἰερουσαλὴμ ἀναζητοῦντες αὐτόν .
+# sentence_id = 31
+# translation_lang = en
+# prose_translation = But supposing him to be in the company, they went a day's journey, and sought him among their relatives and acquaintances, and when they did not find him, they returned to Jerusalem seeking him.
+1	νομίσαντες	νομίζω	v	v-papamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=a|Voice=a	8	ADV	_	t_2103|gloss=supposing
+2	δὲ	δέ	d	d--------	_	21	AuxY	_	t_2104|gloss=but
+3	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	4	SBJ	_	t_2105|gloss=him
+4	εἶναι	εἰμί	v	v--pna---	Mood=n|Tense=p|Voice=a	1	OBJ	_	t_2106|gloss=to-be
+5	ἐν	ἐν	r	r--------	_	4	AuxP	_	t_2107|gloss=in
+6	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	7	ATR	_	t_2108|gloss=the
+7	συνοδίᾳ	σύνοδος	n	n-s---fd-	Case=d|Gender=f|Number=s	5	PNOM	_	t_2109|gloss=company
+8	ἦλθον	ἔρχομαι	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	21	PRED	_	t_2110|gloss=they-went
+9	ἡμέρας	ἡμέρα	n	n-s---fg-	Case=g|Gender=f|Number=s	10	ATR	_	t_2111|gloss=day's
+10	ὁδὸν	ὁδός	n	n-s---fa-	Case=a|Gender=f|Number=s	8	ADV	_	t_2112|gloss=journey
+11	καὶ	καί	d	d--------	_	21	AuxY	_	t_2113|gloss=and
+12	ἀνεζήτουν	ἐπιζητέω	v	v3piia---	Mood=i|Number=p|Person=3|Tense=i|Voice=a	21	PRED	_	t_2114|gloss=they-sought
+13	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	12	OBJ	_	t_2115|gloss=him
+14	ἐν	ἐν	r	r--------	_	12	AuxP	_	t_2116|gloss=among
+15	τοῖς	ὁ	l	l-p---md-	Case=d|Gender=m|Number=p	16	ATR	_	t_2117|gloss=the
+16	συγγενεῦσιν	συγγενής	n	n-p---md-	Case=d|Gender=m|Number=p	17	ADV	_	t_2118|gloss=relatives
+17	καὶ	καί	c	c--------	_	14	COORD	_	t_2119|gloss=and
+18	τοῖς	ὁ	l	l-p---md-	Case=d|Gender=m|Number=p	19	ATR	_	t_2120|gloss=the
+19	γνωστοῖς	γνωστός	n	n-p---md-	Case=d|Gender=m|Number=p	17	ADV	_	t_2121|gloss=acquaintances
+20	,	,	u	u--------	_	0	AuxX	_	t_2122|gloss=,
+21	καὶ	καί	c	c--------	_	20	COORD	_	t_2123|gloss=and
+22	μὴ	μή	d	d--------	_	23	AuxZ	_	t_2124|gloss=not
+23	εὑρόντες	εὑρίσκω	v	v-papamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=a|Voice=a	24	ADV	_	t_2125|gloss=finding
+24	ὑπέστρεψαν	ἐπανέρχομαι	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	21	PRED	_	t_2126|gloss=they-returned
+25	εἰς	εἰς	r	r--------	_	24	AuxP	_	t_2127|gloss=to
+26	Ἰερουσαλὴμ	ἰερουσαλὴμ	n	n-s---fa-	Case=a|Gender=f|Number=s	25	OBJ	_	t_2128|gloss=Jerusalem
+27	ἀναζητοῦντες	ἀναζητέω	v	v-pppamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	24	ADV	_	t_2129|gloss=seeking
+28	αὐτόν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	27	OBJ	_	t_2130|gloss=him
+29	.	.	u	u--------	_	20	AuxK	_	t_2131|gloss=.
+
+# sent_id = luke-32
+# text = καὶ ἐγένετο μετὰ ἡμέρας τρεῖς εὗρον αὐτὸν ἐν τῷ ἱερῷ καθεζόμενον ἐν μέσῳ τῶν διδασκάλων καὶ ἀκούοντα αὐτῶν καὶ ἐπερωτῶντα αὐτούς ·
+# sentence_id = 32
+# translation_lang = en
+# prose_translation = And it happened that after three days they found him in the temple, sitting in the midst of the teachers and listening to them and asking them questions;
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_2132|gloss=and
+2	ἐγένετο	γίγνομαι	v	v3saim---	Mood=i|Number=s|Person=3|Tense=a|Voice=m	0	PRED	_	t_2133|gloss=it-happened
+3	μετὰ	μετά	r	r--------	_	2	AuxP	_	t_2134|gloss=after
+4	ἡμέρας	ἡμέρα	n	n-p---fa-	Case=a|Gender=f|Number=p	3	ADV	_	t_2135|gloss=days
+5	τρεῖς	τρεῖς	a	a-p---fa-	Case=a|Gender=f|Number=p	4	ATR	_	t_2136|gloss=three
+6	εὗρον	εὑρίσκω	v	v-sapann-	Case=n|Gender=n|Mood=p|Number=s|Tense=a|Voice=a	2	SBJ	_	t_2137|gloss=they-found
+7	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	6	OBJ	_	t_2138|gloss=him
+8	ἐν	ἐν	r	r--------	_	11	AuxP	_	t_2139|gloss=in
+9	τῷ	ὁ	l	l-s---nd-	Case=d|Gender=n|Number=s	10	ATR	_	t_2140|gloss=the
+10	ἱερῷ	ἱερόν	n	n-s---nd-	Case=d|Gender=n|Number=s	8	ADV	_	t_2141|gloss=temple
+11	καθεζόμενον	κατάἕζομαι	v	v-sppema-	Case=a|Gender=m|Mood=p|Number=s|Tense=p|Voice=e	19	OBJ	_	t_2142|gloss=sitting
+12	ἐν	ἐν	r	r--------	_	11	AuxP	_	t_2143|gloss=in
+13	μέσῳ	μέσος	a	a-s---md-	Case=d|Gender=m|Number=s	12	ADV	_	t_2144|gloss=midst
+14	τῶν	ὁ	l	l-p---mg-	Case=g|Gender=m|Number=p	15	ATR	_	t_2145|gloss=the
+15	διδασκάλων	διδάσκαλος	n	n-p---mg-	Case=g|Gender=m|Number=p	13	ATR	_	t_2146|gloss=teachers
+16	καὶ	καί	d	d--------	_	19	AuxY	_	t_2147|gloss=and
+17	ἀκούοντα	ἀκούω	v	v-sppama-	Case=a|Gender=m|Mood=p|Number=s|Tense=p|Voice=a	19	OBJ	_	t_2148|gloss=listening-to
+18	αὐτῶν	αὐτός	p	p-p---mg-	Case=g|Gender=m|Number=p	17	OBJ	_	t_2149|gloss=them
+19	καὶ	καί	c	c--------	_	6	COORD	_	t_2150|gloss=and
+20	ἐπερωτῶντα	ἐπερωτάω	v	v-sppama-	Case=a|Gender=m|Mood=p|Number=s|Tense=p|Voice=a	19	OBJ	_	t_2151|gloss=questioning
+21	αὐτούς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	20	OBJ	_	t_2152|gloss=them
+22	·	·	u	u--------	_	2	AuxK	_	t_2153|gloss=;
+
+# sent_id = luke-33
+# text = ἐξίσταντο δὲ πάντες οἱ ἀκούοντες αὐτοῦ ἐπὶ τῇ συνέσει καὶ ταῖς ἀποκρίσεσιν αὐτοῦ .
+# sentence_id = 33
+# translation_lang = en
+# prose_translation = And all who heard him were amazed at his understanding and his answers.
+1	ἐξίσταντο	ἐξίστημι	v	v3piie---	Mood=i|Number=p|Person=3|Tense=i|Voice=e	0	PRED	_	t_2154|gloss=were-amazed
+2	δὲ	δέ	d	d--------	_	1	AuxY	_	t_2155|gloss=and
+3	πάντες	πᾶς	a	a-p---mn-	Case=n|Gender=m|Number=p	5	ATR	_	t_2156|gloss=all
+4	οἱ	ὁ	l	l-p---mn-	Case=n|Gender=m|Number=p	5	ATR	_	t_2157|gloss=who
+5	ἀκούοντες	ἀκούω	v	v-pppamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=a	1	SBJ	_	t_2158|gloss=were-hearing
+6	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	5	OBJ	_	t_2159|gloss=him
+7	ἐπὶ	ἐπί	r	r--------	_	1	AuxP	_	t_2160|gloss=at
+8	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	9	ATR	_	t_2161|gloss=the
+9	συνέσει	σύνεσις	n	n-s---fd-	Case=d|Gender=f|Number=s	10	ADV	_	t_2162|gloss=understanding
+10	καὶ	καί	c	c--------	_	7	COORD	_	t_2163|gloss=and
+11	ταῖς	ὁ	l	l-p---fd-	Case=d|Gender=f|Number=p	12	ATR	_	t_2164|gloss=the
+12	ἀποκρίσεσιν	ἀπόκρισις	n	n-p---fd-	Case=d|Gender=f|Number=p	10	ADV	_	t_2165|gloss=answers
+13	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	12	ATR	_	t_2166|gloss=his
+14	.	.	u	u--------	_	1	AuxK	_	t_2167|gloss=.
+
+# sent_id = luke-34
+# text = καὶ ἰδόντες αὐτὸν ἐξεπλάγησαν , καὶ εἶπεν πρὸς αὐτὸν ἡ μήτηρ αὐτοῦ Τέκνον , τί ἐποίησας ἡμῖν οὕτως ;
+# sentence_id = 34
+# translation_lang = en
+# prose_translation = And when they saw him, they were astonished, and his mother said to him, "Child, why have you done this to us?"
+1	καὶ	καί	d	d--------	_	6	AuxY	_	t_2168|gloss=and
+2	ἰδόντες	εἶδον	v	v-papamn-	Case=n|Gender=m|Mood=p|Number=p|Tense=a|Voice=a	4	ADV	_	t_2169|gloss=seeing
+3	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	2	OBJ	_	t_2170|gloss=him
+4	ἐξεπλάγησαν	ἐκπλήσσω	v	v3paip---	Mood=i|Number=p|Person=3|Tense=a|Voice=p	6	PRED	_	t_2171|gloss=they-were-astonished
+5	,	,	u	u--------	_	0	AuxX	_	t_2172|gloss=,
+6	καὶ	καί	c	c--------	_	5	COORD	_	t_2173|gloss=and
+7	εἶπεν	λέγω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	6	PRED	_	t_2174|gloss=said
+8	πρὸς	πρός	r	r--------	_	7	AuxP	_	t_2175|gloss=to
+9	αὐτὸν	αὐτός	p	p-s---ma-	Case=a|Gender=m|Number=s	8	OBJ	_	t_2176|gloss=him
+10	ἡ	ὁ	l	l-s---fn-	Case=n|Gender=f|Number=s	11	ATR	_	t_2177|gloss=the
+11	μήτηρ	μήτηρ	n	n-s---fn-	Case=n|Gender=f|Number=s	7	SBJ	_	t_2178|gloss=mother
+12	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	11	ATR	_	t_2179|gloss=his
+13	Τέκνον	τέκνον	n	n-s---nv-	Case=v|Gender=n|Number=s	16	OBJ	_	t_2180|gloss=child
+14	,	,	u	u--------	_	5	AuxX	_	t_2181|gloss=,
+15	τί	τίς	p	p-s---na-	Case=a|Gender=n|Number=s	16	ADV	_	t_2182|gloss=why
+16	ἐποίησας	ποιέω	v	v2saia---	Mood=i|Number=s|Person=2|Tense=a|Voice=a	7	OBJ	_	t_2183|gloss=have-you-done
+17	ἡμῖν	ἐγώ	p	p1p---cd-	Case=d|Gender=c|Number=p|Person=1	16	OBJ	_	t_2184|gloss=to-us
+18	οὕτως	οὕτως	d	d--------	_	16	ADV	_	t_2185|gloss=thus
+19	;	;	u	u--------	_	5	AuxK	_	t_2186|gloss=;
+
+# sent_id = luke-35
+# text = ἰδοὺ ὁ πατήρ σου καὶ ἐγὼ ὀδυνώμενοι ζητοῦμέν σε .
+# sentence_id = 35
+# translation_lang = en
+# prose_translation = Behold, your father and I have been anxiously seeking you.
+1	ἰδοὺ	ἰδού	d	d--------	_	8	ExD	_	t_2187|gloss=behold
+2	ὁ	ὁ	l	l-s---mn-	Case=n|Gender=m|Number=s	3	ATR	_	t_2188|gloss=the
+3	πατήρ	πατήρ	n	n-s---mn-	Case=n|Gender=m|Number=s	5	SBJ	_	t_2189|gloss=father
+4	σου	σύ	p	p2s---cg-	Case=g|Gender=c|Number=s|Person=2	3	ATR	_	t_2190|gloss=your
+5	καὶ	καί	c	c--------	_	8	COORD	_	t_2191|gloss=and
+6	ἐγὼ	ἐγώ	p	p-s---mn-	Case=n|Gender=m|Number=s	5	SBJ	_	t_2192|gloss=i
+7	ὀδυνώμενοι	ὀδυνάω	v	v-pppemn-	Case=n|Gender=m|Mood=p|Number=p|Tense=p|Voice=e	8	ADV	_	t_2193|gloss=anxiously-distressed
+8	ζητοῦμέν	ζητέω	v	v1ppia---	Mood=i|Number=p|Person=1|Tense=p|Voice=a	0	PRED	_	t_2194|gloss=have-been-seeking
+9	σε	σύ	p	v1pfia---	Mood=i|Number=p|Person=1|Tense=f|Voice=a	8	OBJ	_	t_2195|gloss=you
+10	.	.	u	u--------	_	8	AuxK	_	t_2196|gloss=.
+
+# sent_id = luke-36
+# text = καὶ εἶπεν πρὸς αὐτούς Τί ὅτι ἐζητεῖτέ με ;
+# sentence_id = 36
+# translation_lang = en
+# prose_translation = And he said to them, "Why is it that you were looking for me?"
+1	καὶ	καί	d	d--------	_	2	AuxY	_	t_2197|gloss=and
+2	εἶπεν	λέγω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	0	PRED	_	t_2198|gloss=he-said
+3	πρὸς	πρός	r	r--------	_	2	AuxP	_	t_2199|gloss=to
+4	αὐτούς	αὐτός	p	p-p---ma-	Case=a|Gender=m|Number=p	3	OBJ	_	t_2200|gloss=them
+5	Τί	τίς	n	n-s---fn-	Case=n|Gender=f|Number=s	2	AuxX	_	t_2201|gloss=why
+6	ὅτι	ὅτι	c	c--------	_	2	AuxC	_	t_2202|gloss=is-it-that
+7	ἐζητεῖτέ	ζητέω	v	v2piia---	Mood=i|Number=p|Person=2|Tense=i|Voice=a	6	OBJ	_	t_2203|gloss=you-were-looking-for
+8	με	ἐγώ	p	p1s---ma-	Case=a|Gender=m|Number=s|Person=1	7	OBJ	_	t_2204|gloss=me
+9	;	;	u	u--------	_	2	AuxK	_	t_2205|gloss=?
+
+# sent_id = luke-37
+# text = οὐκ ᾔδειτε ὅτι ἐν τοῖς τοῦ πατρός μου δεῖ εἶναί με ;
+# sentence_id = 37
+# translation_lang = en
+# prose_translation = Did you not know that I must be in my Father's house?
+1	οὐκ	οὐ	d	d--------	_	2	AuxZ	_	t_2206|gloss=not
+2	ᾔδειτε	οἶδα	v	v2pria---	Mood=i|Number=p|Person=2|Tense=r|Voice=a	0	PRED	_	t_2207|gloss=did-you-know
+3	ὅτι	ὅτι	c	c--------	_	2	AuxC	_	t_2208|gloss=that
+4	ἐν	ἐν	r	r--------	_	10	AuxP	_	t_2209|gloss=in
+5	τοῖς	ὁ	l	l-p---md-	Case=d|Gender=m|Number=p	4	PNOM	_	t_2210|gloss=the
+6	τοῦ	ὁ	l	l-s---mg-	Case=g|Gender=m|Number=s	7	ATR	_	t_2211|gloss=the
+7	πατρός	πατήρ	n	n-s---mg-	Case=g|Gender=m|Number=s	5	ATR	_	t_2212|gloss=father
+8	μου	ἐγώ	p	p1s---cg-	Case=g|Gender=c|Number=s|Person=1	7	ATR	_	t_2213|gloss=my
+9	δεῖ	δεῖ	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	3	OBJ	_	t_2214|gloss=it-is-necessary
+10	εἶναί	εἰμί	v	v--pna---	Mood=n|Tense=p|Voice=a	9	SBJ	_	t_2215|gloss=to-be
+11	με	ἐγώ	p	p1s---ca-	Case=a|Gender=c|Number=s|Person=1	10	SBJ	_	t_2216|gloss=i
+12	;	;	u	u--------	_	2	AuxK	_	t_2217|gloss=?
+
+# sent_id = luke-38
+# text = καὶ αὐτοὶ οὐ συνῆκαν τὸ ῥῆμα ὃ ἐλάλησεν αὐτοῖς .
+# sentence_id = 38
+# translation_lang = en
+# prose_translation = And they did not understand the saying that he spoke to them.
+1	καὶ	καί	d	d--------	_	4	AuxY	_	t_2218|gloss=and
+2	αὐτοὶ	αὐτός	p	p-p---mn-	Case=n|Gender=m|Number=p	4	SBJ	_	t_2219|gloss=they
+3	οὐ	οὐ	d	d--------	_	4	AuxZ	_	t_2220|gloss=not
+4	συνῆκαν	συνίημι	v	v3paia---	Mood=i|Number=p|Person=3|Tense=a|Voice=a	0	PRED	_	t_2221|gloss=understood
+5	τὸ	ὁ	l	l-s---na-	Case=a|Gender=n|Number=s	6	ATR	_	t_2222|gloss=the
+6	ῥῆμα	ῥῆμα	n	n-s---na-	Case=a|Gender=n|Number=s	4	OBJ	_	t_2223|gloss=saying
+7	ὃ	ὅς	p	p-s---na-	Case=a|Gender=n|Number=s	8	OBJ	_	t_2224|gloss=which
+8	ἐλάλησεν	λαλέω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	6	ATR	_	t_2225|gloss=he-spoke
+9	αὐτοῖς	αὐτός	p	p-p---md-	Case=d|Gender=m|Number=p	8	OBJ	_	t_2226|gloss=to-them
+10	.	.	u	u--------	_	4	AuxK	_	t_2227|gloss=.
+
+# sent_id = luke-39
+# text = καὶ κατέβη μετʼ αὐτῶν καὶ ἦλθεν εἰς Ναζαρέτ , καὶ ἦν ὑποτασσόμενος αὐτοῖς .
+# sentence_id = 39
+# translation_lang = en
+# prose_translation = And he went down with them and came to Nazareth, and he was obedient to them.
+1	καὶ	καί	d	d--------	_	10	AuxY	_	t_2228|gloss=and
+2	κατέβη	καταβαίνω	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	10	PRED	_	t_2229|gloss=he-went-down
+3	μετʼ	μετά	r	r--------	_	2	AuxP	_	t_2230|gloss=with
+4	αὐτῶν	αὐτός	p	p-p---mg-	Case=g|Gender=m|Number=p	3	ADV	_	t_2231|gloss=them
+5	καὶ	καί	c	c--------	_	10	AuxY	_	t_2232|gloss=and
+6	ἦλθεν	ἔρχομαι	v	v3saia---	Mood=i|Number=s|Person=3|Tense=a|Voice=a	10	PRED	_	t_2233|gloss=he-came
+7	εἰς	εἰς	r	r--------	_	6	AuxP	_	t_2234|gloss=to
+8	Ναζαρέτ	ναζαρέτ	n	n-s---fa-	Case=a|Gender=f|Number=s	7	OBJ	_	t_2235|gloss=Nazareth
+9	,	,	u	u--------	_	0	AuxX	_	t_2236|gloss=,
+10	καὶ	καί	c	c--------	_	9	COORD	_	t_2237|gloss=and
+11	ἦν	εἰμί	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	10	PRED	_	t_2238|gloss=he-was
+12	ὑποτασσόμενος	ὑποτάσσω	v	v-sppemn-	Case=n|Gender=m|Mood=p|Number=s|Tense=p|Voice=e	11	PNOM	_	t_2239|gloss=being-obedient
+13	αὐτοῖς	αὐτός	p	p-p---md-	Case=d|Gender=m|Number=p	12	OBJ	_	t_2240|gloss=to-them
+14	.	.	u	u--------	_	9	AuxK	_	t_2241|gloss=.
+
+# sent_id = luke-40
+# text = καὶ ἡ μήτηρ αὐτοῦ διετήρει πάντα τὰ ῥήματα ἐν τῇ καρδίᾳ αὐτῆς .
+# sentence_id = 40
+# translation_lang = en
+# prose_translation = And his mother kept all these sayings in her heart.
+1	καὶ	καί	d	d--------	_	5	AuxY	_	t_2242|gloss=and
+2	ἡ	ὁ	l	l-s---fn-	Case=n|Gender=f|Number=s	3	ATR	_	t_2243|gloss=the
+3	μήτηρ	μήτηρ	n	n-s---fn-	Case=n|Gender=f|Number=s	5	SBJ	_	t_2244|gloss=mother
+4	αὐτοῦ	αὐτός	p	p-s---mg-	Case=g|Gender=m|Number=s	3	ATR	_	t_2245|gloss=his
+5	διετήρει	διατελέω	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	0	PRED	_	t_2246|gloss=kept
+6	πάντα	πᾶς	a	a-p---na-	Case=a|Gender=n|Number=p	8	ATR	_	t_2247|gloss=all
+7	τὰ	ὁ	l	l-p---na-	Case=a|Gender=n|Number=p	8	ATR	_	t_2248|gloss=the
+8	ῥήματα	ῥῆμα	n	n-p---na-	Case=a|Gender=n|Number=p	5	OBJ	_	t_2249|gloss=sayings
+9	ἐν	ἐν	r	r--------	_	5	AuxP	_	t_2250|gloss=in
+10	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	11	ATR	_	t_2251|gloss=the
+11	καρδίᾳ	καρδία	n	n-s---fd-	Case=d|Gender=f|Number=s	9	ADV	_	t_2252|gloss=heart
+12	αὐτῆς	αὐτός	p	p-s---fg-	Case=g|Gender=f|Number=s	11	ATR	_	t_2253|gloss=her
+13	.	.	u	u--------	_	5	AuxK	_	t_2254|gloss=.
+
+# sent_id = luke-41
+# text = Καὶ Ἰησοῦς προέκοπτεν τῇ σοφίᾳ καὶ ἡλικίᾳ καὶ χάριτι παρὰ θεῷ καὶ ἀνθρώποις .
+# sentence_id = 41
+# translation_lang = en
+# prose_translation = And Jesus grew in wisdom and stature and in favor with God and men.
+1	Καὶ	καί	c	c--------	_	0	COORD	_	t_2255|gloss=and
+2	Ἰησοῦς	ἰησοῦς	n	n-s---fg-	Case=g|Gender=f|Number=s	3	OBJ	_	t_2256|gloss=Jesus
+3	προέκοπτεν	αὐξάνω	v	v3siia---	Mood=i|Number=s|Person=3|Tense=i|Voice=a	1	PRED	_	t_2257|gloss=grew
+4	τῇ	ὁ	l	l-s---fd-	Case=d|Gender=f|Number=s	5	ATR	_	t_2258|gloss=the
+5	σοφίᾳ	σοφία	n	n-s---fd-	Case=d|Gender=f|Number=s	8	ADV	_	t_2259|gloss=in-wisdom
+6	καὶ	καί	d	d--------	_	8	AuxY	_	t_2260|gloss=and
+7	ἡλικίᾳ	ἡλικία	n	n-s---fd-	Case=d|Gender=f|Number=s	8	ADV	_	t_2261|gloss=in-stature
+8	καὶ	καί	c	c--------	_	3	COORD	_	t_2262|gloss=and
+9	χάριτι	χάρις	n	n-s---fd-	Case=d|Gender=f|Number=s	8	ADV	_	t_2263|gloss=in-favor
+10	παρὰ	παρά	r	r--------	_	3	AuxP	_	t_2264|gloss=with
+11	θεῷ	θεός	n	n-s---md-	Case=d|Gender=m|Number=s	12	ADV	_	t_2265|gloss=God
+12	καὶ	καί	c	c--------	_	10	COORD	_	t_2266|gloss=and
+13	ἀνθρώποις	ἄνθρωπος	n	n-p---md-	Case=d|Gender=m|Number=p	12	ADV	_	t_2267|gloss=men
+14	.	.	u	u--------	_	1	AuxK	_	t_2268|gloss=.
+
