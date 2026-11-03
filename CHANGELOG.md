@@ -7,6 +7,18 @@ dates.
 
 ## [Unreleased]
 
+<!-- release draft (Archeion's changelog.roc): what changed since release-2026.10.20. Describe it in the entries below, in reader language (Internal for the rest), then delete this comment.
+Commits:
+- 3b7a06f data: Luke 2 through apo 0.1.0 (claude-sonnet-5)
+- 217bee5 feat: adopt-apo continues a generated work with apo's output
+- de9fbab fix: kai run apo passes its options to apo
+- 63c669d chore: use Kai 0.0.10
+- d917394 feat: generate through apo
+- aadcedf fix: gh errors no longer print the token; an existing preload release is skipped
+- 93791ee fix: GitHub releases use the repository owner's token
+- 68266d0 data: publish v2026.10.20 from Lyceum production
+-->
+
 ## [2026-10-20]
 
 ### Added
