@@ -7,6 +7,8 @@ dates.
 
 ## [Unreleased]
 
+## [2026-11-04]
+
 ### Added
 
 - The Gospel of Luke continues through chapter 2: 132 passages (1.1-2.52), up from chapter 1 (80). Chapter 2 has
