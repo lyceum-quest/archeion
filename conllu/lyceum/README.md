@@ -15,6 +15,6 @@ A partly imported work holds only the passages Lyceum serves, and the sentences 
 | [`2peter-claude-sonnet-5`](2peter-claude-sonnet-5/) | Second Epistle of Peter | `urn:cts:greekLit:tlg0031.tlg022.lyceum-grc1` | 61 of 61 | claude-sonnet-5 |
 | [`3john-claude-sonnet-5`](3john-claude-sonnet-5/) | Third Epistle of John | `urn:cts:greekLit:tlg0031.tlg025.lyceum-grc1` | 15 of 15 | claude-sonnet-5 |
 | [`crito-claude-sonnet-5`](crito-claude-sonnet-5/) | Plato, Crito | `urn:cts:greekLit:tlg0059.tlg003.lyceum-grc1` | 139 of 139 | claude-sonnet-5 |
-| [`luke-claude-sonnet-5`](luke-claude-sonnet-5/) | Gospel of Luke | `urn:cts:greekLit:tlg0031.tlg003.lyceum-grc1` | 80 of 80 | claude-sonnet-5 |
+| [`luke-claude-sonnet-5`](luke-claude-sonnet-5/) | Gospel of Luke | `urn:cts:greekLit:tlg0031.tlg003.lyceum-grc1` | 132 of 132 | claude-sonnet-5 |
 | [`meditations-claude-sonnet-5`](meditations-claude-sonnet-5/) | Marcus Aurelius, Meditations | `urn:cts:greekLit:tlg0562.tlg001.workspace-grc1` | 42 of 42 | claude-sonnet-5 |
 | [`romans-claude-sonnet-5`](romans-claude-sonnet-5/) | Epistle to the Romans | `urn:cts:greekLit:tlg0031.tlg006.lyceum-grc1` | 432 of 432 | claude-sonnet-5 |
