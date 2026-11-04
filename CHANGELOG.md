@@ -7,18 +7,20 @@ dates.
 
 ## [Unreleased]
 
-<!-- release draft (Archeion's changelog.roc): what changed since release-2026.10.20. Describe it in the entries below, in reader language (Internal for the rest), then delete this comment.
-Commits:
-- 3b7a06f data: Luke 2 through apo 0.1.0 (claude-sonnet-5)
-- 217bee5 feat: adopt-apo continues a generated work with apo's output
-- de9fbab fix: kai run apo passes its options to apo
-- 63c669d chore: use Kai 0.0.10
-- d917394 feat: generate through apo
-- aadcedf fix: gh errors no longer print the token; an existing preload release is skipped
-- 93791ee fix: GitHub releases use the repository owner's token
-- 68266d0 data: publish v2026.10.20 from Lyceum production
--->
+### Added
 
+- The Gospel of Luke continues through chapter 2: 132 passages (1.1-2.52), up from chapter 1 (80). Chapter 2 has
+  prose translations and word glosses, but no literal translations yet.
+
+### Internal
+
+- Luke 2 was generated with apo 0.1.0 (claude-sonnet-5, through the Claude Code login) and added with
+  `kai run adopt-apo`, a stopgap that continues a generated work with apo's output for its later sentences. Each apo
+  session's output is kept in the work's `apo/<first token>/`.
+- `lyceum-import-config` leaves out an empty literal translation, which Lyceum reads as none.
+- Archeion and Lyceum Study build with Kai 0.0.10; `kai run apo` passes its options to apo.
+- GitHub releases use the repository owner's token, a failed `gh` call no longer prints it, and publishing a preload
+  release that already exists is skipped.
 ## [2026-10-20]
 
 ### Added
