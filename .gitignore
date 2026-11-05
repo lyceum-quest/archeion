@@ -27,3 +27,6 @@ conllu/generated/*/.scratch/
 
 # apo run stores and outputs (apo export writes finished runs into conllu/generated/)
 /apo/runs/
+
+# Written by `kai workflow test-perseus`, compared with scripts/tests/perseus/expected/
+/scripts/tests/perseus/out/

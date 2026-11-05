@@ -1,0 +1,7 @@
+# Perseus token archives, pinned by digest; `kai run perseus-pin -- <corpus>` re-pins one (see README.md).
+# corpus	image	digest	size	created
+first1kgreek	ghcr.io/perseusdlcode/mvp-tokens-first1kgreek	sha256:e58a6d996e6570398c18f667dccb9b0583aee0816cbc41b060140f8bc98b9783	727628864	2026-11-04T13:01:27Z
+grcnewxml	ghcr.io/perseusdlcode/mvp-tokens-grcnewxml	sha256:deac01555e089e57e5acaec4fb49a195b9d016fd197bddb7ac5ced2b7aadc29a	212715189	2026-11-04T12:59:40Z
+greeklit	ghcr.io/perseusdlcode/mvp-tokens-greeklit	sha256:e520cd340739fa3af7b3eb7a143466cdcd9c13cffaba87590e54f44d5f0f8963	664179679	2026-11-04T13:00:00Z
+latinlit	ghcr.io/perseusdlcode/mvp-tokens-latinlit	sha256:9abe59af09b87f32050b78b63535bb5dbc6a76ac50db6935bbf272c026df2a3e	500668429	2026-11-05T13:13:26Z
+nd-dlc	ghcr.io/perseusdlcode/mvp-tokens-nd-dlc	sha256:18cb52e81abffae0baa94db985e5f84685428731c066c50d766bc39780b24a6b	19337602	2026-11-04T12:59:11Z
