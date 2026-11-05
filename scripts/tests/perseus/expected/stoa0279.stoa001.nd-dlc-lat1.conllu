@@ -1,0 +1,49 @@
+# sent_id = urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4.1
+# text = Et quamvis nostris auspiciis totius operis instauratio deberetur, adtamen magis imperatorium magisque credidimus gloriosum, si fugata invidia perennitatis iure memoria remaneret auctorum.
+1	Et	et	CCONJ	conjunction/coordinating	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@Et[1]|TokenRange=0:2
+2	quamvis	quamuis	SCONJ	conjunction/subordinating	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@quamvis[1]|TokenRange=3:10
+3	nostris	noster	DET	determiner	Case=Abl|Gender=Neut|Number=Plur	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@nostris[1]|TokenRange=11:18
+4	auspiciis	auspicium	NOUN	noun	Case=Abl|Gender=Neut|Number=Plur	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@auspiciis[1]|TokenRange=19:28
+5	totius	totus	DET	determiner	Case=Gen|Gender=Neut|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@totius[1]|TokenRange=29:35
+6	operis	opus	NOUN	noun	Case=Gen|Gender=Neut|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@operis[1]|TokenRange=36:42
+7	instauratio	instauratio	NOUN	noun	Case=Nom|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@instauratio[1]|TokenRange=43:54
+8	deberetur	debeo	VERB	verb	Aspect=Imp|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@deberetur[1]|SpaceAfter=No|TokenRange=55:64
+9	,	,	PUNCT	punc	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@,[1]|TokenRange=64:65
+10	adtamen	adtamen	NOUN	noun	Case=Nom|Gender=Neut|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@adtamen[1]|TokenRange=66:73
+11	magis	magis	ADV	adverb	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@magis[1]|TokenRange=74:79
+12	imperatorium	imperatorius	ADJ	adjective	Case=Acc|Gender=Neut|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@imperatorium[1]|TokenRange=80:92
+13	magis	magis	ADV	adverb	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@magis[2]|SpaceAfter=No|TokenRange=93:98
+14	que	que	CCONJ	conjunction/coordinating	_	13	cc	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@que[1]|TokenRange=98:101
+15	credidimus	credo	VERB	verb	Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@credidimus[1]|TokenRange=102:112
+16	gloriosum	gloriosus	ADJ	adjective	Case=Acc|Gender=Masc|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@gloriosum[1]|SpaceAfter=No|TokenRange=113:122
+17	,	,	PUNCT	punc	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@,[2]|TokenRange=122:123
+18	si	si	SCONJ	conjunction/subordinating	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@si[1]|TokenRange=124:126
+19	fugata	fugo	VERB	verb	Aspect=Perf|Case=Abl|Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@fugata[1]|TokenRange=127:133
+20	invidia	inuidia	NOUN	noun	Case=Abl|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@invidia[1]|TokenRange=134:141
+21	perennitatis	perennitas	NOUN	noun	Case=Gen|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@perennitatis[1]|TokenRange=142:154
+22	iure	ius	NOUN	noun	Case=Abl|Gender=Neut|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@iure[1]|TokenRange=155:159
+23	memoria	memoria	NOUN	noun	Case=Nom|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@memoria[1]|TokenRange=160:167
+24	remaneret	remaneo	VERB	verb	Aspect=Imp|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@remaneret[1]|TokenRange=168:177
+25	auctorum	auctor	NOUN	noun	Case=Gen|Gender=Fem|Number=Plur	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@auctorum[1]|SpaceAfter=No|TokenRange=178:186
+26	.	.	PUNCT	punc	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@.[1]|TokenRange=186:187
+
+# sent_id = urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4.2
+# text = Nobis ad fructum bonae conscientiae satis abundeque sufficiet revelatis legibus inventa maiorum obscuritatis iniuria vindicasse.
+1	Nobis	nos	PRON	proper_noun	Case=Dat|Number=Plur|Person=1	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@Nobis[1]|TokenRange=188:193
+2	ad	ad	ADP	preposition	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@ad[1]|TokenRange=194:196
+3	fructum	fructus	NOUN	noun	Case=Acc|Gender=Masc|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@fructum[1]|TokenRange=197:204
+4	bonae	bonus	ADJ	adjective	Case=Gen|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@bonae[1]|TokenRange=205:210
+5	conscientiae	conscientia	NOUN	noun	Case=Gen|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@conscientiae[1]|TokenRange=211:223
+6	satis	satis	ADV	adverb	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@satis[1]|TokenRange=224:229
+7	abunde	abunde	ADV	adverb	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@abunde[1]|SpaceAfter=No|TokenRange=230:236
+8	que	que	CCONJ	conjunction/coordinating	_	7	cc	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@que[2]|TokenRange=236:239
+9	sufficiet	sufficio	VERB	verb	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@sufficiet[1]|TokenRange=240:249
+10	revelatis	reuelo	VERB	verb	Aspect=Perf|Case=Abl|Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@revelatis[1]|TokenRange=250:259
+11	legibus	lex	NOUN	noun	Case=Abl|Gender=Fem|Number=Plur	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@legibus[1]|TokenRange=260:267
+12	inventa	inuenio	VERB	verb	Aspect=Perf|Case=Acc|Gender=Neut|Number=Plur|VerbForm=Part|Voice=Pass	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@inventa[1]|TokenRange=268:275
+13	maiorum	maiores	NOUN	noun	Case=Gen|Gender=Fem|Number=Plur	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@maiorum[1]|TokenRange=276:283
+14	obscuritatis	obscuritas	NOUN	noun	Case=Gen|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@obscuritatis[1]|TokenRange=284:296
+15	iniuria	iniuria	NOUN	noun	Case=Abl|Gender=Fem|Number=Sing	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@iniuria[1]|TokenRange=297:304
+16	vindicasse	uindico	VERB	verb	Aspect=Perf|VerbForm=Inf|Voice=Act	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@vindicasse[1]|SpaceAfter=No|TokenRange=305:315
+17	.	.	PUNCT	punc	_	_	_	_	urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1:1.1.4@.[2]|SpaceAfter=No|TokenRange=315:316
+

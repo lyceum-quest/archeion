@@ -38,6 +38,14 @@ the work's first generation; each `apo/<first token>/output.conllu` names the mo
 apo version of the sentences from that token on. A later session needs no earlier workspace: start its text at the
 token after the work's last.
 
+### Perseus input
+
+Perseus's own nightly annotation (lemmas, UD tags and features) is a second source of apo input, pinned by digest in
+`data/perseus/pins.tsv` (see [`data/perseus/README.md`](data/perseus/README.md)).
+`kai run perseus-conllu -- <corpus> <work-urn> <out-dir> [<chunk-count>]` writes a work as `<work>.conllu` and
+`<work>.refs.tsv`, the shape apo reads OGA's in; `conllu/perseus/` holds the first six cards of the Iliad (1.1–205).
+`kai workflow test-perseus` tests the converter.
+
 ## Lyceum Study preload
 
 The preload is every generated work as Lyceum Study loads it: `corpora.json` (version 1), `corpora/<work>.conllu`,

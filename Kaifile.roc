@@ -76,6 +76,38 @@ kaifile = Std.kaifile([
 
 	Task("check-cite-tool", [Use("dev"), Run(["roc", "check", "scripts/cite.roc"])]),
 
+	# kai run perseus-conllu -- <corpus> <work-urn> <out-dir> [<chunk-count>]
+	# e.g. kai run perseus-conllu -- greeklit urn:cts:greekLit:tlg0012.tlg001.perseus-grc2 conllu/perseus 6
+	# Perseus's own annotation of a work as apo input, <out-dir>/<work>.conllu and <work>.refs.tsv as OGA's, from the
+	# archive pinned in data/perseus/pins.tsv (fetched into ARCHEION_PERSEUS_CACHE, default /var/tmp/archeion-perseus).
+	Task("perseus-conllu", [Use("dev"), Run(["roc", "scripts/perseus-conllu.roc", "convert"])]),
+
+	# kai run perseus-pin -- <corpus>: pins the corpus's current nightly archive in data/perseus/pins.tsv.
+	Task("perseus-pin", [Use("dev"), Run(["roc", "scripts/perseus-conllu.roc", "pin"])]),
+
+	Task("check-perseus-tool", [Use("dev"), Run(["roc", "check", "scripts/perseus-conllu.roc"])]),
+
+	# kai workflow test-perseus: the converter's unit tests, then its output for a Greek and a Latin chunk (real ones,
+	# from the pinned archives) against scripts/tests/perseus/expected/.
+	Task("test-perseus-tokens", [Use("dev"), Run(["roc", "test", "scripts/PerseusTokens.roc"])]),
+
+	Task("test-perseus-greek", [Use("dev"), Run(["roc", "scripts/perseus-conllu.roc", "convert-dir", "scripts/tests/perseus/greekLit/tlg0562/tlg001/perseus-grc2", "urn:cts:greekLit:tlg0562.tlg001.perseus-grc2", "scripts/tests/perseus/out"])]),
+
+	Task("test-perseus-latin", [Use("dev"), Run(["roc", "scripts/perseus-conllu.roc", "convert-dir", "scripts/tests/perseus/latinLit/stoa0279/stoa001/nd-dlc-lat1", "urn:cts:latinLit:stoa0279.stoa001.nd-dlc-lat1", "scripts/tests/perseus/out"])]),
+
+	Task("test-perseus-compare", [Use("dev"), Run(["git", "diff", "--no-index", "--exit-code", "scripts/tests/perseus/expected", "scripts/tests/perseus/out"])]),
+
+	Workflow(
+		"test-perseus",
+		[
+			RunTask("check-perseus-tool", []),
+			RunTask("test-perseus-tokens", []),
+			RunTask("test-perseus-greek", []),
+			RunTask("test-perseus-latin", []),
+			RunTask("test-perseus-compare", []),
+		],
+	),
+
 	# Bundles every conllu/generated/<work>-<model>/ folder with output.conllu and config.json as corpus <work>,
 	# including partially generated works, into preload/ (git-ignored) for inspection; releases build their own.
 	Task("preload", [Use("dev"), Run(["roc", "scripts/build-corpus-preload.roc", "preload", "conllu/generated"])]),

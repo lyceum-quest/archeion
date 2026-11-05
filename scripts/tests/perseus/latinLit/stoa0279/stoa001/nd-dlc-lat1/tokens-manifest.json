@@ -1,0 +1,9 @@
+{
+  "chunks": {
+    "1.1.4.xml": {
+      "sha": "f16aeafd777baea8e4884e2cc61df1f09da90e8ba7524a0eca5186dd705f48da",
+      "lang": "la",
+      "pipeline": "2:spacy-3.8.15:la_core_web_lg-3.9.6:analyze"
+    }
+  }
+}

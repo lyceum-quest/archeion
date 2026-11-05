@@ -1,0 +1,9 @@
+{
+  "chunks": {
+    "12.25.xml": {
+      "sha": "108503728be6ee2833b432d2a2546c7caa7de66e918d2a28bc5a747705dd35eb",
+      "lang": "grc",
+      "pipeline": "2:spacy-3.8.15:grc_dep_web_lg-3.8.2:analyze"
+    }
+  }
+}

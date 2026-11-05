@@ -1,0 +1,22 @@
+# sent_id = urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25.1
+# text = Βάλε ἔξω τὴν ὑπόληψιν·
+1	Βάλε	βάλλω	PROPN	proper_noun	Case=Nom|Gender=Fem|Number=Sing	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@Βάλε[1]|TokenRange=0:4
+2	ἔξω	ἔξω	ADV	adverb	_	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@ἔξω[1]|TokenRange=5:8
+3	τὴν	ὁ	DET	determiner	Case=Acc|Gender=Fem|Number=Sing	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@τὴν[1]|TokenRange=9:12
+4	ὑπόληψιν	ὑπόληψις	NOUN	noun	Case=Acc|Gender=Fem|Number=Sing	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@ὑπόληψιν[1]|SpaceAfter=No|TokenRange=13:21
+5	·	·	PUNCT	punc	_	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@·[1]|TokenRange=21:22
+
+# sent_id = urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25.2
+# text = σέσωσαι.
+1	σέσωσαι	σέσωσαι	VERB	verb	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Mid	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@σέσωσαι[1]|SpaceAfter=No|TokenRange=23:30
+2	.	.	PUNCT	punc	_	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@.[1]|TokenRange=30:31
+
+# sent_id = urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25.3
+# text = τίς οὖν ὁ κωλύων ἐκβάλλειν;
+1	τίς	τίς	PRON	pronoun	Case=Nom|Gender=Masc|Number=Sing	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@τίς[1]|TokenRange=32:35
+2	οὖν	οὖν	ADV	particle	_	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@οὖν[1]|TokenRange=36:39
+3	ὁ	ὁ	DET	determiner	Case=Nom|Gender=Masc|Number=Sing	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@ὁ[1]|TokenRange=40:41
+4	κωλύων	κωλύω	VERB	verb	Case=Nom|Gender=Masc|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@κωλύων[1]|TokenRange=42:48
+5	ἐκβάλλειν	ἐκβάλλω	VERB	verb	Tense=Pres|VerbForm=Inf|Voice=Act	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@ἐκβάλλειν[1]|SpaceAfter=No|TokenRange=49:58
+6	;	;	PUNCT	punc	_	_	_	_	urn:cts:greekLit:tlg0562.tlg001.perseus-grc2:12.25@;[1]|TokenRange=58:59
+
