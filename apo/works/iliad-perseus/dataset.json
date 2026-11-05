@@ -1,0 +1,7 @@
+{
+  "name": "iliad-perseus",
+  "title": "Iliad (Perseus annotation)",
+  "input": "../../../conllu/perseus/tlg0012.tlg001.perseus-grc2.conllu",
+  "token_ids": "misc-first",
+  "passages": { "kind": "refs", "path": "../../../conllu/perseus/tlg0012.tlg001.perseus-grc2.refs.tsv" }
+}

@@ -1,0 +1,47 @@
+{
+  "apo": "0.1.0",
+  "run": "64d45446d0493f870fe8e88406690ef79ceae8c0a6136691e5cf9e05f75f4e1d",
+  "experiment": "iliad-perseus",
+  "label": "claude-sonnet-5",
+  "model": {
+    "name": "claude-sonnet-5",
+    "provider": "claude-subscription",
+    "protocol": "claude-cli",
+    "id": "claude-sonnet-5",
+    "options": {}
+  },
+  "dataset": {
+    "name": "iliad-perseus",
+    "title": "Iliad (Perseus annotation)",
+    "input": "apo/works/iliad-perseus/../../../conllu/perseus/tlg0012.tlg001.perseus-grc2.conllu",
+    "passages": 6,
+    "token_ids": "misc-first",
+    "first_line": 1
+  },
+  "steps": [
+    {
+      "kind": "translate-sentence",
+      "prompt": "apo/works/iliad-perseus/../../prompts/translate.md",
+      "max_tokens": 1024
+    },
+    {
+      "kind": "gloss-tokens",
+      "prompt": "apo/works/iliad-perseus/../../prompts/gloss.md",
+      "max_tokens": 2048
+    },
+    {
+      "kind": "translate-passage",
+      "prompt": "apo/works/iliad-perseus/../../prompts/passage.md",
+      "max_tokens": 1024
+    }
+  ],
+  "limits": {
+    "attempts": 3,
+    "timeout_seconds": 180,
+    "budget_usd": 0.0
+  },
+  "started": "2026-11-05T15:30:11Z",
+  "status": "completed",
+  "cost_usd": 4.853368800000000008,
+  "replayable": true
+}
